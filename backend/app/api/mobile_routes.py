@@ -60,3 +60,22 @@ async def day_plan():
             },
         ],
     }
+
+
+@router.get("/stats")
+async def mobile_stats():
+    from app.db.cloud import get_cloud_store
+
+    cloud = get_cloud_store()
+    traders = cloud.list_traders()
+    outreach = cloud.list_outreach()
+    by_status: dict[str, int] = {}
+    for t in traders:
+        by_status[t["status"]] = by_status.get(t["status"], 0) + 1
+    return {
+        "n_traders": len(traders),
+        "n_outreach": len(outreach),
+        "by_status": by_status,
+        "apk_url": "/downloads/motman.apk",
+        "next_action": "أضف تاجرًا جديدًا أو اطلب سعرًا ملزمًا" if traders else "أضف أول تاجر الآن",
+    }

@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg'],
+      includeAssets: ['favicon.svg', 'downloads/motman-qr.png', 'downloads/motman-apk-qr.png'],
       manifest: {
         name: 'مطمن — مؤشر الصرف الشفاف',
         short_name: 'مطمن',
@@ -17,7 +17,7 @@ export default defineConfig({
         display: 'standalone',
         lang: 'ar',
         dir: 'rtl',
-        start_url: '/',
+        start_url: '/?v=3',
         icons: [
           {
             src: '/favicon.svg',
@@ -26,6 +26,12 @@ export default defineConfig({
             purpose: 'any maskable',
           },
         ],
+      },
+      workbox: {
+        navigateFallback: '/index.html',
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+        skipWaiting: true,
       },
     }),
   ],

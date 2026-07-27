@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const TEMPLATES = [
   {
@@ -34,6 +34,9 @@ const CHECKLIST = [
 
 export function FieldworkPanel() {
   const [amount, setAmount] = useState('100000')
+  const [stats, setStats] = useState<{ n_traders?: number; n_outreach?: number; next_action?: string } | null>(
+    null,
+  )
   const [done, setDone] = useState<Record<string, boolean>>(() => {
     try {
       return JSON.parse(localStorage.getItem('motman_checklist') || '{}')
@@ -42,10 +45,14 @@ export function FieldworkPanel() {
     }
   })
 
-  const templates = useMemo(
-    () => TEMPLATES.map((t) => ({ ...t, body: t.body.replace('{amount}', amount) })),
-    [amount],
-  )
+  useEffect(() => {
+    void fetch('/api/v1/mobile/stats')
+      .then((r) => r.json())
+      .then(setStats)
+      .catch(() => undefined)
+  }, [])
+
+  const templates = TEMPLATES.map((t) => ({ ...t, body: t.body.replace('{amount}', amount) }))
 
   function toggle(item: string) {
     const next = { ...done, [item]: !done[item] }
@@ -65,6 +72,19 @@ export function FieldworkPanel() {
       <p className="tag">
         قائمة تنفيذ + رسائل جاهزة للتجار. التقدم: {progress}/{CHECKLIST.length}
       </p>
+      {stats && (
+        <div className="metrics">
+          <div className="metric">
+            <div className="k">التجار</div>
+            <div className="v">{stats.n_traders ?? 0}</div>
+          </div>
+          <div className="metric">
+            <div className="k">تواصلات</div>
+            <div className="v">{stats.n_outreach ?? 0}</div>
+          </div>
+        </div>
+      )}
+      {stats?.next_action && <p className="tag">التالي: {stats.next_action}</p>}
 
       <div className="grid">
         {CHECKLIST.map((item) => (
