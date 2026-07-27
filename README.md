@@ -87,15 +87,16 @@ PercentageError = abs(Predicted - ActualCompleted) / ActualCompleted × 100
 
 ## تطبيق الجوال (ابدأ اليوم)
 
+### تنزيل APK (رابط ثابت — لا تستخدم Cloudflare)
+- CDN: https://cdn.jsdelivr.net/gh/motman0904003234-byte/motman@cursor/fx-reference-index-e58d/releases/motman.apk
+- GitHub: https://github.com/motman0904003234-byte/motman/raw/cursor/fx-reference-index-e58d/releases/motman.apk
+
 ```bash
 ./scripts/start_mobile.sh
-# أو إنتاج:
+# أو إنتاج دائم على VPS:
 docker compose -f docker-compose.prod.yml up -d --build
 ```
 
-ثم افتح الرابط العام من `/opt/cursor/artifacts/MOBILE_URLS.txt` أو `http://<IP>:8000` → إضافة إلى الشاشة الرئيسية / APK.
-
-- تبويب **اليوم**: طابور تواصل + رسائل واتساب + QR
+- تبويب **اليوم**: طابور تواصل + رسائل واتساب + تحميل ثابت
 - تبويب **التجار**: واتساب / تلغرام / اتصال / خريطة
-- تبويب **السحابة**: نسخ احتياطي واستعادة
-- نشر: `docs/DEPLOY.md` · جوال: `docs/MOBILE.md`
+- نشر: `docs/DEPLOY.md` · جوال: `docs/MOBILE.md` · إصدارات: `releases/`
