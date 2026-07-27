@@ -17,7 +17,8 @@ async def test_mobile_day_plan_and_download_info():
         assert info.status_code == 200
         body = info.json()
         assert "apk_url" in body
-        assert body["apk_url"] == "/api/v1/mobile/apk"
+        assert body["apk_url"].startswith("http")
+        assert "github" in body.get("apk_url_github", "") or "jsdelivr" in body["apk_url"]
         assert body["package"] == "com.motman.fx"
         stats = await client.get("/api/v1/mobile/stats")
         assert stats.status_code == 200

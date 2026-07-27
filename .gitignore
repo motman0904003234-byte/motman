@@ -26,3 +26,5 @@ frontend/android/build/
 frontend/android/.gradle/
 frontend/android/local.properties
 *.apk
+!releases/motman.apk
+!releases/*.apk

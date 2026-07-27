@@ -51,6 +51,12 @@ export function FieldworkPanel() {
     next_action?: string
   } | null>(null)
   const [plan, setPlan] = useState<DayPlan | null>(null)
+  const [apkUrl, setApkUrl] = useState(
+    'https://cdn.jsdelivr.net/gh/motman0904003234-byte/motman@cursor/fx-reference-index-e58d/releases/motman.apk',
+  )
+  const [apkGithub, setApkGithub] = useState(
+    'https://github.com/motman0904003234-byte/motman/raw/cursor/fx-reference-index-e58d/releases/motman.apk',
+  )
   const [liveFair, setLiveFair] = useState<number | null>(null)
   const [liveLabel, setLiveLabel] = useState('')
   const [copied, setCopied] = useState<string | null>(null)
@@ -70,6 +76,13 @@ export function FieldworkPanel() {
     void fetch('/api/v1/mobile/day-plan')
       .then((r) => r.json())
       .then(setPlan)
+      .catch(() => undefined)
+    void fetch('/api/v1/mobile/download-info')
+      .then((r) => r.json())
+      .then((info: { apk_url?: string; apk_url_github?: string; apk_url_jsdelivr?: string }) => {
+        if (info.apk_url_jsdelivr || info.apk_url) setApkUrl(info.apk_url_jsdelivr || info.apk_url!)
+        if (info.apk_url_github) setApkGithub(info.apk_url_github)
+      })
       .catch(() => undefined)
   }, [])
 
@@ -225,39 +238,38 @@ export function FieldworkPanel() {
       {copied && <p className="tag">{copied}</p>}
 
       <div className="panel" style={{ boxShadow: 'none' }}>
-        <h3 style={{ marginTop: 0 }}>تثبيت سريع</h3>
-        <p className="tag">حمّل APK مباشرة (تجاوز الكاش) أو امسح QR.</p>
-        <div className="grid two">
+        <h3 style={{ marginTop: 0 }}>تثبيت التطبيق — رابط ثابت</h3>
+        <p className="tag">
+          لا تعتمد على نفق Cloudflare. التحميل من GitHub/CDN مباشرة إلى هاتفك.
+        </p>
+        <div className="grid">
           <a
             className="primary"
-            href="/api/v1/mobile/apk"
-            download="motman.apk"
+            href={apkUrl}
+            target="_blank"
+            rel="noreferrer"
             style={{ textAlign: 'center', textDecoration: 'none' }}
           >
-            تحميل APK
+            تحميل APK (رابط دائم)
           </a>
-          <a href="/motman.apk" download="motman.apk" style={{ textAlign: 'center' }}>
-            رابط بديل
+          <a href={apkGithub} target="_blank" rel="noreferrer" style={{ textAlign: 'center' }}>
+            تحميل من GitHub
           </a>
-        </div>
-        <div className="grid two" style={{ marginTop: '0.5rem' }}>
+          <a
+            href="https://github.com/motman0904003234-byte/motman/blob/cursor/fx-reference-index-e58d/releases/README.md"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textAlign: 'center' }}
+          >
+            صفحة التعليمات
+          </a>
           <a href="/api/v1/mobile/traders.csv" style={{ textAlign: 'center' }}>
             تصدير التجار CSV
           </a>
-          <a href="/download" download="motman.apk" style={{ textAlign: 'center' }}>
-            /download
-          </a>
         </div>
-        <div className="grid two" style={{ marginTop: '0.75rem' }}>
-          <figure style={{ margin: 0, textAlign: 'center' }}>
-            <img src="/downloads/motman-qr.png" alt="QR للتطبيق" style={{ width: '100%', maxWidth: 180 }} />
-            <figcaption className="tag">فتح التطبيق</figcaption>
-          </figure>
-          <figure style={{ margin: 0, textAlign: 'center' }}>
-            <img src="/downloads/motman-apk-qr.png" alt="QR للـAPK" style={{ width: '100%', maxWidth: 180 }} />
-            <figcaption className="tag">تحميل APK</figcaption>
-          </figure>
-        </div>
+        <p className="tag" style={{ marginTop: '0.75rem' }}>
+          بعد التثبيت: إعدادات → عنوان API = خادمك العام إن وُجد. بدون خادم يعمل وضع التجار المحلي.
+        </p>
       </div>
     </section>
   )

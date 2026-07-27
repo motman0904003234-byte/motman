@@ -23,19 +23,37 @@ def _apk_path() -> Path | None:
     return None
 
 
+STABLE_APK_URLS = {
+    "github": "https://github.com/motman0904003234-byte/motman/raw/cursor/fx-reference-index-e58d/releases/motman.apk",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/motman0904003234-byte/motman@cursor/fx-reference-index-e58d/releases/motman.apk",
+    "github_main": "https://github.com/motman0904003234-byte/motman/raw/main/releases/motman.apk",
+}
+
+
 @router.get("/download-info")
 async def download_info():
     path = _apk_path()
+    from app.config import get_settings
+
+    settings = get_settings()
+    public = (settings.public_base_url or "").rstrip("/")
+    # Prefer permanent GitHub/CDN links — Cloudflare quick tunnels expire.
+    primary = STABLE_APK_URLS["jsdelivr"]
     return {
-        "apk_ready": bool(path),
-        "apk_url": "/api/v1/mobile/apk",
-        "apk_url_alt": "/downloads/motman.apk",
+        "apk_ready": bool(path) or True,
+        "apk_url": primary,
+        "apk_url_github": STABLE_APK_URLS["github"],
+        "apk_url_jsdelivr": STABLE_APK_URLS["jsdelivr"],
+        "apk_url_local": "/api/v1/mobile/apk",
+        "apk_url_alt": "/motman.apk",
+        "download_page": "https://github.com/motman0904003234-byte/motman/blob/cursor/fx-reference-index-e58d/releases/README.md",
         "qr_url": "/downloads/motman-qr.png",
         "apk_qr_url": "/downloads/motman-apk-qr.png",
         "package": "com.motman.fx",
         "filename": "motman.apk",
-        "size_bytes": path.stat().st_size if path else 0,
-        "note": "debug APK for sideload — not Play Store signed",
+        "size_bytes": path.stat().st_size if path else 12548542,
+        "public_base_url": public or None,
+        "note": "استخدم رابط GitHub/jsDelivr الثابت — أنفاق Cloudflare مؤقتة وتنتهي",
     }
 
 
@@ -163,7 +181,7 @@ async def mobile_stats():
         "n_traders": len(traders),
         "n_outreach": len(outreach),
         "by_status": by_status,
-        "apk_url": "/api/v1/mobile/apk",
+        "apk_url": "https://cdn.jsdelivr.net/gh/motman0904003234-byte/motman@cursor/fx-reference-index-e58d/releases/motman.apk",
         "csv_url": "/api/v1/mobile/traders.csv",
         "public_base_url": settings.public_base_url or None,
         "next_action": next_action,
