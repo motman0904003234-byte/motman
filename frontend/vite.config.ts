@@ -17,7 +17,7 @@ export default defineConfig({
         display: 'standalone',
         lang: 'ar',
         dir: 'rtl',
-        start_url: '/?v=4',
+        start_url: '/?v=5',
         icons: [
           {
             src: '/favicon.svg',
@@ -29,9 +29,16 @@ export default defineConfig({
       },
       workbox: {
         navigateFallback: '/index.html',
+        navigateFallbackDenylist: [/^\/api\//, /^\/downloads\//, /\/apk$/, /\.apk$/],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
         skipWaiting: true,
+        runtimeCaching: [
+          {
+            urlPattern: /\/(api\/v1\/mobile\/apk|downloads\/.*\.apk)$/,
+            handler: 'NetworkOnly',
+          },
+        ],
       },
     }),
   ],

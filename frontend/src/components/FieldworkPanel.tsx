@@ -226,13 +226,26 @@ export function FieldworkPanel() {
 
       <div className="panel" style={{ boxShadow: 'none' }}>
         <h3 style={{ marginTop: 0 }}>تثبيت سريع</h3>
-        <p className="tag">حمّل APK أو امسح رمز QR من الخادم.</p>
+        <p className="tag">حمّل APK مباشرة (تجاوز الكاش) أو امسح QR.</p>
         <div className="grid two">
-          <a className="primary" href="/downloads/motman.apk" style={{ textAlign: 'center', textDecoration: 'none' }}>
+          <a
+            className="primary"
+            href="/api/v1/mobile/apk"
+            download="motman.apk"
+            style={{ textAlign: 'center', textDecoration: 'none' }}
+          >
             تحميل APK
           </a>
+          <a href="/motman.apk" download="motman.apk" style={{ textAlign: 'center' }}>
+            رابط بديل
+          </a>
+        </div>
+        <div className="grid two" style={{ marginTop: '0.5rem' }}>
           <a href="/api/v1/mobile/traders.csv" style={{ textAlign: 'center' }}>
             تصدير التجار CSV
+          </a>
+          <a href="/download" download="motman.apk" style={{ textAlign: 'center' }}>
+            /download
           </a>
         </div>
         <div className="grid two" style={{ marginTop: '0.75rem' }}>

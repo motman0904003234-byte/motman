@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from fastapi import APIRouter
-from fastapi.responses import PlainTextResponse
+from fastapi import APIRouter, HTTPException
+from fastapi.responses import FileResponse, PlainTextResponse
 
 router = APIRouter(prefix="/mobile", tags=["mobile"])
 
@@ -18,7 +18,7 @@ CANDIDATES = [
 
 def _apk_path() -> Path | None:
     for p in CANDIDATES:
-        if p.exists():
+        if p.exists() and p.stat().st_size > 1_000_000:
             return p
     return None
 
@@ -28,13 +28,33 @@ async def download_info():
     path = _apk_path()
     return {
         "apk_ready": bool(path),
-        "apk_url": "/downloads/motman.apk",
+        "apk_url": "/api/v1/mobile/apk",
+        "apk_url_alt": "/downloads/motman.apk",
         "qr_url": "/downloads/motman-qr.png",
         "apk_qr_url": "/downloads/motman-apk-qr.png",
         "package": "com.motman.fx",
+        "filename": "motman.apk",
         "size_bytes": path.stat().st_size if path else 0,
         "note": "debug APK for sideload — not Play Store signed",
     }
+
+
+@router.get("/apk")
+async def download_apk():
+    """Reliable APK download (bypasses SPA/SW static quirks)."""
+    path = _apk_path()
+    if not path:
+        raise HTTPException(404, detail="apk_not_ready")
+    return FileResponse(
+        path,
+        media_type="application/vnd.android.package-archive",
+        filename="motman.apk",
+        headers={
+            "Content-Disposition": 'attachment; filename="motman.apk"',
+            "Cache-Control": "no-store",
+            "X-Content-Type-Options": "nosniff",
+        },
+    )
 
 
 @router.get("/day-plan")
@@ -143,7 +163,7 @@ async def mobile_stats():
         "n_traders": len(traders),
         "n_outreach": len(outreach),
         "by_status": by_status,
-        "apk_url": "/downloads/motman.apk",
+        "apk_url": "/api/v1/mobile/apk",
         "csv_url": "/api/v1/mobile/traders.csv",
         "public_base_url": settings.public_base_url or None,
         "next_action": next_action,

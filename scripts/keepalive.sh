@@ -25,9 +25,9 @@ import urllib.request
 from pathlib import Path
 
 url = Path("/opt/cursor/artifacts/PUBLIC_URL.txt").read_text().strip()
-apk = f"{url}/downloads/motman.apk"
-for name, target in [("motman-qr.png", url), ("motman-apk-qr.png", apk)]:
-    q = "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=" + urllib.parse.quote(target, safe="")
+apk = f"{url}/api/v1/mobile/apk"
+for name, target in [("motman-qr.png", f"{url}/?v=5"), ("motman-apk-qr.png", apk)]:
+    q = "https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=" + urllib.parse.quote(target, safe="")
     data = urllib.request.urlopen(q, timeout=20).read()
     for base in [
         Path("/workspace/frontend/public/downloads"),
@@ -42,17 +42,30 @@ PY
   cat >/opt/cursor/artifacts/MOBILE_URLS.txt <<EOF
 Motman مستمر
 
-WEB: $url
-APK: $url/downloads/motman.apk
-CSV: $url/api/v1/mobile/traders.csv
-STATS: $url/api/v1/mobile/stats
+WEB: $url/?v=5
+APK: $url/api/v1/mobile/apk
+APK_ALT: $url/motman.apk
+DOWNLOAD_PAGE: $url/download.html
 HEALTH: $url/healthz
 
 محلي APK: /opt/cursor/artifacts/motman-debug.apk
 PR: https://github.com/motman0904003234-byte/motman/pull/1
 EOF
-  # Export for API process restarts
   export PUBLIC_BASE_URL="$url"
+  host="${url#https://}"
+  host="${host%%/*}"
+  if ! getent hosts "$host" >/dev/null 2>&1; then
+    ip="$(python3 - <<PY
+import json,urllib.request
+host="$host"
+req=urllib.request.Request("https://1.1.1.1/dns-query?name=%s&type=A"%host, headers={"accept":"application/dns-json"})
+print(json.load(urllib.request.urlopen(req, timeout=10))["Answer"][0]["data"])
+PY
+)" || true
+    if [ -n "${ip:-}" ]; then
+      grep -q "$host" /etc/hosts 2>/dev/null || echo "$ip $host" | sudo tee -a /etc/hosts >/dev/null 2>&1 || true
+    fi
+  fi
 }
 
 ensure_api() {
@@ -60,14 +73,24 @@ ensure_api() {
     return 0
   fi
   echo "$(date -Is) restarting API" >>"$LOG_DIR/keepalive.log"
-  # Stop any stale uvicorn on :8000 without broad pkill
-  for pid in $(pgrep -f 'python3 -m uvicorn app.main:app' || true); do
-    kill "$pid" 2>/dev/null || true
-  done
-  sleep 1
+  python3 - <<'PY' || true
+import os, signal, subprocess, time
+try:
+    out = subprocess.check_output(["pgrep", "-f", "python3 -m uvicorn app.main:app"], text=True)
+except subprocess.CalledProcessError:
+    out = ""
+for line in out.splitlines():
+    pid = int(line.split()[0])
+    try:
+        os.kill(pid, signal.SIGTERM)
+    except ProcessLookupError:
+        pass
+time.sleep(1)
+PY
   cd "$ROOT/frontend" && npm run build >>"$LOG_DIR/build.log" 2>&1 || true
   mkdir -p "$ROOT/frontend/dist/downloads"
   cp -f "$ROOT/frontend/public/downloads/"* "$ROOT/frontend/dist/downloads/" 2>/dev/null || true
+  cp -f "$ROOT/frontend/public/download.html" "$ROOT/frontend/dist/download.html" 2>/dev/null || true
   refresh_public_assets || true
   cd "$ROOT/backend"
   PUBLIC_BASE_URL="${PUBLIC_BASE_URL:-$(cat /opt/cursor/artifacts/PUBLIC_URL.txt 2>/dev/null || true)}" \
@@ -78,8 +101,29 @@ ensure_api() {
 }
 
 ensure_tunnel() {
-  if pgrep -f 'cloudflared tunnel --url' >/dev/null; then
-    return 0
+  if pgrep -x cloudflared >/dev/null || pgrep -f '/tmp/cloudflared tunnel --url' >/dev/null; then
+    url="$(cat /opt/cursor/artifacts/PUBLIC_URL.txt 2>/dev/null || true)"
+    if [ -n "$url" ]; then
+      host="${url#https://}"; host="${host%%/*}"
+      if python3 - <<PY
+import json,urllib.request,sys
+host="$host"
+try:
+  req=urllib.request.Request("https://1.1.1.1/dns-query?name=%s&type=A"%host, headers={"accept":"application/dns-json"})
+  ans=json.load(urllib.request.urlopen(req, timeout=8)).get("Answer") or []
+  sys.exit(0 if ans else 1)
+except Exception:
+  sys.exit(1)
+PY
+      then
+        return 0
+      fi
+      echo "$(date -Is) stale tunnel DNS — restarting" >>"$LOG_DIR/keepalive.log"
+      pkill -x cloudflared 2>/dev/null || true
+      sleep 1
+    else
+      return 0
+    fi
   fi
   echo "$(date -Is) restarting tunnel" >>"$LOG_DIR/keepalive.log"
   if [ ! -x /tmp/cloudflared ]; then
@@ -90,13 +134,12 @@ ensure_tunnel() {
   nohup /tmp/cloudflared tunnel --url http://127.0.0.1:8000 --no-autoupdate \
     >>"$LOG_DIR/tunnel.log" 2>&1 &
   echo $! >"$LOG_DIR/tunnel.pid"
-  sleep 4
+  sleep 5
   grep -oE 'https://[a-z0-9-]+\.trycloudflare\.com' "$LOG_DIR/tunnel.log" | tail -1 \
     >/opt/cursor/artifacts/PUBLIC_URL.txt || true
   refresh_public_assets || true
 }
 
-# Refresh QR periodically even when already up
 n=0
 while true; do
   ensure_api

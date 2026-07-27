@@ -9,11 +9,15 @@
 - محلي: `http://127.0.0.1:8000`
 
 ### 2) تثبيت APK أندرويد
-ملف البناء:
+روابط التنزيل الموثوقة (لا تستخدم `/downloads/...` فقط إن فشل):
 
+- `/api/v1/mobile/apk` ← الأفضل
+- `/motman.apk`
+- `/download.html` صفحة تنزيل بسيطة
+
+أو من الملفات المحلية:
 `/opt/cursor/artifacts/motman-debug.apk`
 
-أو:
 ```bash
 ./scripts/build_apk.sh
 ```
@@ -22,6 +26,8 @@
 
 في التطبيق: **إعدادات → عنوان API السحابي** =
 `https://YOUR_PUBLIC_HOST/api/v1`
+
+افتح دائمًا الرابط الحالي من `/opt/cursor/artifacts/MOBILE_URLS.txt` لأن نفق Cloudflare قد يتغيّر.
 
 ## ميدان اليوم داخل التطبيق
 - تبويب **اليوم**: قائمة تحقق + طابور تواصل + رسائل واتساب جاهزة + QR

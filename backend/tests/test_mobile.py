@@ -17,6 +17,7 @@ async def test_mobile_day_plan_and_download_info():
         assert info.status_code == 200
         body = info.json()
         assert "apk_url" in body
+        assert body["apk_url"] == "/api/v1/mobile/apk"
         assert body["package"] == "com.motman.fx"
         stats = await client.get("/api/v1/mobile/stats")
         assert stats.status_code == 200
@@ -24,3 +25,9 @@ async def test_mobile_day_plan_and_download_info():
         health = await client.get("/healthz")
         assert health.status_code == 200
         assert health.json()["ok"] is True
+        # APK route must exist (200 if file present, 404 if not in CI without artifact)
+        apk = await client.get("/api/v1/mobile/apk")
+        assert apk.status_code in (200, 404)
+        if apk.status_code == 200:
+            assert apk.headers.get("content-type", "").startswith("application/")
+            assert "motman.apk" in (apk.headers.get("content-disposition") or "")

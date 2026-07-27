@@ -57,6 +57,37 @@ def create_app() -> FastAPI:
     downloads_public = Path(__file__).resolve().parents[2] / "frontend" / "public" / "downloads"
     downloads_dist = dist / "downloads"
     downloads_dir = downloads_dist if downloads_dist.exists() else downloads_public
+    artifact_apk = Path("/opt/cursor/artifacts/motman-debug.apk")
+
+    def _resolve_apk() -> Path | None:
+        for p in [
+            downloads_public / "motman.apk",
+            downloads_dist / "motman.apk",
+            artifact_apk,
+        ]:
+            if p.exists() and p.stat().st_size > 1_000_000:
+                return p
+        return None
+
+    @app.get("/download")
+    @app.get("/download/apk")
+    @app.get("/motman.apk")
+    async def download_apk_short():
+        from fastapi import HTTPException
+
+        path = _resolve_apk()
+        if not path:
+            raise HTTPException(404, detail="apk_not_ready")
+        return FileResponse(
+            path,
+            media_type="application/vnd.android.package-archive",
+            filename="motman.apk",
+            headers={
+                "Content-Disposition": 'attachment; filename="motman.apk"',
+                "Cache-Control": "no-store",
+            },
+        )
+
     if downloads_dir.exists():
         app.mount("/downloads", StaticFiles(directory=downloads_dir), name="downloads")
 
@@ -67,6 +98,13 @@ def create_app() -> FastAPI:
 
         @app.get("/")
         async def spa_index():
+            return FileResponse(dist / "index.html")
+
+        @app.get("/download.html")
+        async def download_page():
+            page = dist / "download.html"
+            if page.exists():
+                return FileResponse(page)
             return FileResponse(dist / "index.html")
 
         @app.get("/favicon.svg")
