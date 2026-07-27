@@ -1,0 +1,265 @@
+.shell {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 3rem;
+}
+
+.hero {
+  position: relative;
+  padding: 2.5rem 0 1.5rem;
+  overflow: hidden;
+  animation: rise 0.7s ease both;
+}
+
+.hero-glow {
+  position: absolute;
+  inset: -20% 10% auto;
+  height: 180px;
+  background: radial-gradient(circle, rgba(212, 160, 23, 0.25), transparent 70%);
+  filter: blur(12px);
+  pointer-events: none;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.eyebrow {
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 12vw, 5rem);
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 0.02em;
+  background: linear-gradient(120deg, var(--sand), #fff 40%, var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: brandIn 0.9s ease both;
+}
+
+.tagline {
+  max-width: 38rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0.85rem 0 1.4rem;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tabs button {
+  background: transparent;
+  color: var(--sand);
+  border: 1px solid var(--line);
+  padding: 0.55rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.tabs button:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.tabs button.active {
+  background: rgba(212, 160, 23, 0.15);
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.panel {
+  margin-top: 1.25rem;
+  padding: 1.25rem 0;
+  animation: rise 0.5s ease both;
+}
+
+.form {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form button {
+    grid-column: 1 / -1;
+  }
+}
+
+.form label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.form input,
+.form select {
+  background: rgba(7, 26, 20, 0.65);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 0.75rem 0.85rem;
+  border-radius: 2px;
+}
+
+.form button,
+.panel button {
+  background: linear-gradient(120deg, var(--accent), #f0c14b);
+  color: #1a1405;
+  border: 0;
+  padding: 0.85rem 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s, filter 0.15s;
+}
+
+.form button:hover,
+.panel button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.form button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.result h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  margin: 0 0 0.5rem;
+}
+
+.fair {
+  font-size: 1.35rem;
+  color: var(--sand);
+  margin: 0.25rem 0;
+}
+
+.exec {
+  font-size: 1.15rem;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.exec.warn {
+  color: var(--accent);
+}
+
+.metrics {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.metric {
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.metric span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.metric strong {
+  font-size: 1.05rem;
+}
+
+.note,
+.audit,
+.callout,
+.method p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.audit {
+  font-size: 0.8rem;
+}
+
+.error {
+  color: var(--danger);
+}
+
+.ok {
+  color: var(--ok);
+}
+
+.callout {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.method ol {
+  line-height: 1.8;
+  padding-right: 1.2rem;
+}
+
+.foot {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes brandIn {
+  from {
+    opacity: 0;
+    letter-spacing: 0.2em;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    letter-spacing: 0.02em;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}

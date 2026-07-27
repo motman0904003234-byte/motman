@@ -1,0 +1,22 @@
+{
+  "name": "motman-fx-index",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Transparent real-time FX reference index for Bankak-SDG, Cash-SDG, MTN-MoMo-RWF, Bank-RWF via USD/USDT/USDC",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm --parallel -r --filter @motman/api --filter @motman/web --filter @motman/telegram-bot run dev",
+    "dev:api": "pnpm --filter @motman/api run dev",
+    "dev:web": "pnpm --filter @motman/web run dev",
+    "test": "pnpm -r run test",
+    "test:core": "pnpm --filter @motman/core run test",
+    "test:api": "pnpm --filter @motman/api run test",
+    "lint": "pnpm -r run lint --if-present",
+    "accuracy": "pnpm --filter @motman/api run accuracy",
+    "seed": "pnpm --filter @motman/api run seed"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

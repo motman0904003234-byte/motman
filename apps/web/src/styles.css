@@ -1,0 +1,45 @@
+:root {
+  --bg0: #071a14;
+  --bg1: #0b3d2e;
+  --bg2: #125c45;
+  --sand: #e6d5b8;
+  --ink: #f3efe6;
+  --muted: #b7c7bf;
+  --accent: #d4a017;
+  --danger: #c45c48;
+  --ok: #3dba8a;
+  --line: rgba(230, 213, 184, 0.18);
+  --font-display: "Reem Kufi", "IBM Plex Sans Arabic", sans-serif;
+  --font-body: "IBM Plex Sans Arabic", Tahoma, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 100% -10%, rgba(212, 160, 23, 0.18), transparent 55%),
+    radial-gradient(900px 500px at -10% 20%, rgba(61, 186, 138, 0.16), transparent 50%),
+    linear-gradient(165deg, var(--bg0), var(--bg1) 45%, #083528 100%);
+  background-attachment: fixed;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+a {
+  color: var(--accent);
+}

@@ -1,0 +1,53 @@
+{
+  "definition": "PercentageError = abs(PredictedPrice - ActualCompletedPrice) / ActualCompletedPrice × 100",
+  "examplePercentageError": 1.5154890342186733,
+  "realDataReport": {
+    "sampleCount": 0,
+    "independentMerchants": 0,
+    "mape": null,
+    "medianError": null,
+    "p95Error": null,
+    "pctWithin10": 0,
+    "meetsMinimum90": false,
+    "meetsTargetMape2": false,
+    "meetsMedian1_5": false,
+    "meetsP95_5": false,
+    "definition": "PercentageError = abs(PredictedPrice - ActualCompletedPrice) / ActualCompletedPrice × 100",
+    "caveats": [
+      "لا تُستخدم بيانات اصطناعية لإثبات الدقة",
+      "التقسيم الزمني إلزامي",
+      "عينات حقيقية: 0/300 — لا يُدَّعى تحقيق معيار الدقة"
+    ]
+  },
+  "softwarePipelineCheck_NOT_FOR_CLAIMS": {
+    "sampleCount": 1,
+    "independentMerchants": 1,
+    "mape": 0.3968253968253968,
+    "medianError": 0.3968253968253968,
+    "p95Error": 0.3968253968253968,
+    "pctWithin10": 100,
+    "meetsMinimum90": true,
+    "meetsTargetMape2": true,
+    "meetsMedian1_5": true,
+    "meetsP95_5": true,
+    "definition": "PercentageError = abs(PredictedPrice - ActualCompletedPrice) / ActualCompletedPrice × 100",
+    "caveats": [
+      "لا تُستخدم بيانات اصطناعية لإثبات الدقة",
+      "التقسيم الزمني إلزامي",
+      "عينات حقيقية: 1/300 — لا يُدَّعى تحقيق معيار الدقة"
+    ],
+    "warning": "اصطناعي بالكامل — لاختبار البرمجيات فقط"
+  },
+  "missingForAcceptance": [
+    "بحاجة إلى 300 صفقة مكتملة حقيقية إضافية",
+    "≥ 10 تجار مستقلين مع موصل محلي (مفاتيح لا تغادر الجهاز)",
+    "تقسيم زمني walk-forward على Bankak و MTN MoMo واتجاهي الشراء/البيع",
+    "فئات 100k / 500k / 1m+"
+  ],
+  "howToCollectSafely": [
+    "شغّل apps/trader-connector محلياً بصلاحية قراءة Binance C2C Trade History فقط",
+    "ارفع الحقول المسموحة فقط: وقت، عملة، اتجاه، كمية، سعر، إجمالي، طريقة دفع، رسوم، COMPLETED، معرف مشفّر",
+    "لا تطلب سحب أو أوامر أو اسم/هاتف/حساب/PIN/OTP",
+    "POST إلى /v1/ingest/trades ثم أعد تشغيل pnpm accuracy"
+  ]
+}

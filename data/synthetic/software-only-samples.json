@@ -1,0 +1,11 @@
+[
+  {
+    "predictedPrice": 25100,
+    "actualCompletedPrice": 25200,
+    "completedAt": "2026-06-01T10:00:00Z",
+    "amountBucket": "100k",
+    "corridorPair": "Bankak-SDG>MTN-MoMo-RWF",
+    "side": "BUY",
+    "isSynthetic": true
+  }
+]
