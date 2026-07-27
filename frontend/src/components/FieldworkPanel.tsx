@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { getQuote } from '../api'
 
 type DayPlan = {
   goal?: string
@@ -50,6 +51,8 @@ export function FieldworkPanel() {
     next_action?: string
   } | null>(null)
   const [plan, setPlan] = useState<DayPlan | null>(null)
+  const [liveFair, setLiveFair] = useState<number | null>(null)
+  const [liveLabel, setLiveLabel] = useState('')
   const [copied, setCopied] = useState<string | null>(null)
   const [done, setDone] = useState<Record<string, boolean>>(() => {
     try {
@@ -69,6 +72,19 @@ export function FieldworkPanel() {
       .then(setPlan)
       .catch(() => undefined)
   }, [])
+
+  useEffect(() => {
+    void getQuote({
+      amount: Number(amount) || 100000,
+      from_rail: 'Bankak-SDG',
+      to_rail: 'MTN-MoMo-RWF',
+    })
+      .then((q) => {
+        setLiveFair(q.display.fair)
+        setLiveLabel(q.label)
+      })
+      .catch(() => undefined)
+  }, [amount])
 
   const templates = (plan?.templates?.length ? plan.templates : TEMPLATES).map((t) => ({
     ...t,
@@ -94,6 +110,10 @@ export function FieldworkPanel() {
   }
 
   const progress = CHECKLIST.filter((c) => done[c]).length
+  const quoteMsg =
+    liveFair != null
+      ? `مرجع مطمن لـ${Number(amount).toLocaleString()} Bankak→MoMo ≈ ${Math.round(liveFair).toLocaleString()} RWF (${liveLabel}). أحتاج سعركم الملزم.`
+      : templates.find((t) => t.id === 'quote')?.body || ''
 
   return (
     <section className="panel grid">
@@ -113,6 +133,16 @@ export function FieldworkPanel() {
           </div>
         </div>
       )}
+      {liveFair != null && (
+        <div className="metric">
+          <div className="k">مرجع مطمن الآن · {liveLabel}</div>
+          <div className="v">{Math.round(liveFair).toLocaleString()} RWF</div>
+          <div className="tag">لـ {Number(amount).toLocaleString()} Bankak → MoMo — قارن قبل الاتفاق</div>
+          <button type="button" className="primary" onClick={() => void copy(quoteMsg)}>
+            نسخ رسالة السعر المرجعي
+          </button>
+        </div>
+      )}
       {stats?.next_action && <p className="tag">التالي: {stats.next_action}</p>}
 
       {(plan?.queue?.next_leads?.length || plan?.queue?.follow_ups?.length) && (
@@ -130,9 +160,9 @@ export function FieldworkPanel() {
                   type="button"
                   className="primary"
                   disabled={!t.wa_link}
-                  onClick={() => shareWhatsApp(templates[0]?.body || TEMPLATES[0].body, t.wa_link)}
+                  onClick={() => shareWhatsApp(quoteMsg || templates[0]?.body || TEMPLATES[0].body, t.wa_link)}
                 >
-                  واتساب
+                  واتساب + سعر
                 </button>
                 <a href={t.tg_link || '#'} target="_blank" rel="noreferrer" style={{ textAlign: 'center' }}>
                   تلغرام
@@ -148,7 +178,12 @@ export function FieldworkPanel() {
                 type="button"
                 className="primary"
                 disabled={!t.wa_link}
-                onClick={() => shareWhatsApp(templates.find((x) => x.id === 'follow')?.body || TEMPLATES[3].body, t.wa_link)}
+                onClick={() =>
+                  shareWhatsApp(
+                    templates.find((x) => x.id === 'follow')?.body || TEMPLATES[3].body,
+                    t.wa_link,
+                  )
+                }
               >
                 متابعة واتساب
               </button>

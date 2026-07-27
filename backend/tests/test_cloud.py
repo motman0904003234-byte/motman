@@ -63,3 +63,19 @@ async def test_cloud_traders_flow():
         )
         assert bak.status_code == 200
         assert bak.json()["backup_id"].startswith("bk_")
+
+        bulk = await client.post(
+            "/api/v1/cloud/outreach/bulk",
+            headers={
+                "X-Device-Id": device["device_id"],
+                "X-Device-Token": device["device_token"],
+            },
+            json={
+                "trader_ids": [trader_id],
+                "channel": "whatsapp",
+                "message": "bulk hello",
+                "limit": 3,
+            },
+        )
+        assert bulk.status_code == 200
+        assert bulk.json()["n"] >= 1

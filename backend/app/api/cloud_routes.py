@@ -40,6 +40,14 @@ class OutreachIn(BaseModel):
     outcome: str = "sent"
 
 
+class OutreachBulkIn(BaseModel):
+    trader_ids: list[str] = Field(default_factory=list)
+    channel: str = "whatsapp"
+    message: str = ""
+    outcome: str = "contacted"
+    limit: int = 5
+
+
 class BackupIn(BaseModel):
     note: str = ""
 
@@ -142,6 +150,31 @@ async def add_outreach(
     except KeyError:
         raise HTTPException(404, detail="trader_not_found") from None
     return {"ok": True, "outreach": row}
+
+
+@router.post("/outreach/bulk")
+async def bulk_outreach(
+    body: OutreachBulkIn,
+    x_device_id: str | None = Header(default=None),
+    x_device_token: str | None = Header(default=None),
+) -> dict[str, Any]:
+    """Log outreach for several leads at once (does not auto-send — opens are client-side)."""
+    owner = _device(x_device_id, x_device_token)
+    cloud = get_cloud_store()
+    ids = list(body.trader_ids)
+    if not ids:
+        leads = [t for t in cloud.list_traders(status="lead") if t.get("whatsapp") or t.get("telegram")]
+        ids = [t["id"] for t in leads[: max(1, min(body.limit, 20))]]
+    sent: list[dict] = []
+    errors: list[str] = []
+    for tid in ids[: max(1, min(body.limit, 20))]:
+        try:
+            sent.append(
+                cloud.add_outreach(tid, body.channel, body.message, body.outcome, owner)
+            )
+        except KeyError:
+            errors.append(tid)
+    return {"ok": True, "n": len(sent), "items": sent, "errors": errors}
 
 
 @router.get("/outreach")
