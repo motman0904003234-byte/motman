@@ -133,8 +133,12 @@ describe("quote corridor", () => {
       },
     });
     expect(q.metrics.quoteLabel).toBe("EXECUTABLE");
-    expect(q.metrics.fairRate).toBeGreaterThan(0);
+    expect(q.metrics.fairRate).toBeGreaterThan(1000);
     expect(q.display.executableLine).toContain("السعر التنفيذي");
+    expect(q.metrics.fairRate!).toBeCloseTo(
+      (q.metrics.bid! / q.metrics.ask!) * 100000,
+      0,
+    );
   });
 
   it("labels one-sided liquidity as estimated non-executable", () => {

@@ -43,19 +43,21 @@ function filterObs(
     amount: number;
     city?: string;
     asOf?: string;
+    /** Depth books use ads/RFQ only — completed corridor totals must not enter USDT legs. */
+    kinds?: PriceObservation["sourceKind"][];
   },
 ): PriceObservation[] {
   const asOfMs = opts.asOf ? Date.parse(opts.asOf) : Date.now();
+  const kinds = opts.kinds ?? ["P2P_AD", "BINDING_RFQ"];
   return observations.filter((o) => {
+    if (!kinds.includes(o.sourceKind)) return false;
     if (o.assetBase !== opts.base || o.assetQuote !== opts.quote) return false;
     if (o.paymentRail !== opts.rail) return false;
     if (o.side !== opts.side) return false;
-    if (o.executableUpTo + 1e-9 < opts.amount && o.sourceKind !== "COMPLETED_TRADE") {
-      return false;
-    }
+    if (o.executableUpTo + 1e-9 < opts.amount) return false;
     if (opts.city && o.city && o.city !== opts.city) return false;
     if (Date.parse(o.observedAt) > asOfMs) return false;
-    if (o.sourceKind === "SYNTHETIC_TEST") return false;
+    if (o.isSynthetic && o.sourceKind === "SYNTHETIC_TEST") return false;
     if (isLowQualityTrader(o.completionRate, o.rating)) return false;
     return true;
   });
@@ -99,7 +101,7 @@ export interface QuoteEngineInput {
   observations: PriceObservation[];
   request: CorridorQuoteRequest;
   now?: Date;
-  /** Shadow mid used only when one side missing — never presented as executable. */
+  /** Shadow mid TOTAL RWF for 100,000 SDG used only when one side missing. */
   shadowRate?: number;
   dynamicDealerMargin?: number;
   /** Field trader expected band from completed/RFQ when available. */
@@ -216,7 +218,8 @@ export function quoteCorridor(input: QuoteEngineInput): CorridorQuoteResult {
     bid = rwfBid.vwap;
 
     if (sdgAsk.filled && rwfBid.filled && ask && bid) {
-      theoreticalRate = executableCrossRate(bid, ask);
+      const unitRate = executableCrossRate(bid, ask);
+      theoreticalRate = unitRate * request.amount;
       fairRate = theoreticalRate;
       quoteLabel = "EXECUTABLE";
       const slip = theoreticalRate * 0.003;
@@ -226,22 +229,30 @@ export function quoteCorridor(input: QuoteEngineInput): CorridorQuoteResult {
       };
     } else {
       warnings.push("سيولة أحادية الجانب أو غير كافية للمبلغ المطلوب");
-      const shadow =
-        input.shadowRate ??
-        (ask && bid ? executableCrossRate(bid, ask) : null);
-      if (shadow) {
+      const shadowTotal =
+        input.shadowRate != null
+          ? input.shadowRate * (request.amount / 100_000)
+          : ask && bid
+            ? executableCrossRate(bid, ask) * request.amount
+            : null;
+      if (shadowTotal) {
         const est = estimatedNonExecutableRate(
-          shadow,
+          shadowTotal,
           input.dynamicDealerMargin ?? 0.015,
         );
-        theoreticalRate = shadow;
-        fairRate = shadow;
+        theoreticalRate = shadowTotal;
+        fairRate = shadowTotal;
         quoteLabel = "ESTIMATED_NON_EXECUTABLE";
         warnings.push("سعر تقديري غير قابل للتنفيذ — ليس سعراً نهائياً");
         executableRange = null;
-        // keep est only as trader expected hint if no band
         if (!input.traderExpectedBand) {
           input.traderExpectedBand = { low: est * 0.995, high: est };
+        } else {
+          const scale = request.amount / 100_000;
+          input.traderExpectedBand = {
+            low: input.traderExpectedBand.low * scale,
+            high: input.traderExpectedBand.high * scale,
+          };
         }
       } else {
         quoteLabel = "NO_EXECUTABLE_LIQUIDITY";
@@ -299,23 +310,20 @@ export function quoteCorridor(input: QuoteEngineInput): CorridorQuoteResult {
     hasBothSides: hasBoth,
   });
 
-  const traderBand =
-    input.traderExpectedBand ??
-    (executableRange
-      ? { low: executableRange.low, high: executableRange.high }
-      : null);
+  const scaledExpected = input.traderExpectedBand
+    ? {
+        low: input.traderExpectedBand.low * (request.amount / 100_000),
+        high: input.traderExpectedBand.high * (request.amount / 100_000),
+      }
+    : null;
+  const traderBand = executableRange ?? scaledExpected;
 
   const spreadPct =
-    bid != null && ask != null && ask !== 0
-      ? ((ask - bid) / ask) * 100
-      : fairRate != null && traderBand
-        ? ((fairRate - (traderBand.low + traderBand.high) / 2) / fairRate) * 100
-        : null;
-
-  const grossMarginPct =
     fairRate != null && traderBand
       ? ((fairRate - (traderBand.low + traderBand.high) / 2) / fairRate) * 100
       : null;
+
+  const grossMarginPct = spreadPct;
 
   const amountLine = `${fmtNum(request.amount)} ${assetLabel(request.fromAsset)}`;
   const fairRateLine =
