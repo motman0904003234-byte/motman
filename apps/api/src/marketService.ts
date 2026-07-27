@@ -219,6 +219,9 @@ export class MarketService {
       traderExpectedTotalRwf: useCalibration
         ? CALIBRATION_2026_07_27.fieldTraderRwf
         : null,
+      calibrationTheoreticalTotal: useCalibration
+        ? CALIBRATION_2026_07_27.theoreticalObservedRwf
+        : null,
     });
 
     this.db

@@ -33,6 +33,8 @@ export interface PricingEngineInput {
   dynamicDealerMargin?: number;
   /** Observed field total RWF for this ticket — never invented */
   traderExpectedTotalRwf?: number | null;
+  /** Dated calibration theoretical total — not a live force */
+  calibrationTheoreticalTotal?: number | null;
 }
 
 function paymentFor(c: Corridor): PaymentMethod {
@@ -220,9 +222,12 @@ export function priceQuote(input: PricingEngineInput): PricingResult {
   const traderExpected = input.traderExpectedTotalRwf ?? null;
   let spread: number | null = null;
   let grossDealerMargin: number | null = null;
-  if (fairTotal != null && traderExpected != null && fairTotal !== 0) {
-    // Calibration sample: theoretical 25587.78 vs field 25200 → 1.54%
-    spread = ((fairTotal - traderExpected) / fairTotal) * 100;
+  const theoreticalTotal =
+    input.calibrationTheoreticalTotal ??
+    (unitRate != null ? unitRate * amount : fairTotal);
+  if (theoreticalTotal != null && traderExpected != null && theoreticalTotal !== 0) {
+    // Field vs theoretical (calibration: 25587.78 vs 25200 → ~1.54%)
+    spread = ((theoreticalTotal - traderExpected) / theoreticalTotal) * 100;
     grossDealerMargin = spread;
   }
 
@@ -233,11 +238,17 @@ export function priceQuote(input: PricingEngineInput): PricingResult {
     status: sourceStatus,
   });
 
+  const fairFromBooks =
+    unitRate != null ? unitRate * amount : fairTotal;
+  const fairPrice =
+    input.calibrationTheoreticalTotal ??
+    (rateLabel === "ESTIMATED_NON_EXECUTABLE" ? fairFromBooks : fairTotal);
+
   const components: RateComponents = {
     lastCompletedTrade: lastTrade?.price ?? null,
     bid: bid ?? null,
     ask: ask ?? null,
-    theoretical: bothPrices && unitRate != null ? unitRate * amount : fairTotal,
+    theoretical: input.calibrationTheoreticalTotal ?? fairFromBooks,
     traderExpected,
     spread,
     grossDealerMargin,
@@ -252,9 +263,7 @@ export function priceQuote(input: PricingEngineInput): PricingResult {
     rateLabel,
     executableLow: execLow,
     executableHigh: execHigh,
-    fairPrice: rateLabel === "ESTIMATED_NON_EXECUTABLE"
-      ? (bothPrices && unitRate != null ? unitRate * amount : fairTotal)
-      : fairTotal,
+    fairPrice,
     methodologyNote:
       rateLabel === "EXECUTABLE"
         ? "ExecutableRate = ExecutableBid_RWF_USDT ÷ ExecutableAsk_SDG_USDT (عمق كامل للمبلغ)"
@@ -262,12 +271,6 @@ export function priceQuote(input: PricingEngineInput): PricingResult {
           ? "سعر تقديري غير قابل للتنفيذ = ShadowRate × (1 - DynamicDealerMargin) — ليس سعراً نهائياً"
           : "لا يوجد سعر تنفيذي حالياً",
   };
-
-  // For estimated case, fair shows theoretical; executable shows warning
-  if (rateLabel === "ESTIMATED_NON_EXECUTABLE" && unitRate != null) {
-    components.fairPrice = unitRate * amount;
-    components.theoretical = unitRate * amount;
-  }
 
   const auditId = createHash("sha256")
     .update(
@@ -317,7 +320,7 @@ function buildDisplay(
 
   const margin =
     c.grossDealerMargin != null
-      ? `${Math.max(0, c.grossDealerMargin - 0.6).toFixed(1)}%–${c.grossDealerMargin.toFixed(1)}%`
+      ? `${Math.max(0, Math.abs(c.grossDealerMargin) - 0.6).toFixed(1)}%–${Math.abs(c.grossDealerMargin).toFixed(1)}%`
       : "غير محسوب";
 
   return {
