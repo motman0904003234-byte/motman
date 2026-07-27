@@ -1,6 +1,5 @@
 import { appStorage } from './storage'
-
-const API_BASE = import.meta.env.VITE_API_BASE || '/api/v1'
+import { apiFetch, cacheTraders, readCachedTraders, resolveApiBase } from './offline'
 
 async function deviceHeaders(): Promise<Record<string, string>> {
   const id = await appStorage.get('device_id')
@@ -69,7 +68,7 @@ export async function getQuote(body: {
   to_payment?: string
   city?: string | null
 }): Promise<QuoteResponse> {
-  const r = await fetch(`${API_BASE}/quote`, {
+  const r = await apiFetch('/quote', {
     method: 'POST',
     headers: await deviceHeaders(),
     body: JSON.stringify(body),
@@ -79,19 +78,19 @@ export async function getQuote(body: {
 }
 
 export async function getHistory() {
-  const r = await fetch(`${API_BASE}/history?limit=50`)
+  const r = await apiFetch('/history?limit=50')
   if (!r.ok) throw new Error('history failed')
   return r.json()
 }
 
 export async function getMethodology() {
-  const r = await fetch(`${API_BASE}/methodology`)
+  const r = await apiFetch('/methodology')
   if (!r.ok) throw new Error('methodology failed')
   return r.json()
 }
 
 export async function submitRfq(body: Record<string, unknown>) {
-  const r = await fetch(`${API_BASE}/traders/rfq`, {
+  const r = await apiFetch('/traders/rfq', {
     method: 'POST',
     headers: await deviceHeaders(),
     body: JSON.stringify(body),
@@ -101,7 +100,7 @@ export async function submitRfq(body: Record<string, unknown>) {
 }
 
 export async function refreshSources() {
-  const r = await fetch(`${API_BASE}/refresh`, { method: 'POST' })
+  const r = await apiFetch('/refresh', { method: 'POST' })
   if (!r.ok) throw new Error('refresh failed')
   return r.json()
 }
@@ -110,7 +109,7 @@ export async function ensureDevice(name = 'هاتف مطمن') {
   const existingId = await appStorage.get('device_id')
   const existingToken = await appStorage.get('device_token')
   if (existingId && existingToken) return { device_id: existingId, device_token: existingToken }
-  const r = await fetch(`${API_BASE}/cloud/devices/register`, {
+  const r = await apiFetch('/cloud/devices/register', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ name }),
@@ -124,7 +123,7 @@ export async function ensureDevice(name = 'هاتف مطمن') {
 }
 
 export async function cloudStatus() {
-  const r = await fetch(`${API_BASE}/cloud/status`)
+  const r = await apiFetch('/cloud/status')
   if (!r.ok) throw new Error('cloud status failed')
   return r.json()
 }
@@ -134,20 +133,48 @@ export async function listTraders(params: { q?: string; status?: string; city?: 
   if (params.q) sp.set('q', params.q)
   if (params.status) sp.set('status', params.status)
   if (params.city) sp.set('city', params.city)
-  const r = await fetch(`${API_BASE}/cloud/traders?${sp.toString()}`)
-  if (!r.ok) throw new Error('traders failed')
-  return r.json() as Promise<{ items: Trader[]; count: number }>
+  try {
+    const r = await apiFetch(`/cloud/traders?${sp.toString()}`)
+    if (!r.ok) throw new Error('traders failed')
+    const data = (await r.json()) as { items: Trader[]; count: number }
+    await cacheTraders(data.items)
+    return data
+  } catch (err) {
+    const cached = await readCachedTraders<Trader>()
+    if (cached.length) {
+      let items = cached
+      if (params.q) {
+        const q = params.q.toLowerCase()
+        items = items.filter((t) =>
+          `${t.display_name} ${t.telegram} ${t.notes} ${t.city}`.toLowerCase().includes(q),
+        )
+      }
+      if (params.status) items = items.filter((t) => t.status === params.status)
+      if (params.city) items = items.filter((t) => t.city.toLowerCase().includes(params.city!.toLowerCase()))
+      return { items, count: items.length, offline: true as const }
+    }
+    throw err
+  }
 }
 
 export async function saveTrader(body: Partial<Trader> & { display_name: string }) {
   await ensureDevice()
-  const r = await fetch(`${API_BASE}/cloud/traders`, {
+  const r = await apiFetch('/cloud/traders', {
     method: 'POST',
     headers: await deviceHeaders(),
     body: JSON.stringify(body),
   })
   if (!r.ok) throw new Error('save trader failed')
-  return r.json()
+  const data = await r.json()
+  // refresh local cache + auto cloud backup (best effort)
+  try {
+    const listed = await listTraders({})
+    await cacheTraders(listed.items)
+    await createBackup('auto-after-trader-save')
+  } catch {
+    /* ignore */
+  }
+  return data
 }
 
 export async function addOutreach(body: {
@@ -157,7 +184,7 @@ export async function addOutreach(body: {
   outcome?: string
 }) {
   await ensureDevice()
-  const r = await fetch(`${API_BASE}/cloud/outreach`, {
+  const r = await apiFetch('/cloud/outreach', {
     method: 'POST',
     headers: await deviceHeaders(),
     body: JSON.stringify(body),
@@ -168,30 +195,32 @@ export async function addOutreach(body: {
 
 export async function createBackup(note = 'نسخة هاتف') {
   await ensureDevice()
-  const r = await fetch(`${API_BASE}/cloud/backup`, {
+  const r = await apiFetch('/cloud/backup', {
     method: 'POST',
     headers: await deviceHeaders(),
     body: JSON.stringify({ note }),
   })
   if (!r.ok) throw new Error('backup failed')
-  return r.json()
+  const data = await r.json()
+  if (data.backup_id) await appStorage.set('last_backup_id', data.backup_id)
+  return data
 }
 
 export async function exportCloud() {
-  const r = await fetch(`${API_BASE}/cloud/export`)
+  const r = await apiFetch('/cloud/export')
   if (!r.ok) throw new Error('export failed')
   return r.json()
 }
 
 export async function seedTraders() {
-  const r = await fetch(`${API_BASE}/cloud/seed`, { method: 'POST' })
+  const r = await apiFetch('/cloud/seed', { method: 'POST' })
   if (!r.ok) throw new Error('seed failed')
   return r.json()
 }
 
 export async function restoreBackup(backup_id: string) {
   await ensureDevice()
-  const r = await fetch(`${API_BASE}/cloud/restore`, {
+  const r = await apiFetch('/cloud/restore', {
     method: 'POST',
     headers: await deviceHeaders(),
     body: JSON.stringify({ backup_id }),
@@ -199,3 +228,5 @@ export async function restoreBackup(backup_id: string) {
   if (!r.ok) throw new Error('restore failed')
   return r.json()
 }
+
+export { resolveApiBase }

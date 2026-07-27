@@ -21,8 +21,15 @@ export function TradersPanel() {
   })
 
   async function load() {
-    const res = await listTraders({ q, status, city })
-    setItems(res.items)
+    try {
+      const res = await listTraders({ q, status, city })
+      setItems(res.items)
+      if ((res as { offline?: boolean }).offline) {
+        setMsg('وضع عدم اتصال: عرض النسخة المحلية المخزّنة')
+      }
+    } catch (e) {
+      setMsg(e instanceof Error ? e.message : String(e))
+    }
   }
 
   useEffect(() => {

@@ -1,44 +1,49 @@
 # تطبيق مطمن للجوال — ابدأ اليوم
 
-## الأسرع اليوم (بدون متجر)
+## الأسرع اليوم
 
-1. شغّل الخادم:
+### 1) PWA على الهاتف (موصى به فورًا)
+افتح الرابط العام ثم «إضافة إلى الشاشة الرئيسية»:
+
+- Cloudflare: انظر `/opt/cursor/artifacts/MOBILE_URLS.txt`
+- محلي: `http://127.0.0.1:8000`
+
+### 2) تثبيت APK أندرويد
+ملف البناء:
+
+`/opt/cursor/artifacts/motman-debug.apk`
+
+أو:
 ```bash
-./scripts/start_mobile.sh
+./scripts/build_apk.sh
 ```
-2. افتح الرابط العام أو رابط الشبكة على هاتفك.
-3. من Chrome/Safari: **إضافة إلى الشاشة الرئيسية**.
-4. ادخل تبويب **التجار** وابدأ الإضافة/البحث/التواصل.
-5. من تبويب **السحابة**: انسخ احتياطيًا كل يوم.
+
+ثم انقل APK للهاتف وثبّته (مصدر غير معروف).
+
+في التطبيق: **إعدادات → عنوان API السحابي** =
+`https://YOUR_PUBLIC_HOST/api/v1`
 
 ## ماذا يُحفظ سحابيًا؟
-
 - التجار وحالاتهم
 - سجل التواصل
 - النسخ الاحتياطية
-- أسعار التسعير المرتبطة بالاستخدام
-- معرف الجهاز (لا مفاتيح Binance)
+- أسعار التسعير
+- معرف الجهاز
 
-قاعدة البيانات الافتراضية: `motman_cloud.db`
-للإنتاج ضع Postgres:
+قاعدة البيانات الافتراضية: `motman_cloud.db`  
+للإنتاج:
 ```bash
 export CLOUD_DATABASE_URL=postgresql+psycopg://user:pass@host/db
 ```
 
-## Capacitor (Android لاحقًا)
-
+## Capacitor
 ```bash
 cd frontend
-npm run build
-npx cap add android
-npx cap sync android
+npm run build && npx cap sync android
 npx cap open android
 ```
 
-يتطلب Android Studio محليًا لبناء APK. المشروع جاهز للربط.
-
-## ملاحظات أمان
-
-- لا تنفيذ صرف ولا حفظ أموال.
-- لا تخزّن PIN/OTP.
-- فضّل معرفات تلغرام بدل أرقام كاملة عند الإمكان.
+## أمان
+- لا تنفيذ صرف ولا حفظ أموال
+- لا تخزّن PIN/OTP
+- فضّل Telegram بدل أرقام كاملة عند الإمكان

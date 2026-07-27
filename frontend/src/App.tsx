@@ -4,17 +4,27 @@ import { TraderDesk } from './components/TraderDesk'
 import { HistoryPanel } from './components/HistoryPanel'
 import { TradersPanel } from './components/TradersPanel'
 import { CloudPanel } from './components/CloudPanel'
+import { SettingsPanel } from './components/SettingsPanel'
 import { ensureDevice, refreshSources } from './api'
 
-type Tab = 'quote' | 'traders' | 'trader' | 'cloud' | 'history'
+type Tab = 'quote' | 'traders' | 'trader' | 'cloud' | 'history' | 'settings'
 
 export default function App() {
   const [tab, setTab] = useState<Tab>('traders')
   const [refreshMsg, setRefreshMsg] = useState<string | null>(null)
   const [installHint, setInstallHint] = useState(true)
+  const [online, setOnline] = useState(navigator.onLine)
 
   useEffect(() => {
     void ensureDevice('هاتف مطمن').catch(() => undefined)
+    const on = () => setOnline(true)
+    const off = () => setOnline(false)
+    window.addEventListener('online', on)
+    window.addEventListener('offline', off)
+    return () => {
+      window.removeEventListener('online', on)
+      window.removeEventListener('offline', off)
+    }
   }, [])
 
   async function onRefresh() {
@@ -37,6 +47,9 @@ export default function App() {
         <p className="tag">
           ابدأ اليوم: ابحث عن التجار، احسب السعر الشفاف، واحفظ كل شيء سحابيًا. لا حفظ أموال ولا
           تنفيذ تلقائي.
+        </p>
+        <p className="tag">
+          الحالة: {online ? 'متصل بالإنترنت' : 'بدون إنترنت — عرض النسخة المحلية للتجار إن وُجدت'}
         </p>
         {installHint && (
           <p className="tag" style={{ border: '1px solid var(--line)', padding: '0.7rem', borderRadius: 12 }}>
@@ -62,6 +75,9 @@ export default function App() {
           <button className={tab === 'history' ? 'active' : ''} onClick={() => setTab('history')}>
             التاريخ
           </button>
+          <button className={tab === 'settings' ? 'active' : ''} onClick={() => setTab('settings')}>
+            إعدادات
+          </button>
           <button onClick={() => void onRefresh()}>تحديث</button>
         </div>
         {refreshMsg && <p className="tag">{refreshMsg}</p>}
@@ -72,6 +88,7 @@ export default function App() {
       {tab === 'trader' && <TraderDesk />}
       {tab === 'cloud' && <CloudPanel />}
       {tab === 'history' && <HistoryPanel />}
+      {tab === 'settings' && <SettingsPanel />}
 
       <footer className="footer">
         التخزين السحابي يحفظ التجار والتواصل والنسخ الاحتياطية. الدفع لا يؤثر على وزن المؤشر.

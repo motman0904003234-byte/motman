@@ -64,6 +64,13 @@ def create_app() -> FastAPI:
         async def manifest():
             return FileResponse(dist / "manifest.webmanifest")
 
+        @app.get("/runtime-config.json")
+        async def runtime_config():
+            cfg = dist / "runtime-config.json"
+            if cfg.exists():
+                return FileResponse(cfg)
+            return {"apiBase": "/api/v1"}
+
         sw = dist / "sw.js"
         if sw.exists():
 
