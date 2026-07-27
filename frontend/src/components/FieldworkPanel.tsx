@@ -99,7 +99,7 @@ export function FieldworkPanel() {
           <a className="primary" href="/downloads/motman.apk" style={{ textAlign: 'center', textDecoration: 'none' }}>
             تحميل APK
           </a>
-          <a href="/downloads/info" style={{ textAlign: 'center' }}>
+          <a href="/api/v1/mobile/download-info" style={{ textAlign: 'center' }}>
             معلومات التحميل
           </a>
         </div>
