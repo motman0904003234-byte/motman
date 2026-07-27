@@ -17,7 +17,7 @@ export default defineConfig({
         display: 'standalone',
         lang: 'ar',
         dir: 'rtl',
-        start_url: '/?v=3',
+        start_url: '/?v=4',
         icons: [
           {
             src: '/favicon.svg',
