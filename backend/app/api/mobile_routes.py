@@ -62,6 +62,29 @@ async def day_plan():
     }
 
 
+@router.get("/traders.csv")
+async def traders_csv():
+    from fastapi.responses import PlainTextResponse
+    from app.db.cloud import get_cloud_store
+
+    traders = get_cloud_store().list_traders()
+    lines = ["id,display_name,city,status,telegram,whatsapp,rails,trust_score"]
+    for t in traders:
+        rails = "|".join(t.get("rails") or [])
+        row = [
+            t.get("id", ""),
+            (t.get("display_name") or "").replace(",", " "),
+            t.get("city", ""),
+            t.get("status", ""),
+            t.get("telegram", ""),
+            t.get("whatsapp", ""),
+            rails,
+            str(t.get("trust_score", "")),
+        ]
+        lines.append(",".join(row))
+    return PlainTextResponse("\n".join(lines) + "\n", media_type="text/csv")
+
+
 @router.get("/stats")
 async def mobile_stats():
     from app.db.cloud import get_cloud_store
@@ -77,5 +100,6 @@ async def mobile_stats():
         "n_outreach": len(outreach),
         "by_status": by_status,
         "apk_url": "/downloads/motman.apk",
+        "csv_url": "/api/v1/mobile/traders.csv",
         "next_action": "أضف تاجرًا جديدًا أو اطلب سعرًا ملزمًا" if traders else "أضف أول تاجر الآن",
     }

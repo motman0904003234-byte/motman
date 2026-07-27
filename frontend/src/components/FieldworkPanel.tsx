@@ -119,8 +119,8 @@ export function FieldworkPanel() {
           <a className="primary" href="/downloads/motman.apk" style={{ textAlign: 'center', textDecoration: 'none' }}>
             تحميل APK
           </a>
-          <a href="/api/v1/mobile/download-info" style={{ textAlign: 'center' }}>
-            معلومات التحميل
+          <a href="/api/v1/mobile/traders.csv" style={{ textAlign: 'center' }}>
+            تصدير التجار CSV
           </a>
         </div>
         <div className="grid two" style={{ marginTop: '0.75rem' }}>
