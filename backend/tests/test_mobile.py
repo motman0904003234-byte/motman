@@ -10,9 +10,17 @@ async def test_mobile_day_plan_and_download_info():
     async with AsyncClient(transport=transport, base_url="http://test") as client:
         plan = await client.get("/api/v1/mobile/day-plan")
         assert plan.status_code == 200
-        assert "steps" in plan.json()
+        body = plan.json()
+        assert "steps" in body
+        assert "queue" in body
         info = await client.get("/api/v1/mobile/download-info")
         assert info.status_code == 200
         body = info.json()
         assert "apk_url" in body
         assert body["package"] == "com.motman.fx"
+        stats = await client.get("/api/v1/mobile/stats")
+        assert stats.status_code == 200
+        assert "next_action" in stats.json()
+        health = await client.get("/healthz")
+        assert health.status_code == 200
+        assert health.json()["ok"] is True

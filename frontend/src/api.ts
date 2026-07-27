@@ -48,6 +48,8 @@ export type Trader = {
   id: string
   display_name: string
   city: string
+  area?: string
+  map_query?: string
   rails: string[]
   payment_methods: string[]
   telegram: string
@@ -58,6 +60,10 @@ export type Trader = {
   notes: string
   source: string
   updated_at?: string | null
+  wa_link?: string
+  tg_link?: string
+  map_link?: string
+  tel_link?: string
 }
 
 export async function getQuote(body: {

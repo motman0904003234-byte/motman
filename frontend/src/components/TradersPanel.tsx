@@ -2,6 +2,11 @@ import { useEffect, useState } from 'react'
 import type { FormEvent } from 'react'
 import { addOutreach, listTraders, saveTrader, seedTraders, type Trader } from '../api'
 
+const INTRO =
+  'السلام عليكم، أحتاج سعر Bankak↔MoMo اليوم. هل لديكم سيولة لمبلغ 100000؟'
+const QUOTE =
+  'السلام عليكم، أحتاج سعرًا ملزمًا لـ100000 Bankak إلى MoMo خلال 15 دقيقة.'
+
 export function TradersPanel() {
   const [items, setItems] = useState<Trader[]>([])
   const [q, setQ] = useState('')
@@ -11,6 +16,8 @@ export function TradersPanel() {
   const [form, setForm] = useState({
     display_name: '',
     city: 'Kigali',
+    area: '',
+    map_query: '',
     telegram: '',
     whatsapp: '',
     phone_note: '',
@@ -49,6 +56,8 @@ export function TradersPanel() {
       await saveTrader({
         display_name: form.display_name,
         city: form.city,
+        area: form.area,
+        map_query: form.map_query || (form.area ? `${form.area} ${form.city}` : form.city),
         telegram: form.telegram,
         whatsapp: form.whatsapp,
         phone_note: form.phone_note,
@@ -59,7 +68,16 @@ export function TradersPanel() {
         source: 'mobile',
         trust_score: 55,
       })
-      setForm({ ...form, display_name: '', telegram: '', whatsapp: '', phone_note: '', notes: '' })
+      setForm({
+        ...form,
+        display_name: '',
+        area: '',
+        map_query: '',
+        telegram: '',
+        whatsapp: '',
+        phone_note: '',
+        notes: '',
+      })
       setMsg('تم حفظ التاجر في السحابة')
       await load()
     } catch (err) {
@@ -67,17 +85,13 @@ export function TradersPanel() {
     }
   }
 
-  async function contact(trader: Trader, template?: string) {
-    const message =
-      template ||
-      `السلام عليكم ${trader.display_name}، أحتاج سعر Bankak↔MoMo اليوم. هل لديكم سيولة؟`
+  async function logContact(trader: Trader, channel: string, message: string) {
     await addOutreach({
       trader_id: trader.id,
-      channel: trader.telegram ? 'telegram' : 'whatsapp',
+      channel,
       message,
       outcome: 'contacted',
     })
-    // advance pipeline
     if (trader.status === 'lead' || trader.status === 'contacted') {
       try {
         await saveTrader({
@@ -89,20 +103,28 @@ export function TradersPanel() {
         /* ignore */
       }
     }
-    if (trader.telegram) {
-      const text = encodeURIComponent(message)
-      window.open(
-        `https://t.me/${trader.telegram.replace('@', '')}?text=${text}`,
-        '_blank',
-      )
-    } else if (trader.whatsapp) {
-      const text = encodeURIComponent(message)
-      window.open(
-        `https://wa.me/${trader.whatsapp.replace(/[^\d]/g, '')}?text=${text}`,
-        '_blank',
-      )
+  }
+
+  async function openChannel(trader: Trader, channel: 'telegram' | 'whatsapp' | 'call' | 'map', template?: string) {
+    const message = template || INTRO
+    if (channel === 'telegram' || channel === 'whatsapp') {
+      await logContact(trader, channel, message)
     }
-    setMsg(`تم تسجيل تواصل مع ${trader.display_name}`)
+    const text = encodeURIComponent(message)
+    if (channel === 'telegram' && trader.telegram) {
+      window.open(`https://t.me/${trader.telegram.replace('@', '')}?text=${text}`, '_blank')
+    } else if (channel === 'whatsapp' && trader.whatsapp) {
+      window.open(`https://wa.me/${trader.whatsapp.replace(/[^\d]/g, '')}?text=${text}`, '_blank')
+    } else if (channel === 'call' && trader.whatsapp) {
+      window.open(`tel:${trader.whatsapp}`, '_self')
+    } else if (channel === 'map') {
+      const q = encodeURIComponent(trader.map_query || `${trader.area || ''} ${trader.city}`.trim())
+      window.open(`https://www.google.com/maps/search/?api=1&query=${q}`, '_blank')
+    } else {
+      setMsg('لا يوجد رابط تواصل لهذا التاجر')
+      return
+    }
+    setMsg(`تم فتح ${channel} — ${trader.display_name}`)
     await load()
   }
 
@@ -110,14 +132,14 @@ export function TradersPanel() {
     <section className="panel grid">
       <h2 style={{ margin: 0 }}>التجار — ابدأ اليوم</h2>
       <p className="tag">
-        أضف التجار وابحث واتصل. البيانات تُحفظ سحابيًا على خادم مطمن وترتبط بجهازك.
+        ابحث، اتصل واتساب/تلغرام، افتح الخريطة. البيانات تُحفظ سحابيًا. صفوف DEMO للاختبار فقط.
       </p>
 
       <form className="grid" onSubmit={onSearch}>
         <div className="grid two">
           <label>
             بحث
-            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="اسم / تلغرام / ملاحظات" />
+            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="اسم / حي / تلغرام" />
           </label>
           <label>
             المدينة
@@ -153,24 +175,40 @@ export function TradersPanel() {
               <span className="badge live">{t.status}</span>
             </div>
             <div className="k">
-              {t.city} · ثقة {t.trust_score}
+              {t.city}
+              {t.area ? ` · ${t.area}` : ''} · ثقة {t.trust_score}
             </div>
             <div className="k">{(t.rails || []).join(' · ')}</div>
             <div className="k">{t.telegram || t.whatsapp || 'بدون تواصل بعد'}</div>
             {t.notes && <div className="tag">{t.notes}</div>}
-            <button className="primary" type="button" onClick={() => void contact(t)}>
-              تواصل الآن
-            </button>
             <div className="grid two">
               <button
+                className="primary"
                 type="button"
-                onClick={() =>
-                  void contact(
-                    t,
-                    `السلام عليكم، أحتاج سعرًا ملزمًا لـ100000 Bankak إلى MoMo خلال 15 دقيقة.`,
-                  )
-                }
+                disabled={!t.whatsapp}
+                onClick={() => void openChannel(t, 'whatsapp')}
               >
+                واتساب
+              </button>
+              <button
+                className="primary"
+                type="button"
+                disabled={!t.telegram}
+                onClick={() => void openChannel(t, 'telegram')}
+              >
+                تلغرام
+              </button>
+            </div>
+            <div className="grid two">
+              <button type="button" disabled={!t.whatsapp} onClick={() => void openChannel(t, 'call')}>
+                اتصال
+              </button>
+              <button type="button" onClick={() => void openChannel(t, 'map')}>
+                خريطة
+              </button>
+            </div>
+            <div className="grid two">
+              <button type="button" onClick={() => void openChannel(t, t.whatsapp ? 'whatsapp' : 'telegram', QUOTE)}>
                 طلب سعر
               </button>
               <button
@@ -196,13 +234,13 @@ export function TradersPanel() {
         onClick={() =>
           void seedTraders()
             .then(load)
-            .then(() => setMsg('تمت إضافة أمثلة تجار'))
+            .then(() => setMsg('تمت إضافة/تحديث دليل التجار التجريبي'))
         }
       >
-        تحميل أمثلة للبدء
+        تحميل دليل كيغالي التجريبي
       </button>
 
-      <h3 style={{ marginBottom: 0 }}>إضافة تاجر</h3>
+      <h3 style={{ marginBottom: 0 }}>إضافة تاجر حقيقي</h3>
       <form className="grid" onSubmit={onSave}>
         <label>
           الاسم الظاهر
@@ -222,12 +260,30 @@ export function TradersPanel() {
             </select>
           </label>
           <label>
+            الحي / المنطقة
+            <input
+              value={form.area}
+              onChange={(e) => setForm({ ...form, area: e.target.value })}
+              placeholder="Remera / Kimironko"
+            />
+          </label>
+        </div>
+        <div className="grid two">
+          <label>
             الحالة
             <select value={form.status} onChange={(e) => setForm({ ...form, status: e.target.value })}>
               <option value="lead">جديد</option>
               <option value="contacted">تم التواصل</option>
               <option value="active">نشط</option>
             </select>
+          </label>
+          <label>
+            بحث الخريطة
+            <input
+              value={form.map_query}
+              onChange={(e) => setForm({ ...form, map_query: e.target.value })}
+              placeholder="Kimironko Market Kigali"
+            />
           </label>
         </div>
         <div className="grid two">

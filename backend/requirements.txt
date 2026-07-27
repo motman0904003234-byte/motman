@@ -13,3 +13,4 @@ orjson==3.11.0
 python-multipart==0.0.20
 cryptography==45.0.5
 structlog==25.4.0
+psycopg[binary]==3.2.9

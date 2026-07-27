@@ -19,6 +19,8 @@ class TraderIn(BaseModel):
     id: str | None = None
     display_name: str = Field(min_length=1)
     city: str = "Unknown"
+    area: str = ""
+    map_query: str = ""
     rails: list[str] = Field(default_factory=list)
     payment_methods: list[str] = Field(default_factory=list)
     telegram: str = ""
@@ -82,8 +84,15 @@ async def cloud_status() -> dict[str, Any]:
 
 @router.post("/seed")
 async def seed_demo() -> dict[str, Any]:
-    n = get_cloud_store().seed_demo_traders()
-    return {"seeded": n}
+    cloud = get_cloud_store()
+    n = cloud.seed_demo_traders()
+    dedupe = cloud.dedupe_traders()
+    return {"seeded": n, "dedupe": dedupe}
+
+
+@router.post("/dedupe")
+async def dedupe_traders() -> dict[str, Any]:
+    return get_cloud_store().dedupe_traders()
 
 
 @router.get("/traders")

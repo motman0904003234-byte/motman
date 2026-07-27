@@ -3,13 +3,14 @@ from __future__ import annotations
 from pathlib import Path
 
 from fastapi import APIRouter
-from fastapi.responses import JSONResponse
+from fastapi.responses import PlainTextResponse
 
 router = APIRouter(prefix="/mobile", tags=["mobile"])
 
 ROOT = Path(__file__).resolve().parents[3]
 CANDIDATES = [
     ROOT / "frontend" / "public" / "downloads" / "motman.apk",
+    ROOT / "frontend" / "dist" / "downloads" / "motman.apk",
     ROOT / "backend" / "static" / "downloads" / "motman.apk",
     Path("/opt/cursor/artifacts/motman-debug.apk"),
 ]
@@ -38,15 +39,44 @@ async def download_info():
 
 @router.get("/day-plan")
 async def day_plan():
+    from app.db.cloud import get_cloud_store
+
+    cloud = get_cloud_store()
+    traders = cloud.list_traders()
+    leads = [t for t in traders if t.get("status") == "lead"][:5]
+    contacted = [t for t in traders if t.get("status") == "contacted"][:3]
     return {
         "goal": "بناء شبكة تجار Bankak↔MoMo اليوم",
         "steps": [
             "ثبّت التطبيق (APK أو الشاشة الرئيسية)",
-            "أضف 5 تجار حقيقيين",
+            "أضف 5 تجار حقيقيين (استبدل DEMO)",
             "أرسل رسائل التعارف لـ3 تجار",
             "اطلب سعرًا ملزمًا لـ100 ألف",
             "احفظ نسخة سحابية",
         ],
+        "queue": {
+            "next_leads": [
+                {
+                    "id": t["id"],
+                    "name": t["display_name"],
+                    "city": t["city"],
+                    "area": t.get("area") or "",
+                    "wa_link": t.get("wa_link") or "",
+                    "tg_link": t.get("tg_link") or "",
+                }
+                for t in leads
+            ],
+            "follow_ups": [
+                {
+                    "id": t["id"],
+                    "name": t["display_name"],
+                    "city": t["city"],
+                    "wa_link": t.get("wa_link") or "",
+                    "tg_link": t.get("tg_link") or "",
+                }
+                for t in contacted
+            ],
+        },
         "templates": [
             {
                 "id": "intro",
@@ -58,28 +88,34 @@ async def day_plan():
                 "title": "طلب سعر",
                 "body": "أحتاج سعرًا ملزمًا لمبلغ 100000 Bankak إلى MoMo خلال 15 دقيقة.",
             },
+            {
+                "id": "confirm",
+                "title": "تأكيد شروط",
+                "body": "للتأكيد: المبلغ، طريقة الدفع، زمن التسوية، ومن يتحمل الرسوم. هل موافق؟",
+            },
         ],
     }
 
 
 @router.get("/traders.csv")
 async def traders_csv():
-    from fastapi.responses import PlainTextResponse
     from app.db.cloud import get_cloud_store
 
     traders = get_cloud_store().list_traders()
-    lines = ["id,display_name,city,status,telegram,whatsapp,rails,trust_score"]
+    lines = ["id,display_name,city,area,status,telegram,whatsapp,rails,trust_score,map_query"]
     for t in traders:
         rails = "|".join(t.get("rails") or [])
         row = [
             t.get("id", ""),
             (t.get("display_name") or "").replace(",", " "),
             t.get("city", ""),
+            (t.get("area") or "").replace(",", " "),
             t.get("status", ""),
             t.get("telegram", ""),
             t.get("whatsapp", ""),
             rails,
             str(t.get("trust_score", "")),
+            (t.get("map_query") or "").replace(",", " "),
         ]
         lines.append(",".join(row))
     return PlainTextResponse("\n".join(lines) + "\n", media_type="text/csv")
@@ -87,6 +123,7 @@ async def traders_csv():
 
 @router.get("/stats")
 async def mobile_stats():
+    from app.config import get_settings
     from app.db.cloud import get_cloud_store
 
     cloud = get_cloud_store()
@@ -95,11 +132,19 @@ async def mobile_stats():
     by_status: dict[str, int] = {}
     for t in traders:
         by_status[t["status"]] = by_status.get(t["status"], 0) + 1
+    leads = sum(1 for t in traders if t["status"] == "lead")
+    settings = get_settings()
+    next_action = "أضف تاجرًا جديدًا أو اطلب سعرًا ملزمًا"
+    if leads:
+        next_action = f"تواصل مع {min(leads, 3)} تجار جدد اليوم"
+    elif not traders:
+        next_action = "أضف أول تاجر الآن"
     return {
         "n_traders": len(traders),
         "n_outreach": len(outreach),
         "by_status": by_status,
         "apk_url": "/downloads/motman.apk",
         "csv_url": "/api/v1/mobile/traders.csv",
-        "next_action": "أضف تاجرًا جديدًا أو اطلب سعرًا ملزمًا" if traders else "أضف أول تاجر الآن",
+        "public_base_url": settings.public_base_url or None,
+        "next_action": next_action,
     }

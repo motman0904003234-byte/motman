@@ -1,16 +1,16 @@
 from __future__ import annotations
 
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
-from pathlib import Path
 
-from app.api.routes import router
 from app.api.cloud_routes import router as cloud_router
 from app.api.mobile_routes import router as mobile_router
+from app.api.routes import router
 from app.config import get_settings
 from app.db.cloud import get_cloud_store
 from app.services.market import market_service
@@ -19,9 +19,9 @@ from app.services.market import market_service
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     await market_service.refresh()
-    # Ensure cloud schema + a few starter traders for day-1 fieldwork
     cloud = get_cloud_store()
     cloud.seed_demo_traders()
+    cloud.dedupe_traders()
     yield
 
 
@@ -29,7 +29,7 @@ def create_app() -> FastAPI:
     settings = get_settings()
     app = FastAPI(
         title=settings.app_name,
-        version="0.3.0",
+        version="0.4.0",
         lifespan=lifespan,
         description=(
             "مؤشر مرجعي شفاف لمسارات الصرف Bankak-SDG / Cash-SDG / "
@@ -48,8 +48,15 @@ def create_app() -> FastAPI:
     app.include_router(cloud_router, prefix=settings.api_prefix)
     app.include_router(mobile_router, prefix=settings.api_prefix)
 
+    @app.get("/healthz")
+    @app.get("/health")
+    async def healthz():
+        return {"ok": True, "service": "motman", "version": "0.4.0"}
+
     dist = Path(__file__).resolve().parents[2] / "frontend" / "dist"
-    downloads_dir = Path(__file__).resolve().parents[2] / "frontend" / "public" / "downloads"
+    downloads_public = Path(__file__).resolve().parents[2] / "frontend" / "public" / "downloads"
+    downloads_dist = dist / "downloads"
+    downloads_dir = downloads_dist if downloads_dist.exists() else downloads_public
     if downloads_dir.exists():
         app.mount("/downloads", StaticFiles(directory=downloads_dir), name="downloads")
 

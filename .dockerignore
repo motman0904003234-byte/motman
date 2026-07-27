@@ -1,0 +1,11 @@
+.git
+frontend/node_modules
+frontend/android
+frontend/dist
+**/__pycache__
+**/*.db
+**/.env
+**/motman*.db
+.cursor
+opt
+*.apk

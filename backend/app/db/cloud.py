@@ -35,6 +35,8 @@ class TraderRow(Base):
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
     display_name: Mapped[str] = mapped_column(String(128))
     city: Mapped[str] = mapped_column(String(64), default="Unknown")
+    area: Mapped[str] = mapped_column(String(128), default="")  # neighborhood / desk location
+    map_query: Mapped[str] = mapped_column(String(256), default="")  # Google Maps search query
     rails: Mapped[str] = mapped_column(Text, default="[]")  # JSON list
     payment_methods: Mapped[str] = mapped_column(Text, default="[]")
     telegram: Mapped[str] = mapped_column(String(128), default="")
@@ -97,7 +99,23 @@ class CloudStore:
         connect_args = {"check_same_thread": False} if url.startswith("sqlite") else {}
         self.engine = create_engine(url, future=True, connect_args=connect_args)
         Base.metadata.create_all(self.engine)
+        self._migrate_sqlite()
         self.Session = sessionmaker(self.engine, expire_on_commit=False, future=True)
+
+    def _migrate_sqlite(self) -> None:
+        """Add columns introduced after first deploy (SQLite create_all won't alter)."""
+        if not str(self.engine.url).startswith("sqlite"):
+            return
+        alters = [
+            ("traders", "area", "VARCHAR(128) DEFAULT ''"),
+            ("traders", "map_query", "VARCHAR(256) DEFAULT ''"),
+        ]
+        with self.engine.begin() as conn:
+            for table, col, ddl in alters:
+                rows = conn.exec_driver_sql(f"PRAGMA table_info({table})").fetchall()
+                names = {r[1] for r in rows}
+                if col not in names:
+                    conn.exec_driver_sql(f"ALTER TABLE {table} ADD COLUMN {col} {ddl}")
 
     @staticmethod
     def hash_token(token: str) -> str:
@@ -135,6 +153,8 @@ class CloudStore:
             fields = {
                 "display_name": data.get("display_name") or data.get("name") or "تاجر",
                 "city": data.get("city") or "Unknown",
+                "area": data.get("area") or "",
+                "map_query": data.get("map_query") or "",
                 "rails": json.dumps(data.get("rails") or [], ensure_ascii=False),
                 "payment_methods": json.dumps(data.get("payment_methods") or [], ensure_ascii=False),
                 "telegram": data.get("telegram") or "",
@@ -168,11 +188,34 @@ class CloudStore:
                 if city and city.lower() not in r.city.lower():
                     continue
                 if q:
-                    blob = f"{r.display_name} {r.telegram} {r.whatsapp} {r.notes} {r.city}".lower()
+                    blob = (
+                        f"{r.display_name} {r.telegram} {r.whatsapp} {r.notes} "
+                        f"{r.city} {getattr(r, 'area', '')} {getattr(r, 'map_query', '')}"
+                    ).lower()
                     if q.lower() not in blob:
                         continue
                 out.append(self._trader_dict(r))
             return out
+
+    def dedupe_traders(self) -> dict[str, int]:
+        """Collapse duplicate demo/test traders by telegram or display_name+city."""
+        removed = 0
+        kept = 0
+        with self.Session() as s:
+            rows = list(s.scalars(select(TraderRow).order_by(TraderRow.updated_at.desc())).all())
+            seen: set[str] = set()
+            for r in rows:
+                key = (r.telegram or "").strip().lower()
+                if not key:
+                    key = f"{r.display_name.strip().lower()}|{r.city.strip().lower()}"
+                if key in seen:
+                    s.delete(r)
+                    removed += 1
+                else:
+                    seen.add(key)
+                    kept += 1
+            s.commit()
+        return {"kept": kept, "removed": removed}
 
     def get_trader(self, trader_id: str) -> dict | None:
         with self.Session() as s:
@@ -308,47 +351,127 @@ class CloudStore:
             }
 
     def seed_demo_traders(self) -> int:
+        """Seed fieldwork directory templates. Marked as demo — replace with real contacts."""
         samples = [
             {
                 "display_name": "تاجر خرطوم Bankak",
                 "city": "Khartoum",
+                "area": "Bahri",
+                "map_query": "Khartoum Sudan",
                 "rails": ["Bankak-SDG", "USDT"],
                 "payment_methods": ["Bankak"],
                 "telegram": "@khartoum_p2p_demo",
                 "status": "lead",
                 "source": "seed",
-                "notes": "عرض تجريبي — استبدله بتجار حقيقيين",
+                "notes": "DEMO — استبدله بتاجر Bankak حقيقي",
                 "trust_score": 55,
             },
             {
-                "display_name": "تاجر كيغالي MoMo",
+                "display_name": "كيغالي MoMo — Nyarutarama",
                 "city": "Kigali",
+                "area": "Nyarutarama",
+                "map_query": "Nyarutarama Kigali",
                 "rails": ["MTN-MoMo-RWF", "USDT"],
                 "payment_methods": ["MTN Mobile Money"],
                 "telegram": "@kigali_momo_demo",
-                "whatsapp": "+2507XXXXXXX",
+                "whatsapp": "+250788000001",
                 "status": "lead",
                 "source": "seed",
-                "notes": "عرض تجريبي للبحث والمراسلة",
+                "notes": "DEMO — سيولة MoMo نهارًا",
                 "trust_score": 60,
             },
             {
-                "display_name": "Corridor Desk",
+                "display_name": "Corridor Desk — Kimironko",
                 "city": "Kigali",
+                "area": "Kimironko",
+                "map_query": "Kimironko Market Kigali",
                 "rails": ["Bankak-SDG", "MTN-MoMo-RWF", "USDT"],
                 "payment_methods": ["Bankak", "MTN Mobile Money"],
                 "telegram": "@corridor_desk_demo",
+                "whatsapp": "+250788000002",
                 "status": "active",
                 "source": "seed",
-                "notes": "مسار كامل SDG→RWF",
+                "notes": "DEMO — مسار كامل SDG→RWF",
                 "trust_score": 70,
+            },
+            {
+                "display_name": "Remera USDT Desk",
+                "city": "Kigali",
+                "area": "Remera",
+                "map_query": "Remera Kigali",
+                "rails": ["USDT", "MTN-MoMo-RWF", "Bank-RWF"],
+                "payment_methods": ["MTN Mobile Money", "Bank Transfer"],
+                "telegram": "@remera_usdt_demo",
+                "whatsapp": "+250788000003",
+                "status": "lead",
+                "source": "seed",
+                "notes": "DEMO — وسيط USDT↔MoMo",
+                "trust_score": 58,
+            },
+            {
+                "display_name": "Nyabugogo Cash Bridge",
+                "city": "Kigali",
+                "area": "Nyabugogo",
+                "map_query": "Nyabugogo Bus Park Kigali",
+                "rails": ["Cash-SDG", "MTN-MoMo-RWF", "USDT"],
+                "payment_methods": ["Cash", "MTN Mobile Money"],
+                "telegram": "@nyabugogo_cash_demo",
+                "whatsapp": "+250788000004",
+                "status": "lead",
+                "source": "seed",
+                "notes": "DEMO — نقد SDG قرب المحطة (تحقق شخصيًا)",
+                "trust_score": 45,
+            },
+            {
+                "display_name": "Kacyiru Bank RWF",
+                "city": "Kigali",
+                "area": "Kacyiru",
+                "map_query": "Kacyiru Kigali",
+                "rails": ["Bank-RWF", "USDT", "USDC"],
+                "payment_methods": ["Bank Transfer"],
+                "telegram": "@kacyiru_bank_demo",
+                "status": "lead",
+                "source": "seed",
+                "notes": "DEMO — تحويل بنكي RWF فقط",
+                "trust_score": 62,
+            },
+            {
+                "display_name": "Gisozi MoMo Fast",
+                "city": "Kigali",
+                "area": "Gisozi",
+                "map_query": "Gisozi Kigali",
+                "rails": ["MTN-MoMo-RWF", "USDT"],
+                "payment_methods": ["MTN Mobile Money"],
+                "telegram": "@gisozi_momo_demo",
+                "whatsapp": "+250788000005",
+                "status": "contacted",
+                "source": "seed",
+                "notes": "DEMO — رد سريع على واتساب",
+                "trust_score": 57,
+            },
+            {
+                "display_name": "Downtown Parallel Spot",
+                "city": "Kigali",
+                "area": "CBD",
+                "map_query": "Kigali City Center",
+                "rails": ["Bankak-SDG", "Cash-SDG", "MTN-MoMo-RWF"],
+                "payment_methods": ["Bankak", "Cash", "MTN Mobile Money"],
+                "telegram": "@kigali_cbd_demo",
+                "whatsapp": "+250788000006",
+                "status": "lead",
+                "source": "seed",
+                "notes": "DEMO — قارن دائمًا مع مؤشر مطمن قبل الاتفاق",
+                "trust_score": 50,
             },
         ]
         n = 0
         for s in samples:
-            # avoid dupes by telegram
-            existing = self.list_traders(q=s["telegram"])
+            existing = self.list_traders(q=s["telegram"]) if s.get("telegram") else []
             if existing:
+                # refresh area/map fields on existing seed rows
+                row = existing[0]
+                if row.get("source") == "seed":
+                    self.upsert_trader({**row, **s, "id": row["id"]})
                 continue
             self.upsert_trader(s)
             n += 1
@@ -360,6 +483,8 @@ class CloudStore:
             "id": r.id,
             "display_name": r.display_name,
             "city": r.city,
+            "area": getattr(r, "area", "") or "",
+            "map_query": getattr(r, "map_query", "") or "",
             "rails": json.loads(r.rails or "[]"),
             "payment_methods": json.loads(r.payment_methods or "[]"),
             "telegram": r.telegram,
@@ -373,6 +498,23 @@ class CloudStore:
             "owner_device_id": r.owner_device_id,
             "created_at": r.created_at.isoformat() if r.created_at else None,
             "updated_at": r.updated_at.isoformat() if r.updated_at else None,
+            "wa_link": (
+                f"https://wa.me/{''.join(c for c in (r.whatsapp or '') if c.isdigit())}"
+                if r.whatsapp
+                else ""
+            ),
+            "tg_link": (
+                f"https://t.me/{r.telegram.lstrip('@')}" if r.telegram else ""
+            ),
+            "map_link": (
+                "https://www.google.com/maps/search/?api=1&query="
+                + (getattr(r, "map_query", None) or f"{r.area} {r.city}").replace(" ", "+")
+                if (getattr(r, "map_query", None) or getattr(r, "area", None) or r.city)
+                else ""
+            ),
+            "tel_link": (
+                f"tel:{r.whatsapp}" if r.whatsapp and r.whatsapp.startswith("+") else ""
+            ),
         }
 
 

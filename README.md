@@ -88,13 +88,14 @@ PercentageError = abs(Predicted - ActualCompleted) / ActualCompleted × 100
 ## تطبيق الجوال (ابدأ اليوم)
 
 ```bash
-cd frontend && npm run build
-cd ../backend && PYTHONPATH=. python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000
+./scripts/start_mobile.sh
+# أو إنتاج:
+docker compose -f docker-compose.prod.yml up -d --build
 ```
 
-ثم افتح `http://<IP-جهازك>:8000` من الهاتف → إضافة إلى الشاشة الرئيسية.
+ثم افتح الرابط العام من `/opt/cursor/artifacts/MOBILE_URLS.txt` أو `http://<IP>:8000` → إضافة إلى الشاشة الرئيسية / APK.
 
-- تبويب التجار للبحث والتواصل
-- تبويب السحابة للنسخ الاحتياطي
-- مشروع Android: `frontend/android` عبر Capacitor
-- الدليل: `docs/MOBILE.md`
+- تبويب **اليوم**: طابور تواصل + رسائل واتساب + QR
+- تبويب **التجار**: واتساب / تلغرام / اتصال / خريطة
+- تبويب **السحابة**: نسخ احتياطي واستعادة
+- نشر: `docs/DEPLOY.md` · جوال: `docs/MOBILE.md`
