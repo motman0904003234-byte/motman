@@ -1,0 +1,26 @@
+[
+  {
+    "traded_at": "2026-07-27T09:15:00+00:00",
+    "base_asset": "USDT",
+    "quote_asset": "SDG",
+    "side": "SELL",
+    "quantity": 25,
+    "price": 599.2,
+    "total_amount": 14980,
+    "payment_method": "Bankak",
+    "fees": 0.1,
+    "status": "COMPLETED"
+  },
+  {
+    "traded_at": "2026-07-27T09:40:00+00:00",
+    "base_asset": "USDT",
+    "quote_asset": "RWF",
+    "side": "BUY",
+    "quantity": 25,
+    "price": 1535.5,
+    "total_amount": 38387.5,
+    "payment_method": "MTN Mobile Money",
+    "fees": 0.1,
+    "status": "COMPLETED"
+  }
+]

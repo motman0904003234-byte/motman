@@ -1,0 +1,227 @@
+:root {
+  --bg0: #07140f;
+  --bg1: #0b1f17;
+  --bg2: #123528;
+  --ink: #f0f5e8;
+  --muted: #a7bbae;
+  --accent: #d7f56a;
+  --accent-2: #7ad1c1;
+  --danger: #ff7a6e;
+  --warn: #ffd36a;
+  --card: rgba(18, 53, 40, 0.72);
+  --line: rgba(240, 245, 232, 0.12);
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  color: var(--ink);
+  background: var(--bg0);
+  line-height: 1.55;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 100% -10%, rgba(215, 245, 106, 0.12), transparent 50%),
+    radial-gradient(900px 500px at -10% 100%, rgba(122, 209, 193, 0.14), transparent 45%),
+    linear-gradient(165deg, var(--bg0), var(--bg1) 45%, #0a1a14);
+}
+
+button, input, select {
+  font: inherit;
+}
+
+a { color: var(--accent-2); }
+
+.app {
+  width: min(980px, calc(100% - 1.25rem));
+  margin: 0 auto;
+  padding: 1rem 0 3rem;
+}
+
+.hero {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.25rem 0 1rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3rem);
+  letter-spacing: -0.03em;
+}
+
+.brand span {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.tag {
+  color: var(--muted);
+  max-width: 40rem;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0 1rem;
+}
+
+.nav button {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.nav button.active {
+  background: var(--accent);
+  color: #102016;
+  border-color: transparent;
+  font-weight: 700;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 720px) {
+  .grid.two { grid-template-columns: 1fr; }
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+input, select {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(7, 20, 15, 0.65);
+  color: var(--ink);
+  padding: 0.8rem 0.9rem;
+}
+
+button.primary {
+  border: 0;
+  border-radius: 16px;
+  background: linear-gradient(120deg, var(--accent), #b6e86a);
+  color: #132418;
+  font-weight: 700;
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+}
+
+button.primary:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.result {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.result h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.metric {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.75rem;
+  background: rgba(7, 20, 15, 0.35);
+}
+
+.metric .k { color: var(--muted); font-size: 0.82rem; }
+.metric .v {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.05rem;
+  margin-top: 0.2rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge.live { background: rgba(122, 209, 193, 0.2); color: var(--accent-2); }
+.badge.stale { background: rgba(255, 211, 106, 0.18); color: var(--warn); }
+.badge.down, .badge.no { background: rgba(255, 122, 110, 0.16); color: var(--danger); }
+.badge.est { background: rgba(255, 211, 106, 0.18); color: var(--warn); }
+.badge.exec { background: rgba(215, 245, 106, 0.18); color: var(--accent); }
+
+.warnings {
+  margin: 0;
+  padding-inline-start: 1.1rem;
+  color: var(--warn);
+}
+
+.mono { font-family: "JetBrains Mono", monospace; }
+
+.footer {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th, .table td {
+  border-bottom: 1px solid var(--line);
+  padding: 0.55rem 0.3rem;
+  text-align: right;
+}

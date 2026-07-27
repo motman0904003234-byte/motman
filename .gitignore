@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.env
+motman.db
+*.db
+.DS_Store
+frontend/dev-dist/
+.vite/
