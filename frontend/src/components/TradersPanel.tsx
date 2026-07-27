@@ -67,18 +67,40 @@ export function TradersPanel() {
     }
   }
 
-  async function contact(trader: Trader) {
-    const message = `تم التواصل بخصوص Bankak↔MoMo — ${new Date().toLocaleString('ar')}`
+  async function contact(trader: Trader, template?: string) {
+    const message =
+      template ||
+      `السلام عليكم ${trader.display_name}، أحتاج سعر Bankak↔MoMo اليوم. هل لديكم سيولة؟`
     await addOutreach({
       trader_id: trader.id,
       channel: trader.telegram ? 'telegram' : 'whatsapp',
       message,
       outcome: 'contacted',
     })
+    // advance pipeline
+    if (trader.status === 'lead' || trader.status === 'contacted') {
+      try {
+        await saveTrader({
+          ...trader,
+          display_name: trader.display_name,
+          status: trader.status === 'lead' ? 'contacted' : 'active',
+        })
+      } catch {
+        /* ignore */
+      }
+    }
     if (trader.telegram) {
-      window.open(`https://t.me/${trader.telegram.replace('@', '')}`, '_blank')
+      const text = encodeURIComponent(message)
+      window.open(
+        `https://t.me/${trader.telegram.replace('@', '')}?text=${text}`,
+        '_blank',
+      )
     } else if (trader.whatsapp) {
-      window.open(`https://wa.me/${trader.whatsapp.replace(/[^\d]/g, '')}`, '_blank')
+      const text = encodeURIComponent(message)
+      window.open(
+        `https://wa.me/${trader.whatsapp.replace(/[^\d]/g, '')}?text=${text}`,
+        '_blank',
+      )
     }
     setMsg(`تم تسجيل تواصل مع ${trader.display_name}`)
     await load()
@@ -139,6 +161,31 @@ export function TradersPanel() {
             <button className="primary" type="button" onClick={() => void contact(t)}>
               تواصل الآن
             </button>
+            <div className="grid two">
+              <button
+                type="button"
+                onClick={() =>
+                  void contact(
+                    t,
+                    `السلام عليكم، أحتاج سعرًا ملزمًا لـ100000 Bankak إلى MoMo خلال 15 دقيقة.`,
+                  )
+                }
+              >
+                طلب سعر
+              </button>
+              <button
+                type="button"
+                onClick={() =>
+                  void saveTrader({
+                    ...t,
+                    display_name: t.display_name,
+                    status: 'active',
+                  }).then(load)
+                }
+              >
+                تفعيل
+              </button>
+            </div>
           </article>
         ))}
         {items.length === 0 && <p className="tag">لا تجار بعد — أضف أول تاجر بالأسفل أو حمّل أمثلة.</p>}

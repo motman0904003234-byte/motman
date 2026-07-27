@@ -5,12 +5,13 @@ import { HistoryPanel } from './components/HistoryPanel'
 import { TradersPanel } from './components/TradersPanel'
 import { CloudPanel } from './components/CloudPanel'
 import { SettingsPanel } from './components/SettingsPanel'
+import { FieldworkPanel } from './components/FieldworkPanel'
 import { ensureDevice, refreshSources } from './api'
 
-type Tab = 'quote' | 'traders' | 'trader' | 'cloud' | 'history' | 'settings'
+type Tab = 'today' | 'quote' | 'traders' | 'trader' | 'cloud' | 'history' | 'settings'
 
 export default function App() {
-  const [tab, setTab] = useState<Tab>('traders')
+  const [tab, setTab] = useState<Tab>('today')
   const [refreshMsg, setRefreshMsg] = useState<string | null>(null)
   const [installHint, setInstallHint] = useState(true)
   const [online, setOnline] = useState(navigator.onLine)
@@ -45,21 +46,25 @@ export default function App() {
           </h1>
         </div>
         <p className="tag">
-          ابدأ اليوم: ابحث عن التجار، احسب السعر الشفاف، واحفظ كل شيء سحابيًا. لا حفظ أموال ولا
-          تنفيذ تلقائي.
+          ابدأ اليوم: ثبّت التطبيق، أضف التجار، أرسل رسائل جاهزة، واحفظ كل شيء سحابيًا. لا حفظ أموال
+          ولا تنفيذ تلقائي.
         </p>
         <p className="tag">
           الحالة: {online ? 'متصل بالإنترنت' : 'بدون إنترنت — عرض النسخة المحلية للتجار إن وُجدت'}
         </p>
         {installHint && (
           <p className="tag" style={{ border: '1px solid var(--line)', padding: '0.7rem', borderRadius: 12 }}>
-            لتثبيته كتطبيق: من متصفح الهاتف اختر «إضافة إلى الشاشة الرئيسية».{' '}
+            ثبّته الآن: من تبويب «اليوم» حمّل APK أو امسحه بـQR، أو من المتصفح «إضافة إلى الشاشة
+            الرئيسية».{' '}
             <button type="button" onClick={() => setInstallHint(false)}>
               حسناً
             </button>
           </p>
         )}
         <div className="nav">
+          <button className={tab === 'today' ? 'active' : ''} onClick={() => setTab('today')}>
+            اليوم
+          </button>
           <button className={tab === 'traders' ? 'active' : ''} onClick={() => setTab('traders')}>
             التجار
           </button>
@@ -83,6 +88,7 @@ export default function App() {
         {refreshMsg && <p className="tag">{refreshMsg}</p>}
       </header>
 
+      {tab === 'today' && <FieldworkPanel />}
       {tab === 'traders' && <TradersPanel />}
       {tab === 'quote' && <QuotePanel />}
       {tab === 'trader' && <TraderDesk />}

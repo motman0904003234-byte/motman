@@ -10,6 +10,7 @@ from pathlib import Path
 
 from app.api.routes import router
 from app.api.cloud_routes import router as cloud_router
+from app.api.mobile_routes import router as mobile_router
 from app.config import get_settings
 from app.db.cloud import get_cloud_store
 from app.services.market import market_service
@@ -28,7 +29,7 @@ def create_app() -> FastAPI:
     settings = get_settings()
     app = FastAPI(
         title=settings.app_name,
-        version="0.2.0",
+        version="0.3.0",
         lifespan=lifespan,
         description=(
             "مؤشر مرجعي شفاف لمسارات الصرف Bankak-SDG / Cash-SDG / "
@@ -45,8 +46,13 @@ def create_app() -> FastAPI:
     )
     app.include_router(router, prefix=settings.api_prefix)
     app.include_router(cloud_router, prefix=settings.api_prefix)
+    app.include_router(mobile_router, prefix=settings.api_prefix)
 
     dist = Path(__file__).resolve().parents[2] / "frontend" / "dist"
+    downloads_dir = Path(__file__).resolve().parents[2] / "frontend" / "public" / "downloads"
+    if downloads_dir.exists():
+        app.mount("/downloads", StaticFiles(directory=downloads_dir), name="downloads")
+
     if dist.exists():
         assets = dist / "assets"
         if assets.exists():
