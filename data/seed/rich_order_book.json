@@ -1,6 +1,6 @@
 [
   {
-    "id": "82e2d409-7fe2-427b-8b65-bc233b521447",
+    "id": "d8e0a219-f9ff-4127-90e2-bbca8e3bcfbc",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -16,12 +16,12 @@
     "fees": 0.0,
     "completion_rate": 0.96,
     "rating": 4.9,
-    "observed_at": "2026-07-27T10:03:01.583000Z",
+    "observed_at": "2026-07-27T10:03:16.643331Z",
     "raw_ref": "rich-sdg-ask-0",
     "is_synthetic": true
   },
   {
-    "id": "477bfff9-2eaf-4da9-a711-b78abaa4cac4",
+    "id": "ae1bc847-6aee-450c-932b-815d22935f5b",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -37,12 +37,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.8500000000000005,
-    "observed_at": "2026-07-27T10:03:00.583000Z",
+    "observed_at": "2026-07-27T10:03:15.643331Z",
     "raw_ref": "rich-sdg-ask-1",
     "is_synthetic": true
   },
   {
-    "id": "ac7c619d-0885-4f47-9177-d5efe4b79bf5",
+    "id": "3d74ecf8-a90d-41d9-84e5-9e2676c2742f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -58,12 +58,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.800000000000001,
-    "observed_at": "2026-07-27T10:02:59.583000Z",
+    "observed_at": "2026-07-27T10:03:14.643331Z",
     "raw_ref": "rich-sdg-ask-2",
     "is_synthetic": true
   },
   {
-    "id": "7e8fc483-3cce-44cf-b8a5-255a578efb22",
+    "id": "2f6e65e1-4cee-460e-b493-3d5b3963407f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -79,12 +79,12 @@
     "fees": 0.0,
     "completion_rate": 0.9299999999999999,
     "rating": 4.75,
-    "observed_at": "2026-07-27T10:02:58.583000Z",
+    "observed_at": "2026-07-27T10:03:13.643331Z",
     "raw_ref": "rich-sdg-ask-3",
     "is_synthetic": true
   },
   {
-    "id": "11287991-3c94-4ccd-b06f-67f5c09696df",
+    "id": "fc3a2aa7-89a6-420d-8d7e-5eee348814ec",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -100,12 +100,12 @@
     "fees": 0.0,
     "completion_rate": 0.9199999999999999,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:57.583000Z",
+    "observed_at": "2026-07-27T10:03:12.643331Z",
     "raw_ref": "rich-sdg-ask-4",
     "is_synthetic": true
   },
   {
-    "id": "e8eab0aa-c9c7-4df8-aea7-d1e8e826bd43",
+    "id": "7b2d095b-fb8a-497b-9e76-4d336df61426",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -121,12 +121,12 @@
     "fees": 0.0,
     "completion_rate": 0.9099999999999999,
     "rating": 4.65,
-    "observed_at": "2026-07-27T10:02:56.583000Z",
+    "observed_at": "2026-07-27T10:03:11.643331Z",
     "raw_ref": "rich-sdg-ask-5",
     "is_synthetic": true
   },
   {
-    "id": "95f90b7a-5929-41df-8867-42a655f33e65",
+    "id": "9e43fa77-b70b-4188-87af-0f7b07015c41",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -142,12 +142,12 @@
     "fees": 0.0,
     "completion_rate": 0.8999999999999999,
     "rating": 4.6000000000000005,
-    "observed_at": "2026-07-27T10:02:55.583000Z",
+    "observed_at": "2026-07-27T10:03:10.643331Z",
     "raw_ref": "rich-sdg-ask-6",
     "is_synthetic": true
   },
   {
-    "id": "c074d8f3-fa7a-4b1d-a145-a94618220efd",
+    "id": "4f25d92d-dd62-460d-a055-5f4687ab7acc",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -163,12 +163,12 @@
     "fees": 0.0,
     "completion_rate": 0.8899999999999999,
     "rating": 4.550000000000001,
-    "observed_at": "2026-07-27T10:02:54.583000Z",
+    "observed_at": "2026-07-27T10:03:09.643331Z",
     "raw_ref": "rich-sdg-ask-7",
     "is_synthetic": true
   },
   {
-    "id": "e9a0deb2-5a6e-4183-9a9c-cf3ff45dd2e7",
+    "id": "13710ee7-b32b-4d9d-bdd9-56c551f0315c",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -184,12 +184,12 @@
     "fees": 0.0,
     "completion_rate": 0.88,
     "rating": 4.9,
-    "observed_at": "2026-07-27T10:02:53.583000Z",
+    "observed_at": "2026-07-27T10:03:08.643331Z",
     "raw_ref": "rich-sdg-ask-8",
     "is_synthetic": true
   },
   {
-    "id": "da3c6ecc-da18-4baf-9761-8820ce2edd7d",
+    "id": "c1a30765-4742-47da-9c30-76ceb2b65452",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -205,12 +205,12 @@
     "fees": 0.0,
     "completion_rate": 0.87,
     "rating": 4.8500000000000005,
-    "observed_at": "2026-07-27T10:02:52.583000Z",
+    "observed_at": "2026-07-27T10:03:07.643331Z",
     "raw_ref": "rich-sdg-ask-9",
     "is_synthetic": true
   },
   {
-    "id": "af8c5693-ffef-4c72-812a-3139c377d663",
+    "id": "ff563d63-3a44-4b73-9ba2-c610e2992faa",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -226,12 +226,12 @@
     "fees": 0.0,
     "completion_rate": 0.96,
     "rating": 4.800000000000001,
-    "observed_at": "2026-07-27T10:02:51.583000Z",
+    "observed_at": "2026-07-27T10:03:06.643331Z",
     "raw_ref": "rich-sdg-ask-10",
     "is_synthetic": true
   },
   {
-    "id": "e09689f5-a5ec-4c27-858c-904058d09f05",
+    "id": "a34c2db4-c1a5-4d9b-9b27-a99f78bc9c48",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -247,12 +247,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.75,
-    "observed_at": "2026-07-27T10:02:50.583000Z",
+    "observed_at": "2026-07-27T10:03:05.643331Z",
     "raw_ref": "rich-sdg-ask-11",
     "is_synthetic": true
   },
   {
-    "id": "97019260-cbe3-4889-8e36-dd00eb8de15a",
+    "id": "b3ead7b5-462d-4a9b-9f40-5bf61cce079d",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -268,12 +268,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:49.583000Z",
+    "observed_at": "2026-07-27T10:03:04.643331Z",
     "raw_ref": "rich-sdg-ask-12",
     "is_synthetic": true
   },
   {
-    "id": "04c70e74-db54-4233-97ed-c4c81f3f503b",
+    "id": "d340dd26-ccf2-494b-bdef-8ee2b3cde7f9",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -289,12 +289,12 @@
     "fees": 0.0,
     "completion_rate": 0.9299999999999999,
     "rating": 4.65,
-    "observed_at": "2026-07-27T10:02:48.583000Z",
+    "observed_at": "2026-07-27T10:03:03.643331Z",
     "raw_ref": "rich-sdg-ask-13",
     "is_synthetic": true
   },
   {
-    "id": "a9c82b17-35b7-455c-afe6-0e69b84fe4f6",
+    "id": "84f7cb87-db46-4652-a4b9-51de43c683b3",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -310,12 +310,12 @@
     "fees": 0.0,
     "completion_rate": 0.9199999999999999,
     "rating": 4.6000000000000005,
-    "observed_at": "2026-07-27T10:02:47.583000Z",
+    "observed_at": "2026-07-27T10:03:02.643331Z",
     "raw_ref": "rich-sdg-ask-14",
     "is_synthetic": true
   },
   {
-    "id": "6f534b7d-2b49-425f-bae2-0dd2a97d6391",
+    "id": "ffb0fba6-fdc8-43f8-9898-e235c92f7344",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -331,12 +331,12 @@
     "fees": 0.0,
     "completion_rate": 0.9099999999999999,
     "rating": 4.550000000000001,
-    "observed_at": "2026-07-27T10:02:46.583000Z",
+    "observed_at": "2026-07-27T10:03:01.643331Z",
     "raw_ref": "rich-sdg-ask-15",
     "is_synthetic": true
   },
   {
-    "id": "c4096ab3-76b8-4f91-b956-9908960eef2c",
+    "id": "f64ea776-2b76-4bfb-bde9-7d0906eaee4e",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -352,12 +352,12 @@
     "fees": 0.0,
     "completion_rate": 0.8999999999999999,
     "rating": 4.9,
-    "observed_at": "2026-07-27T10:02:45.583000Z",
+    "observed_at": "2026-07-27T10:03:00.643331Z",
     "raw_ref": "rich-sdg-ask-16",
     "is_synthetic": true
   },
   {
-    "id": "9acff959-0729-4dd9-8285-4be54671c911",
+    "id": "2e19b1e0-f4d7-42bb-9658-23ec2d156476",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -373,12 +373,12 @@
     "fees": 0.0,
     "completion_rate": 0.8899999999999999,
     "rating": 4.8500000000000005,
-    "observed_at": "2026-07-27T10:02:44.583000Z",
+    "observed_at": "2026-07-27T10:02:59.643331Z",
     "raw_ref": "rich-sdg-ask-17",
     "is_synthetic": true
   },
   {
-    "id": "d3b2cd81-9498-4de1-9892-7859c20c18c1",
+    "id": "1a45c6ab-d5d3-48c5-a3a8-0235c5635d1f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -394,12 +394,12 @@
     "fees": 0.0,
     "completion_rate": 0.88,
     "rating": 4.800000000000001,
-    "observed_at": "2026-07-27T10:02:43.583000Z",
+    "observed_at": "2026-07-27T10:02:58.643331Z",
     "raw_ref": "rich-sdg-ask-18",
     "is_synthetic": true
   },
   {
-    "id": "9ac373df-6f0e-42ca-835d-227e2c86e3fb",
+    "id": "b7836bd1-3ec3-4cc2-8d78-5fca08a660cc",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -415,12 +415,12 @@
     "fees": 0.0,
     "completion_rate": 0.87,
     "rating": 4.75,
-    "observed_at": "2026-07-27T10:02:42.583000Z",
+    "observed_at": "2026-07-27T10:02:57.643331Z",
     "raw_ref": "rich-sdg-ask-19",
     "is_synthetic": true
   },
   {
-    "id": "3a864f53-e723-46e8-889a-46f6c6f3f02e",
+    "id": "687c134c-df0a-4472-89ae-2ccb5ca74296",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -436,12 +436,12 @@
     "fees": 0.0,
     "completion_rate": 0.96,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:41.583000Z",
+    "observed_at": "2026-07-27T10:02:56.643331Z",
     "raw_ref": "rich-sdg-ask-20",
     "is_synthetic": true
   },
   {
-    "id": "eb65a6cf-17a8-4b5b-b9ca-7f597897f2e9",
+    "id": "def5673f-e132-43e4-992d-efb19d814cd6",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -457,12 +457,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.65,
-    "observed_at": "2026-07-27T10:02:40.583000Z",
+    "observed_at": "2026-07-27T10:02:55.643331Z",
     "raw_ref": "rich-sdg-ask-21",
     "is_synthetic": true
   },
   {
-    "id": "64f2b888-f9b9-476b-bd8c-353b0aa49709",
+    "id": "93ba573d-9f73-4dd1-9dd4-e4c4b5b97b87",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -478,12 +478,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6000000000000005,
-    "observed_at": "2026-07-27T10:02:39.583000Z",
+    "observed_at": "2026-07-27T10:02:54.643331Z",
     "raw_ref": "rich-sdg-ask-22",
     "is_synthetic": true
   },
   {
-    "id": "5bf822f3-2ffe-4305-bd3f-a0071ba47e50",
+    "id": "fc692913-4755-4c9d-8f5c-98d5254efbf1",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -499,12 +499,12 @@
     "fees": 0.0,
     "completion_rate": 0.9299999999999999,
     "rating": 4.550000000000001,
-    "observed_at": "2026-07-27T10:02:38.583000Z",
+    "observed_at": "2026-07-27T10:02:53.643331Z",
     "raw_ref": "rich-sdg-ask-23",
     "is_synthetic": true
   },
   {
-    "id": "abb98645-6732-4e1e-ad16-2903622f6586",
+    "id": "c51a9457-13bf-4112-8de5-03154acb6755",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -520,12 +520,12 @@
     "fees": 0.0,
     "completion_rate": 0.9199999999999999,
     "rating": 4.9,
-    "observed_at": "2026-07-27T10:02:37.583000Z",
+    "observed_at": "2026-07-27T10:02:52.643331Z",
     "raw_ref": "rich-sdg-ask-24",
     "is_synthetic": true
   },
   {
-    "id": "4f538242-f5c2-4a28-84b0-5fe035e98442",
+    "id": "6dbc0ed1-2422-4177-8580-117640c1f9fd",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -541,12 +541,12 @@
     "fees": 0.0,
     "completion_rate": 0.9099999999999999,
     "rating": 4.8500000000000005,
-    "observed_at": "2026-07-27T10:02:36.583000Z",
+    "observed_at": "2026-07-27T10:02:51.643331Z",
     "raw_ref": "rich-sdg-ask-25",
     "is_synthetic": true
   },
   {
-    "id": "0b6f3090-5927-416b-9026-88679d982f16",
+    "id": "f2aef2fa-91d3-4bb3-b6f6-1ccc3fc6051d",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -562,12 +562,12 @@
     "fees": 0.0,
     "completion_rate": 0.8999999999999999,
     "rating": 4.800000000000001,
-    "observed_at": "2026-07-27T10:02:35.583000Z",
+    "observed_at": "2026-07-27T10:02:50.643331Z",
     "raw_ref": "rich-sdg-ask-26",
     "is_synthetic": true
   },
   {
-    "id": "9e2bcede-ecc0-4972-9eee-6edbfc217659",
+    "id": "e5b4879d-e682-4f14-990e-b4759bee01ae",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -583,12 +583,12 @@
     "fees": 0.0,
     "completion_rate": 0.8899999999999999,
     "rating": 4.75,
-    "observed_at": "2026-07-27T10:02:34.583000Z",
+    "observed_at": "2026-07-27T10:02:49.643331Z",
     "raw_ref": "rich-sdg-ask-27",
     "is_synthetic": true
   },
   {
-    "id": "2af65de6-d9f8-4016-9fe3-30bfae6df2cc",
+    "id": "94eb2262-1fea-403d-aed1-b08058dcefe9",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -604,12 +604,12 @@
     "fees": 0.0,
     "completion_rate": 0.88,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:33.583000Z",
+    "observed_at": "2026-07-27T10:02:48.643331Z",
     "raw_ref": "rich-sdg-ask-28",
     "is_synthetic": true
   },
   {
-    "id": "f45ee10d-66f7-4cd1-b296-0de36d53d42e",
+    "id": "6f955c48-590a-41fd-a7d7-68e32b4e52a8",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -625,12 +625,12 @@
     "fees": 0.0,
     "completion_rate": 0.87,
     "rating": 4.65,
-    "observed_at": "2026-07-27T10:02:32.583000Z",
+    "observed_at": "2026-07-27T10:02:47.643331Z",
     "raw_ref": "rich-sdg-ask-29",
     "is_synthetic": true
   },
   {
-    "id": "bd0c0536-8008-4894-9e83-2c29b94d4cdb",
+    "id": "f900b300-dee0-4ef5-a289-9daa64928595",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -646,12 +646,12 @@
     "fees": 0.0,
     "completion_rate": 0.96,
     "rating": 4.6000000000000005,
-    "observed_at": "2026-07-27T10:02:31.583000Z",
+    "observed_at": "2026-07-27T10:02:46.643331Z",
     "raw_ref": "rich-sdg-ask-30",
     "is_synthetic": true
   },
   {
-    "id": "fff11adf-a04c-4aba-b8f7-16c8d190ea65",
+    "id": "53b37efb-827e-42ed-8fd2-a96d5f006262",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -667,12 +667,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.550000000000001,
-    "observed_at": "2026-07-27T10:02:30.583000Z",
+    "observed_at": "2026-07-27T10:02:45.643331Z",
     "raw_ref": "rich-sdg-ask-31",
     "is_synthetic": true
   },
   {
-    "id": "2a45b4cb-c876-4118-bf7a-c6a51c5c75c6",
+    "id": "af558ff3-5f03-42bf-b16d-6428272356ea",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -688,12 +688,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.9,
-    "observed_at": "2026-07-27T10:02:29.583000Z",
+    "observed_at": "2026-07-27T10:02:44.643331Z",
     "raw_ref": "rich-sdg-ask-32",
     "is_synthetic": true
   },
   {
-    "id": "acb16258-b82c-490f-b36a-a91041266d57",
+    "id": "6d97be3c-2684-4ba3-b4d9-b6b5ba685c3f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -709,12 +709,12 @@
     "fees": 0.0,
     "completion_rate": 0.9299999999999999,
     "rating": 4.8500000000000005,
-    "observed_at": "2026-07-27T10:02:28.583000Z",
+    "observed_at": "2026-07-27T10:02:43.643331Z",
     "raw_ref": "rich-sdg-ask-33",
     "is_synthetic": true
   },
   {
-    "id": "49ff9646-f170-4e62-b3ce-ac6ea5d43a5a",
+    "id": "becae821-698d-403f-a875-c029d0198d02",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -730,12 +730,12 @@
     "fees": 0.0,
     "completion_rate": 0.9199999999999999,
     "rating": 4.800000000000001,
-    "observed_at": "2026-07-27T10:02:27.583000Z",
+    "observed_at": "2026-07-27T10:02:42.643331Z",
     "raw_ref": "rich-sdg-ask-34",
     "is_synthetic": true
   },
   {
-    "id": "ff3c5ad3-1ae5-45f7-81d7-c2ae978a2b00",
+    "id": "deeaf0bc-4fa5-4bce-bb22-da6ad62c8faf",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -751,12 +751,12 @@
     "fees": 0.0,
     "completion_rate": 0.9099999999999999,
     "rating": 4.75,
-    "observed_at": "2026-07-27T10:02:26.583000Z",
+    "observed_at": "2026-07-27T10:02:41.643331Z",
     "raw_ref": "rich-sdg-ask-35",
     "is_synthetic": true
   },
   {
-    "id": "1256bb5d-5d02-466a-bbf1-bf9d2bec21c2",
+    "id": "1090124b-7bd8-47c4-ab47-532d467b06a3",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -772,12 +772,12 @@
     "fees": 0.0,
     "completion_rate": 0.8999999999999999,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:25.583000Z",
+    "observed_at": "2026-07-27T10:02:40.643331Z",
     "raw_ref": "rich-sdg-ask-36",
     "is_synthetic": true
   },
   {
-    "id": "0b154620-011f-4cd0-a9a7-009bfedfc484",
+    "id": "8a99aae0-74f8-421c-99b3-0c34fbabd6cf",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -793,12 +793,12 @@
     "fees": 0.0,
     "completion_rate": 0.8899999999999999,
     "rating": 4.65,
-    "observed_at": "2026-07-27T10:02:24.583000Z",
+    "observed_at": "2026-07-27T10:02:39.643331Z",
     "raw_ref": "rich-sdg-ask-37",
     "is_synthetic": true
   },
   {
-    "id": "25868bbc-d29e-4b16-a826-af4402c80b3c",
+    "id": "35318b48-8764-42e6-ba1c-09b27ac0bd10",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -814,12 +814,12 @@
     "fees": 0.0,
     "completion_rate": 0.88,
     "rating": 4.6000000000000005,
-    "observed_at": "2026-07-27T10:02:23.583000Z",
+    "observed_at": "2026-07-27T10:02:38.643331Z",
     "raw_ref": "rich-sdg-ask-38",
     "is_synthetic": true
   },
   {
-    "id": "afa9ca2d-7682-42c8-add5-713c427471eb",
+    "id": "3ea7367f-6e4a-4559-b14e-8e484b5c1a31",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -835,12 +835,12 @@
     "fees": 0.0,
     "completion_rate": 0.87,
     "rating": 4.550000000000001,
-    "observed_at": "2026-07-27T10:02:22.583000Z",
+    "observed_at": "2026-07-27T10:02:37.643331Z",
     "raw_ref": "rich-sdg-ask-39",
     "is_synthetic": true
   },
   {
-    "id": "49b689b8-54e6-49ce-bd77-09e8a8c543bc",
+    "id": "96cb6b40-ebe1-4448-8a7f-49fa6fe1a6b3",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -856,12 +856,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:59.583000Z",
+    "observed_at": "2026-07-27T10:03:14.643331Z",
     "raw_ref": "rich-sdg-bid-0",
     "is_synthetic": true
   },
   {
-    "id": "adb5ef55-bcbb-44ef-9339-55155ce67065",
+    "id": "cdd74b19-03bb-4e86-a6d9-e254a40cc151",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -877,12 +877,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:58.583000Z",
+    "observed_at": "2026-07-27T10:03:13.643331Z",
     "raw_ref": "rich-sdg-bid-1",
     "is_synthetic": true
   },
   {
-    "id": "4e1b84b1-7329-4de8-a488-318558e54ac4",
+    "id": "d808b6ff-cc6a-4818-8d4a-fa7f001ef388",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -898,12 +898,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:57.583000Z",
+    "observed_at": "2026-07-27T10:03:12.643331Z",
     "raw_ref": "rich-sdg-bid-2",
     "is_synthetic": true
   },
   {
-    "id": "77f4951c-fdf6-4258-a58b-b7c0c8677d2a",
+    "id": "c2924f77-b2c2-4539-8ff8-7184fc4dc821",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -919,12 +919,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:56.583000Z",
+    "observed_at": "2026-07-27T10:03:11.643331Z",
     "raw_ref": "rich-sdg-bid-3",
     "is_synthetic": true
   },
   {
-    "id": "599a6085-104a-494c-b14f-cb60aab1dc5b",
+    "id": "3ccc2675-0f5d-4d1c-9560-41d7d72ff1a5",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -940,12 +940,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:55.583000Z",
+    "observed_at": "2026-07-27T10:03:10.643331Z",
     "raw_ref": "rich-sdg-bid-4",
     "is_synthetic": true
   },
   {
-    "id": "d8b88709-4dc1-4a54-bfa0-cc0654d29df5",
+    "id": "03e4d916-cd88-4b6c-94fe-f4d5fb88c971",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -961,12 +961,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:54.583000Z",
+    "observed_at": "2026-07-27T10:03:09.643331Z",
     "raw_ref": "rich-sdg-bid-5",
     "is_synthetic": true
   },
   {
-    "id": "8a21f283-529e-43ff-be62-dc5b7c909e8e",
+    "id": "150287d8-a925-4307-9f84-97a92f6e3a14",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -982,12 +982,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:53.583000Z",
+    "observed_at": "2026-07-27T10:03:08.643331Z",
     "raw_ref": "rich-sdg-bid-6",
     "is_synthetic": true
   },
   {
-    "id": "988cc1d0-b13a-4686-8600-7a3e5b9726a0",
+    "id": "932b3c9d-fcd8-4fe5-8b30-2ac8499c1e1d",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1003,12 +1003,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:52.583000Z",
+    "observed_at": "2026-07-27T10:03:07.643331Z",
     "raw_ref": "rich-sdg-bid-7",
     "is_synthetic": true
   },
   {
-    "id": "f71d324a-1f93-490c-b9d7-289ac1fcf854",
+    "id": "38ee7f50-d68d-4f79-a646-1cf9c064a046",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1024,12 +1024,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:51.583000Z",
+    "observed_at": "2026-07-27T10:03:06.643331Z",
     "raw_ref": "rich-sdg-bid-8",
     "is_synthetic": true
   },
   {
-    "id": "a1c7e6bc-c825-40b6-bbeb-2823e856c30b",
+    "id": "5e598cf8-4ede-4907-8e47-c2c7c136aea4",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1045,12 +1045,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:50.583000Z",
+    "observed_at": "2026-07-27T10:03:05.643331Z",
     "raw_ref": "rich-sdg-bid-9",
     "is_synthetic": true
   },
   {
-    "id": "8111ad27-0406-4e18-8f3e-d75897276ac2",
+    "id": "077a5e39-63a4-4e3d-9b98-1b2714e3c290",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1066,12 +1066,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:49.583000Z",
+    "observed_at": "2026-07-27T10:03:04.643331Z",
     "raw_ref": "rich-sdg-bid-10",
     "is_synthetic": true
   },
   {
-    "id": "02fb1e5f-8d09-4619-b8f6-394d5fbb90cf",
+    "id": "43650cac-044e-474d-9174-a55674229727",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1087,12 +1087,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:48.583000Z",
+    "observed_at": "2026-07-27T10:03:03.643331Z",
     "raw_ref": "rich-sdg-bid-11",
     "is_synthetic": true
   },
   {
-    "id": "c68aae99-22ec-4e9f-a116-5a82db99f5de",
+    "id": "893501a3-5207-4d53-b1bd-589e55d35f5c",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1108,12 +1108,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:47.583000Z",
+    "observed_at": "2026-07-27T10:03:02.643331Z",
     "raw_ref": "rich-sdg-bid-12",
     "is_synthetic": true
   },
   {
-    "id": "bb3b0aab-aa05-4d70-b5c8-70adec09589b",
+    "id": "d583ce1f-842f-4582-8a99-f9051ca9f594",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1129,12 +1129,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:46.583000Z",
+    "observed_at": "2026-07-27T10:03:01.643331Z",
     "raw_ref": "rich-sdg-bid-13",
     "is_synthetic": true
   },
   {
-    "id": "52cf2220-021d-4f0d-a924-96b6db19ac9b",
+    "id": "4198b1ec-fcc2-48f8-a51b-add28f3ac0a1",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1150,12 +1150,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:45.583000Z",
+    "observed_at": "2026-07-27T10:03:00.643331Z",
     "raw_ref": "rich-sdg-bid-14",
     "is_synthetic": true
   },
   {
-    "id": "c5ddbc5a-679e-4d02-8e13-48c5637c5726",
+    "id": "ce884570-85a2-4470-952f-1970ced5b1be",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1171,12 +1171,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:44.583000Z",
+    "observed_at": "2026-07-27T10:02:59.643331Z",
     "raw_ref": "rich-sdg-bid-15",
     "is_synthetic": true
   },
   {
-    "id": "97c220aa-3dae-4744-a115-0abb8e430340",
+    "id": "6fc24bd9-576e-41c1-b3eb-4abfc55e00ae",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1192,12 +1192,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:43.583000Z",
+    "observed_at": "2026-07-27T10:02:58.643331Z",
     "raw_ref": "rich-sdg-bid-16",
     "is_synthetic": true
   },
   {
-    "id": "dde69ad7-b0fe-4b49-883a-960f27d65871",
+    "id": "416f5df2-e6fd-41df-8f67-1019abc8dbbe",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1213,12 +1213,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:42.583000Z",
+    "observed_at": "2026-07-27T10:02:57.643331Z",
     "raw_ref": "rich-sdg-bid-17",
     "is_synthetic": true
   },
   {
-    "id": "5ee4fb60-2557-4aa4-93fa-ff98ed0d6886",
+    "id": "96cfed19-cc91-4722-8fe1-a45f6efdd5d2",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1234,12 +1234,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:41.583000Z",
+    "observed_at": "2026-07-27T10:02:56.643331Z",
     "raw_ref": "rich-sdg-bid-18",
     "is_synthetic": true
   },
   {
-    "id": "7d20d902-e3e0-4d13-a4ec-f26f614939a6",
+    "id": "214b5745-d7dc-4578-8c98-25c92cdf1097",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1255,12 +1255,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:40.583000Z",
+    "observed_at": "2026-07-27T10:02:55.643331Z",
     "raw_ref": "rich-sdg-bid-19",
     "is_synthetic": true
   },
   {
-    "id": "c5390ac9-3e36-4783-a045-c4b480b97ec5",
+    "id": "6f8a8127-9fb4-47dc-b0ba-51c76bcc8085",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1276,12 +1276,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:39.583000Z",
+    "observed_at": "2026-07-27T10:02:54.643331Z",
     "raw_ref": "rich-sdg-bid-20",
     "is_synthetic": true
   },
   {
-    "id": "aa1a0264-c507-4417-b3a3-a3436943d070",
+    "id": "2f471baf-bca5-4eae-bba0-93ad116a8d75",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1297,12 +1297,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:38.583000Z",
+    "observed_at": "2026-07-27T10:02:53.643331Z",
     "raw_ref": "rich-sdg-bid-21",
     "is_synthetic": true
   },
   {
-    "id": "8282752b-b91c-4de7-9015-2f5e4921f09a",
+    "id": "468229b3-0fd5-40fb-818c-d6a4782f757f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1318,12 +1318,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:37.583000Z",
+    "observed_at": "2026-07-27T10:02:52.643331Z",
     "raw_ref": "rich-sdg-bid-22",
     "is_synthetic": true
   },
   {
-    "id": "dd14408d-65b3-403b-9cff-3bcbee6702bc",
+    "id": "64e1040a-0abc-4a09-9181-a260c93ccd75",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1339,12 +1339,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:36.583000Z",
+    "observed_at": "2026-07-27T10:02:51.643331Z",
     "raw_ref": "rich-sdg-bid-23",
     "is_synthetic": true
   },
   {
-    "id": "6f0a2f6b-8c15-4f97-ba32-9b46cf795fe2",
+    "id": "368036d6-7e2c-4ab8-a97e-6318a571ed3e",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1360,12 +1360,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:35.583000Z",
+    "observed_at": "2026-07-27T10:02:50.643331Z",
     "raw_ref": "rich-sdg-bid-24",
     "is_synthetic": true
   },
   {
-    "id": "171022e3-e136-4ecc-ad1c-d720cd83fab8",
+    "id": "01b6fcb6-edf0-492c-99e9-740e52838cea",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1381,12 +1381,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:34.583000Z",
+    "observed_at": "2026-07-27T10:02:49.643331Z",
     "raw_ref": "rich-sdg-bid-25",
     "is_synthetic": true
   },
   {
-    "id": "abfdaa58-cc0f-4c58-b01d-8f0140bd7b3f",
+    "id": "b09666a5-1d18-424f-bd4d-8d922fc995f2",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1402,12 +1402,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:33.583000Z",
+    "observed_at": "2026-07-27T10:02:48.643331Z",
     "raw_ref": "rich-sdg-bid-26",
     "is_synthetic": true
   },
   {
-    "id": "3404837f-d00a-45e2-9eca-a2d0f2346cc2",
+    "id": "adeffbbc-0d1b-4030-9b1d-4ff6fa909f93",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1423,12 +1423,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:32.583000Z",
+    "observed_at": "2026-07-27T10:02:47.643331Z",
     "raw_ref": "rich-sdg-bid-27",
     "is_synthetic": true
   },
   {
-    "id": "1c81907b-1b0b-4ff4-ac8d-fffa14757560",
+    "id": "b5d82dd0-e766-4b1e-af1f-a5b0181ee1b3",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1444,12 +1444,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:31.583000Z",
+    "observed_at": "2026-07-27T10:02:46.643331Z",
     "raw_ref": "rich-sdg-bid-28",
     "is_synthetic": true
   },
   {
-    "id": "f5bb88f1-03a1-492d-a941-c5ececeac6e0",
+    "id": "e35898d6-1e4d-45ce-a811-9b6d69a13efc",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1465,12 +1465,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:30.583000Z",
+    "observed_at": "2026-07-27T10:02:45.643331Z",
     "raw_ref": "rich-sdg-bid-29",
     "is_synthetic": true
   },
   {
-    "id": "a7749dd0-a186-405f-9f3f-ccacdf38438f",
+    "id": "d092cbde-bc0b-4c1a-a3ed-04cc120d29ac",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1486,12 +1486,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:29.583000Z",
+    "observed_at": "2026-07-27T10:02:44.643331Z",
     "raw_ref": "rich-sdg-bid-30",
     "is_synthetic": true
   },
   {
-    "id": "b3d47219-0f79-4e6c-bc66-da831d55d856",
+    "id": "00fae778-99c7-433b-a8ff-700418fa97b6",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1507,12 +1507,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:28.583000Z",
+    "observed_at": "2026-07-27T10:02:43.643331Z",
     "raw_ref": "rich-sdg-bid-31",
     "is_synthetic": true
   },
   {
-    "id": "13c69bc1-35d6-45f5-8b36-50a1731cbdc9",
+    "id": "5d3708a7-b1e7-4093-b271-1f46c15800f8",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1528,12 +1528,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:27.583000Z",
+    "observed_at": "2026-07-27T10:02:42.643331Z",
     "raw_ref": "rich-sdg-bid-32",
     "is_synthetic": true
   },
   {
-    "id": "24a74712-4be0-4097-bb08-ae4acb77250c",
+    "id": "03cca78e-403d-455b-835e-7e072ec15f98",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1549,12 +1549,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:26.583000Z",
+    "observed_at": "2026-07-27T10:02:41.643331Z",
     "raw_ref": "rich-sdg-bid-33",
     "is_synthetic": true
   },
   {
-    "id": "e767e750-8628-44a4-85b8-778429e5486e",
+    "id": "68488738-343e-4cc5-b835-3c69595bf380",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1570,12 +1570,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:25.583000Z",
+    "observed_at": "2026-07-27T10:02:40.643331Z",
     "raw_ref": "rich-sdg-bid-34",
     "is_synthetic": true
   },
   {
-    "id": "6b601593-4965-4f4c-9aa8-5526178eb0db",
+    "id": "07ac4a87-757c-42e6-ad93-c7c095990ca3",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1591,12 +1591,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:24.583000Z",
+    "observed_at": "2026-07-27T10:02:39.643331Z",
     "raw_ref": "rich-sdg-bid-35",
     "is_synthetic": true
   },
   {
-    "id": "dd11f949-c07d-424b-81bc-d86bb9533a02",
+    "id": "dccfd4e6-70a1-4eb7-af22-fdbeafbd179e",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1612,12 +1612,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:23.583000Z",
+    "observed_at": "2026-07-27T10:02:38.643331Z",
     "raw_ref": "rich-sdg-bid-36",
     "is_synthetic": true
   },
   {
-    "id": "a59bfc08-ff2f-4b1f-838c-42fe37f55988",
+    "id": "658cf66f-4b9f-430c-9cae-a1eba8da4740",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1633,12 +1633,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:22.583000Z",
+    "observed_at": "2026-07-27T10:02:37.643331Z",
     "raw_ref": "rich-sdg-bid-37",
     "is_synthetic": true
   },
   {
-    "id": "d7a302a5-c423-4164-9830-4770971dcd29",
+    "id": "f84de407-fd95-4f0e-b463-cfdbfb7c15ae",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1654,12 +1654,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:21.583000Z",
+    "observed_at": "2026-07-27T10:02:36.643331Z",
     "raw_ref": "rich-sdg-bid-38",
     "is_synthetic": true
   },
   {
-    "id": "ce458840-d4e2-4858-a141-5b93c7613e1d",
+    "id": "1d7e093b-b677-4284-a20d-9f41acf18fe9",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1675,12 +1675,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:20.583000Z",
+    "observed_at": "2026-07-27T10:02:35.643331Z",
     "raw_ref": "rich-sdg-bid-39",
     "is_synthetic": true
   },
   {
-    "id": "2ef3d7b2-6354-4b41-aac0-4797f52a7e6f",
+    "id": "ad1a0c99-08be-46ed-9172-e67d198d2ba7",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1696,12 +1696,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:19.583000Z",
+    "observed_at": "2026-07-27T10:02:34.643331Z",
     "raw_ref": "rich-sdg-bid-40",
     "is_synthetic": true
   },
   {
-    "id": "db8828fe-8074-47cb-b4ee-507c126ce943",
+    "id": "51235978-502e-4395-a517-cc1b055bf4aa",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1717,12 +1717,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:18.583000Z",
+    "observed_at": "2026-07-27T10:02:33.643331Z",
     "raw_ref": "rich-sdg-bid-41",
     "is_synthetic": true
   },
   {
-    "id": "0819a95f-f254-4992-ba81-51dec032ddc0",
+    "id": "1a9b5d9e-8db3-467d-94aa-517b360d712a",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1738,12 +1738,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:17.583000Z",
+    "observed_at": "2026-07-27T10:02:32.643331Z",
     "raw_ref": "rich-sdg-bid-42",
     "is_synthetic": true
   },
   {
-    "id": "ce76bc50-d858-4b9a-8f9d-b2bb2739e307",
+    "id": "4de99845-a38d-410e-984c-b351eb09670e",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1759,12 +1759,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:16.583000Z",
+    "observed_at": "2026-07-27T10:02:31.643331Z",
     "raw_ref": "rich-sdg-bid-43",
     "is_synthetic": true
   },
   {
-    "id": "763884f1-80fd-4d14-b1dd-86ab0825cc86",
+    "id": "69feaf96-22d6-4b23-948f-bd10043b2029",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1780,12 +1780,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:15.583000Z",
+    "observed_at": "2026-07-27T10:02:30.643331Z",
     "raw_ref": "rich-sdg-bid-44",
     "is_synthetic": true
   },
   {
-    "id": "bce658fe-c269-4ceb-810e-3ce81d2fd7d5",
+    "id": "22867896-b94f-46a8-b04c-c9099ab51675",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1801,12 +1801,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:14.583000Z",
+    "observed_at": "2026-07-27T10:02:29.643331Z",
     "raw_ref": "rich-sdg-bid-45",
     "is_synthetic": true
   },
   {
-    "id": "4cceb99b-f12e-4386-95db-56f4718f6044",
+    "id": "c5990592-61d3-4d6d-b0ca-559e0373317d",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1822,12 +1822,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:13.583000Z",
+    "observed_at": "2026-07-27T10:02:28.643331Z",
     "raw_ref": "rich-sdg-bid-46",
     "is_synthetic": true
   },
   {
-    "id": "c62b3c52-86fc-4256-8ca8-8ae4fd4ff8cb",
+    "id": "01cf07b3-f705-4586-811f-9c7923fee43c",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1843,12 +1843,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:12.583000Z",
+    "observed_at": "2026-07-27T10:02:27.643331Z",
     "raw_ref": "rich-sdg-bid-47",
     "is_synthetic": true
   },
   {
-    "id": "88466d5a-4f9a-43bc-8387-78f444bcfd30",
+    "id": "612c180b-5a38-49bd-97d0-edc120441c05",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1864,12 +1864,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:11.583000Z",
+    "observed_at": "2026-07-27T10:02:26.643331Z",
     "raw_ref": "rich-sdg-bid-48",
     "is_synthetic": true
   },
   {
-    "id": "caa63e25-6ba6-459d-b5d1-ca53d7901f41",
+    "id": "ced811c8-d16b-4495-8f99-e2a2b644c54c",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1885,12 +1885,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:10.583000Z",
+    "observed_at": "2026-07-27T10:02:25.643331Z",
     "raw_ref": "rich-sdg-bid-49",
     "is_synthetic": true
   },
   {
-    "id": "fc045d21-ebdd-432a-9ec2-b4e9e0fd100a",
+    "id": "0682e122-b0d9-42c8-9714-69b0b79f1a21",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1906,12 +1906,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:09.583000Z",
+    "observed_at": "2026-07-27T10:02:24.643331Z",
     "raw_ref": "rich-sdg-bid-50",
     "is_synthetic": true
   },
   {
-    "id": "a583c183-aeb1-4f31-ad61-e2712f2be6f8",
+    "id": "8f8ce4b3-ed12-4fbe-baf0-cf3958d45365",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1927,12 +1927,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:08.583000Z",
+    "observed_at": "2026-07-27T10:02:23.643331Z",
     "raw_ref": "rich-sdg-bid-51",
     "is_synthetic": true
   },
   {
-    "id": "f0efc642-5d50-4434-a1a8-fcb4dad1d282",
+    "id": "af4d0a84-7666-4696-96c5-55191d71991f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1948,12 +1948,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:07.583000Z",
+    "observed_at": "2026-07-27T10:02:22.643331Z",
     "raw_ref": "rich-sdg-bid-52",
     "is_synthetic": true
   },
   {
-    "id": "a9a3adc7-a931-4e35-b5b8-ee3b669ad41f",
+    "id": "3890c9ab-e71b-4222-ac95-a34b9c5f43e2",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1969,12 +1969,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:06.583000Z",
+    "observed_at": "2026-07-27T10:02:21.643331Z",
     "raw_ref": "rich-sdg-bid-53",
     "is_synthetic": true
   },
   {
-    "id": "e1362521-c4f4-4da0-a9fc-24fdf31663b2",
+    "id": "28dc02a4-8f68-47af-98af-aceb9fcf49f1",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -1990,12 +1990,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:05.583000Z",
+    "observed_at": "2026-07-27T10:02:20.643331Z",
     "raw_ref": "rich-sdg-bid-54",
     "is_synthetic": true
   },
   {
-    "id": "dcdda935-80cd-4f45-9c4d-de06a83caea0",
+    "id": "61b2e05f-6ff1-4cd6-8568-fe3b9718cdaf",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2011,12 +2011,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:04.583000Z",
+    "observed_at": "2026-07-27T10:02:19.643331Z",
     "raw_ref": "rich-sdg-bid-55",
     "is_synthetic": true
   },
   {
-    "id": "2c1b0870-0a60-4e1d-b3c5-3f458c655ba6",
+    "id": "bf05e7d3-baff-42c8-b803-51deccb70949",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2032,12 +2032,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:03.583000Z",
+    "observed_at": "2026-07-27T10:02:18.643331Z",
     "raw_ref": "rich-sdg-bid-56",
     "is_synthetic": true
   },
   {
-    "id": "1468a923-dd79-4ced-9213-7c301cd7a014",
+    "id": "d24deb46-0ca2-40a9-b431-a928760d2a6f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2053,12 +2053,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:02.583000Z",
+    "observed_at": "2026-07-27T10:02:17.643331Z",
     "raw_ref": "rich-sdg-bid-57",
     "is_synthetic": true
   },
   {
-    "id": "5c1fef22-c765-41bb-93b8-20b08d3df702",
+    "id": "e0ec6132-efe7-48bf-abe3-e9274422c898",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2074,12 +2074,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:01.583000Z",
+    "observed_at": "2026-07-27T10:02:16.643331Z",
     "raw_ref": "rich-sdg-bid-58",
     "is_synthetic": true
   },
   {
-    "id": "18460049-1a19-4748-bd01-9cdf1338b15b",
+    "id": "423f1c9d-dbf0-461c-8679-a41e793203fa",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2095,12 +2095,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:02:00.583000Z",
+    "observed_at": "2026-07-27T10:02:15.643331Z",
     "raw_ref": "rich-sdg-bid-59",
     "is_synthetic": true
   },
   {
-    "id": "fb2bc48f-a612-4078-845f-ccfe8e539913",
+    "id": "d7ef5228-afe4-485a-8b9c-e53efb6a6995",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2116,12 +2116,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:59.583000Z",
+    "observed_at": "2026-07-27T10:02:14.643331Z",
     "raw_ref": "rich-sdg-bid-60",
     "is_synthetic": true
   },
   {
-    "id": "62cdc436-06ab-4d01-ace7-536411e4d648",
+    "id": "19dcd9a9-b83e-4d28-81a0-f72589488271",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2137,12 +2137,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:58.583000Z",
+    "observed_at": "2026-07-27T10:02:13.643331Z",
     "raw_ref": "rich-sdg-bid-61",
     "is_synthetic": true
   },
   {
-    "id": "a073aa42-5976-4b3e-93fd-16a33bcb9a59",
+    "id": "a9519150-3112-4f70-a821-5263f538826e",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2158,12 +2158,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:57.583000Z",
+    "observed_at": "2026-07-27T10:02:12.643331Z",
     "raw_ref": "rich-sdg-bid-62",
     "is_synthetic": true
   },
   {
-    "id": "a964bd03-6c5d-44f2-8afa-bf5ad98cd540",
+    "id": "53d1e3b2-dbc6-4ebf-8e88-10fdee6bb91f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2179,12 +2179,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:56.583000Z",
+    "observed_at": "2026-07-27T10:02:11.643331Z",
     "raw_ref": "rich-sdg-bid-63",
     "is_synthetic": true
   },
   {
-    "id": "f78c2ab0-8131-403b-9734-fe3c4f027b14",
+    "id": "3227a37c-4b64-43ac-bb5d-3a5e16c7754b",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2200,12 +2200,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:55.583000Z",
+    "observed_at": "2026-07-27T10:02:10.643331Z",
     "raw_ref": "rich-sdg-bid-64",
     "is_synthetic": true
   },
   {
-    "id": "063c0903-7d01-4a98-9df5-30a90fa263be",
+    "id": "58665af3-88fd-44db-bc41-da1798862bde",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2221,12 +2221,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:54.583000Z",
+    "observed_at": "2026-07-27T10:02:09.643331Z",
     "raw_ref": "rich-sdg-bid-65",
     "is_synthetic": true
   },
   {
-    "id": "a1255a5e-803d-428c-b220-bd30705cce59",
+    "id": "b1a7bf9d-9443-41e3-b5c0-eddfb8301b8e",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2242,12 +2242,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:53.583000Z",
+    "observed_at": "2026-07-27T10:02:08.643331Z",
     "raw_ref": "rich-sdg-bid-66",
     "is_synthetic": true
   },
   {
-    "id": "8f8bac05-042a-4b3a-94fe-4673a75f2ece",
+    "id": "03ea5d3c-7031-41ee-a817-3e73835736c1",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2263,12 +2263,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:52.583000Z",
+    "observed_at": "2026-07-27T10:02:07.643331Z",
     "raw_ref": "rich-sdg-bid-67",
     "is_synthetic": true
   },
   {
-    "id": "2f231035-5d12-44ac-b121-267d16970520",
+    "id": "6b6e8b8a-9573-4957-b65a-5f1d280579a6",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2284,12 +2284,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:51.583000Z",
+    "observed_at": "2026-07-27T10:02:06.643331Z",
     "raw_ref": "rich-sdg-bid-68",
     "is_synthetic": true
   },
   {
-    "id": "d9b4900f-80a5-477a-9570-ee168fd4e013",
+    "id": "2f5b6e03-c69e-4519-877c-7351ca34cf20",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2305,12 +2305,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:50.583000Z",
+    "observed_at": "2026-07-27T10:02:05.643331Z",
     "raw_ref": "rich-sdg-bid-69",
     "is_synthetic": true
   },
   {
-    "id": "775aff5d-c802-4c78-8a87-81e4002c7205",
+    "id": "6c8be6ca-0802-466e-817a-d66c23ce2dd2",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2326,12 +2326,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:49.583000Z",
+    "observed_at": "2026-07-27T10:02:04.643331Z",
     "raw_ref": "rich-sdg-bid-70",
     "is_synthetic": true
   },
   {
-    "id": "42ff53de-2982-4221-8473-4d6b889634f6",
+    "id": "6eaf573a-e96c-40c6-8b2e-eba0c5e0e765",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2347,12 +2347,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:48.583000Z",
+    "observed_at": "2026-07-27T10:02:03.643331Z",
     "raw_ref": "rich-sdg-bid-71",
     "is_synthetic": true
   },
   {
-    "id": "b22b2b89-6231-450d-86e9-5f5aacd9afc0",
+    "id": "c6368a50-84ef-455f-a13b-5e7001ea31db",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2368,12 +2368,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:47.583000Z",
+    "observed_at": "2026-07-27T10:02:02.643331Z",
     "raw_ref": "rich-sdg-bid-72",
     "is_synthetic": true
   },
   {
-    "id": "4ff45ad7-6e2f-4c9d-8bf4-ed53565d6b6f",
+    "id": "de7e8986-2a81-459c-9406-0a1dbe6647a8",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2389,12 +2389,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:46.583000Z",
+    "observed_at": "2026-07-27T10:02:01.643331Z",
     "raw_ref": "rich-sdg-bid-73",
     "is_synthetic": true
   },
   {
-    "id": "ee4914f6-f236-4b0d-94b1-e0f325f111b3",
+    "id": "65077b77-42e4-410d-b126-9969ca1e1270",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2410,12 +2410,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:45.583000Z",
+    "observed_at": "2026-07-27T10:02:00.643331Z",
     "raw_ref": "rich-sdg-bid-74",
     "is_synthetic": true
   },
   {
-    "id": "bf52d652-f147-4417-a2a6-3b13092ebb97",
+    "id": "3bbdbd33-297c-4df2-9d8e-9a1ddb4844a9",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2431,12 +2431,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:44.583000Z",
+    "observed_at": "2026-07-27T10:01:59.643331Z",
     "raw_ref": "rich-sdg-bid-75",
     "is_synthetic": true
   },
   {
-    "id": "07b88c0d-c550-4742-a601-1ff82ca65e43",
+    "id": "d8fc493e-a924-4aa1-a0e2-36068f11f065",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2452,12 +2452,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:43.583000Z",
+    "observed_at": "2026-07-27T10:01:58.643331Z",
     "raw_ref": "rich-sdg-bid-76",
     "is_synthetic": true
   },
   {
-    "id": "11b02c2f-3f30-45dc-84d8-50cc39363a85",
+    "id": "22934b98-3ee4-49f8-9c6e-5b909c9c5500",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2473,12 +2473,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:42.583000Z",
+    "observed_at": "2026-07-27T10:01:57.643331Z",
     "raw_ref": "rich-sdg-bid-77",
     "is_synthetic": true
   },
   {
-    "id": "ab8a082d-ad3b-410b-a4a1-2288c57e39ed",
+    "id": "dc7454bc-793d-4e0d-a8d7-a4bac7f3a1c3",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2494,12 +2494,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:41.583000Z",
+    "observed_at": "2026-07-27T10:01:56.643331Z",
     "raw_ref": "rich-sdg-bid-78",
     "is_synthetic": true
   },
   {
-    "id": "284cfba9-1f36-4a2c-975d-2e40f4c31808",
+    "id": "43be9b95-5b8c-40ec-b714-5ec3aecf5156",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2515,12 +2515,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:40.583000Z",
+    "observed_at": "2026-07-27T10:01:55.643331Z",
     "raw_ref": "rich-sdg-bid-79",
     "is_synthetic": true
   },
   {
-    "id": "ffe89f3a-ca47-4359-b157-c45b7bdebc6f",
+    "id": "68cee2ae-6929-4b84-b9f7-6cb4ade08619",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2536,12 +2536,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:39.583000Z",
+    "observed_at": "2026-07-27T10:01:54.643331Z",
     "raw_ref": "rich-sdg-bid-80",
     "is_synthetic": true
   },
   {
-    "id": "d3f62005-dd50-4eaf-92cd-53abfe164514",
+    "id": "f4fbcc11-831d-47ac-88ae-6809e628e9c5",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2557,12 +2557,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:38.583000Z",
+    "observed_at": "2026-07-27T10:01:53.643331Z",
     "raw_ref": "rich-sdg-bid-81",
     "is_synthetic": true
   },
   {
-    "id": "f1c4c297-ab0f-4c07-b1bf-5f3979f80889",
+    "id": "efbf6b29-68c8-4fb5-a1a8-f37e8529a300",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2578,12 +2578,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:37.583000Z",
+    "observed_at": "2026-07-27T10:01:52.643331Z",
     "raw_ref": "rich-sdg-bid-82",
     "is_synthetic": true
   },
   {
-    "id": "192d1928-fec9-4a34-b0b9-23429c38bbca",
+    "id": "ccb0a573-3a68-49d2-8504-c5da458680d4",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2599,12 +2599,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:36.583000Z",
+    "observed_at": "2026-07-27T10:01:51.643331Z",
     "raw_ref": "rich-sdg-bid-83",
     "is_synthetic": true
   },
   {
-    "id": "c6e6c88d-60e3-48f4-ad19-8afece2c3dd3",
+    "id": "19b5f2f7-a10d-4a11-bdc6-7131b06f6e18",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2620,12 +2620,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:35.583000Z",
+    "observed_at": "2026-07-27T10:01:50.643331Z",
     "raw_ref": "rich-sdg-bid-84",
     "is_synthetic": true
   },
   {
-    "id": "c5f91e9b-cc00-4a35-a58d-fa9ef5d9b3ea",
+    "id": "a496fb78-a056-4ad1-8fac-76484cd84b8e",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2641,12 +2641,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:34.583000Z",
+    "observed_at": "2026-07-27T10:01:49.643331Z",
     "raw_ref": "rich-sdg-bid-85",
     "is_synthetic": true
   },
   {
-    "id": "baa98a89-f242-4545-9d57-49c5ab2d1d67",
+    "id": "4401dff5-2ecb-4c38-bdf1-db5538862a2c",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2662,12 +2662,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:33.583000Z",
+    "observed_at": "2026-07-27T10:01:48.643331Z",
     "raw_ref": "rich-sdg-bid-86",
     "is_synthetic": true
   },
   {
-    "id": "b2990175-d74c-40cb-8d12-3f1d71f79f4c",
+    "id": "74dfef38-6fdb-434b-84b6-26430698cd39",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2683,12 +2683,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:32.583000Z",
+    "observed_at": "2026-07-27T10:01:47.643331Z",
     "raw_ref": "rich-sdg-bid-87",
     "is_synthetic": true
   },
   {
-    "id": "2a8b9b49-ded3-4281-b125-a82e898ff29e",
+    "id": "c0d7d9a4-cd2f-41df-ae09-0d4edd7385ac",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2704,12 +2704,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:31.583000Z",
+    "observed_at": "2026-07-27T10:01:46.643331Z",
     "raw_ref": "rich-sdg-bid-88",
     "is_synthetic": true
   },
   {
-    "id": "dc92e062-979d-4ba9-ac8a-5b1192a21962",
+    "id": "08df4d12-8766-4e1f-bfc6-c2d6a9619edf",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2725,12 +2725,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:30.583000Z",
+    "observed_at": "2026-07-27T10:01:45.643331Z",
     "raw_ref": "rich-sdg-bid-89",
     "is_synthetic": true
   },
   {
-    "id": "7051aa66-f20e-4b0b-8387-98667934e82a",
+    "id": "9dad77ec-28c9-4368-a541-ae07c8709112",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2746,12 +2746,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:29.583000Z",
+    "observed_at": "2026-07-27T10:01:44.643331Z",
     "raw_ref": "rich-sdg-bid-90",
     "is_synthetic": true
   },
   {
-    "id": "d0b06ed8-ca8f-4801-9d8f-7f384d830c03",
+    "id": "e3cfb221-5f57-4b1b-bec1-bb295f06a1c1",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2767,12 +2767,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:28.583000Z",
+    "observed_at": "2026-07-27T10:01:43.643331Z",
     "raw_ref": "rich-sdg-bid-91",
     "is_synthetic": true
   },
   {
-    "id": "0d354f0b-d7cf-482e-bb9c-bd53d4b424a3",
+    "id": "95b7d13a-6b39-4985-902c-625177ea097f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2788,12 +2788,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:27.583000Z",
+    "observed_at": "2026-07-27T10:01:42.643331Z",
     "raw_ref": "rich-sdg-bid-92",
     "is_synthetic": true
   },
   {
-    "id": "b03e54d6-f127-4832-afc1-829436163565",
+    "id": "974bdd8b-31e4-4e32-8914-ed97abfab8f8",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2809,12 +2809,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:26.583000Z",
+    "observed_at": "2026-07-27T10:01:41.643331Z",
     "raw_ref": "rich-sdg-bid-93",
     "is_synthetic": true
   },
   {
-    "id": "e48d0566-2251-4b3d-a20f-373716178c88",
+    "id": "6efc6299-f47c-4b20-90da-4a1275000fe4",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2830,12 +2830,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:25.583000Z",
+    "observed_at": "2026-07-27T10:01:40.643331Z",
     "raw_ref": "rich-sdg-bid-94",
     "is_synthetic": true
   },
   {
-    "id": "a2293121-313f-4bde-ae3a-2b745e5e0a73",
+    "id": "9e813745-dcad-4834-8903-f8e14da24bee",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2851,12 +2851,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:24.583000Z",
+    "observed_at": "2026-07-27T10:01:39.643331Z",
     "raw_ref": "rich-sdg-bid-95",
     "is_synthetic": true
   },
   {
-    "id": "9d96c79f-4108-4cb4-806f-99c32fef6b10",
+    "id": "dcabc50e-f081-48bd-a365-b1d3bf6c9f0e",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2872,12 +2872,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:23.583000Z",
+    "observed_at": "2026-07-27T10:01:38.643331Z",
     "raw_ref": "rich-sdg-bid-96",
     "is_synthetic": true
   },
   {
-    "id": "b62dc94f-ee29-4f2f-b42a-38fd036a240a",
+    "id": "79639f44-3403-4c53-879e-5c4033963407",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2893,12 +2893,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:22.583000Z",
+    "observed_at": "2026-07-27T10:01:37.643331Z",
     "raw_ref": "rich-sdg-bid-97",
     "is_synthetic": true
   },
   {
-    "id": "9fb81f44-737f-46a5-8470-7337932ab863",
+    "id": "9cc9d9b2-4571-4878-9d42-1da6c24947d9",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2914,12 +2914,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:21.583000Z",
+    "observed_at": "2026-07-27T10:01:36.643331Z",
     "raw_ref": "rich-sdg-bid-98",
     "is_synthetic": true
   },
   {
-    "id": "1e05dcb4-c1c4-4fc4-84d4-852d3c98beff",
+    "id": "1673f2c6-5059-48af-9abb-1fc8cf8c1298",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2935,12 +2935,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:20.583000Z",
+    "observed_at": "2026-07-27T10:01:35.643331Z",
     "raw_ref": "rich-sdg-bid-99",
     "is_synthetic": true
   },
   {
-    "id": "b24dd5b2-0a68-46f5-a58b-1900fad176bf",
+    "id": "4f501fb2-dfe0-4c18-b1f0-3e51cb35dcc5",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2956,12 +2956,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:19.583000Z",
+    "observed_at": "2026-07-27T10:01:34.643331Z",
     "raw_ref": "rich-sdg-bid-100",
     "is_synthetic": true
   },
   {
-    "id": "61057e2d-3604-438a-a999-41a17fc1bbda",
+    "id": "16c3e6e6-69b9-4ebe-8c03-261dc7d3373a",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2977,12 +2977,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:18.583000Z",
+    "observed_at": "2026-07-27T10:01:33.643331Z",
     "raw_ref": "rich-sdg-bid-101",
     "is_synthetic": true
   },
   {
-    "id": "dd5cd9ea-17d4-44fb-88b1-c1851bfe0562",
+    "id": "0ee69034-7381-4479-b87a-9baa423aad0a",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -2998,12 +2998,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:17.583000Z",
+    "observed_at": "2026-07-27T10:01:32.643331Z",
     "raw_ref": "rich-sdg-bid-102",
     "is_synthetic": true
   },
   {
-    "id": "6aec80bb-1f87-456c-a2aa-72376fc51efe",
+    "id": "8677aa0a-0f6b-4f1b-870c-6bdcaf3b6f1c",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3019,12 +3019,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:16.583000Z",
+    "observed_at": "2026-07-27T10:01:31.643331Z",
     "raw_ref": "rich-sdg-bid-103",
     "is_synthetic": true
   },
   {
-    "id": "ebe5494e-f2d0-40d7-a8d1-4afe1232cc0d",
+    "id": "f450cb38-153b-4d16-97a0-775c72985e8e",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3040,12 +3040,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:15.583000Z",
+    "observed_at": "2026-07-27T10:01:30.643331Z",
     "raw_ref": "rich-sdg-bid-104",
     "is_synthetic": true
   },
   {
-    "id": "c2e47d3b-6790-4e2e-925d-0b340336de5b",
+    "id": "dabf4da8-4778-46e9-815a-e193cd84163e",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3061,12 +3061,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:14.583000Z",
+    "observed_at": "2026-07-27T10:01:29.643331Z",
     "raw_ref": "rich-sdg-bid-105",
     "is_synthetic": true
   },
   {
-    "id": "a2e11cf3-0878-45d4-b461-14ba96170b38",
+    "id": "a54fac50-7592-488e-9d52-a673b5b403af",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3082,12 +3082,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:13.583000Z",
+    "observed_at": "2026-07-27T10:01:28.643331Z",
     "raw_ref": "rich-sdg-bid-106",
     "is_synthetic": true
   },
   {
-    "id": "7db6289b-fdd2-4712-b810-5195e734fd16",
+    "id": "9490c8d0-fc6f-447a-b466-056e15c7fad0",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3103,12 +3103,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:12.583000Z",
+    "observed_at": "2026-07-27T10:01:27.643331Z",
     "raw_ref": "rich-sdg-bid-107",
     "is_synthetic": true
   },
   {
-    "id": "795fcd5b-9c79-47a6-bcea-b6bcb944d4d8",
+    "id": "97082d22-b9ef-4734-baae-e27378bc1151",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3124,12 +3124,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:11.583000Z",
+    "observed_at": "2026-07-27T10:01:26.643331Z",
     "raw_ref": "rich-sdg-bid-108",
     "is_synthetic": true
   },
   {
-    "id": "db100f53-a5a7-471e-98f4-3e1bdbf54ef4",
+    "id": "04295c0d-2f82-49e0-86f2-6e8754692bc5",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3145,12 +3145,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:10.583000Z",
+    "observed_at": "2026-07-27T10:01:25.643331Z",
     "raw_ref": "rich-sdg-bid-109",
     "is_synthetic": true
   },
   {
-    "id": "bb650963-b0f2-4968-adc9-8507285bb90f",
+    "id": "2bc5d7c1-f456-45ec-b813-78dd92488503",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3166,12 +3166,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:09.583000Z",
+    "observed_at": "2026-07-27T10:01:24.643331Z",
     "raw_ref": "rich-sdg-bid-110",
     "is_synthetic": true
   },
   {
-    "id": "5a6fc292-c9ab-4d57-a4d6-9b1217e2ec85",
+    "id": "ff7fc8a7-bfb6-4533-b292-d2daf4a0d645",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3187,12 +3187,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:08.583000Z",
+    "observed_at": "2026-07-27T10:01:23.643331Z",
     "raw_ref": "rich-sdg-bid-111",
     "is_synthetic": true
   },
   {
-    "id": "b8d51203-3440-4352-874f-8114fb4923f2",
+    "id": "405790a3-05be-4a06-80d1-4ff6fcfcb637",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3208,12 +3208,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:07.583000Z",
+    "observed_at": "2026-07-27T10:01:22.643331Z",
     "raw_ref": "rich-sdg-bid-112",
     "is_synthetic": true
   },
   {
-    "id": "8e6dc052-56cb-40f1-a923-796a0a1a7c3b",
+    "id": "db825b37-0d1a-41e1-a6fe-4aea1c786858",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3229,12 +3229,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:06.583000Z",
+    "observed_at": "2026-07-27T10:01:21.643331Z",
     "raw_ref": "rich-sdg-bid-113",
     "is_synthetic": true
   },
   {
-    "id": "07e6ec75-a629-4670-9b14-f4b20e7a6e93",
+    "id": "e4399e3b-e502-43b5-acbe-9a598740744f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3250,12 +3250,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:05.583000Z",
+    "observed_at": "2026-07-27T10:01:20.643331Z",
     "raw_ref": "rich-sdg-bid-114",
     "is_synthetic": true
   },
   {
-    "id": "3c0220e3-b3d9-4533-ba20-cc1a8f7c72e6",
+    "id": "f276525e-dda3-4218-b8ba-8853a7e870b2",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3271,12 +3271,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:04.583000Z",
+    "observed_at": "2026-07-27T10:01:19.643331Z",
     "raw_ref": "rich-sdg-bid-115",
     "is_synthetic": true
   },
   {
-    "id": "d9e283a7-d4c5-43a7-a692-d38bd5c3836d",
+    "id": "8dae8a41-dd75-4691-b752-9977f0edaf88",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3292,12 +3292,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:03.583000Z",
+    "observed_at": "2026-07-27T10:01:18.643331Z",
     "raw_ref": "rich-sdg-bid-116",
     "is_synthetic": true
   },
   {
-    "id": "88060858-bcfc-4179-bfba-b0d13f6fdeb9",
+    "id": "8476d7f8-79f7-4605-9d49-913d07695809",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3313,12 +3313,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:02.583000Z",
+    "observed_at": "2026-07-27T10:01:17.643331Z",
     "raw_ref": "rich-sdg-bid-117",
     "is_synthetic": true
   },
   {
-    "id": "5a15f489-bf20-4cb0-9fb8-19726eacd932",
+    "id": "2a147515-9db5-4f1f-a27c-ae66dfce8bec",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3334,12 +3334,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:01.583000Z",
+    "observed_at": "2026-07-27T10:01:16.643331Z",
     "raw_ref": "rich-sdg-bid-118",
     "is_synthetic": true
   },
   {
-    "id": "d9133800-f650-445a-a250-8ba07ee31a8e",
+    "id": "f6c4262f-74c0-4288-825b-f3fbc15c48b0",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3355,12 +3355,12 @@
     "fees": 0.0,
     "completion_rate": 0.9,
     "rating": 4.5,
-    "observed_at": "2026-07-27T10:01:00.583000Z",
+    "observed_at": "2026-07-27T10:01:15.643331Z",
     "raw_ref": "rich-sdg-bid-119",
     "is_synthetic": true
   },
   {
-    "id": "836f6a98-75ec-4c99-8412-ab9283bd24ed",
+    "id": "f71756cd-f730-4ee4-9b5a-f9313f25fbf6",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3376,12 +3376,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:41.583000Z",
+    "observed_at": "2026-07-27T10:02:56.643331Z",
     "raw_ref": "cash-ask-0",
     "is_synthetic": true
   },
   {
-    "id": "e13b9587-1203-4574-89f2-9222f18c666d",
+    "id": "98da8c50-25d9-41f3-8de0-433eea08d72f",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3397,12 +3397,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:40.583000Z",
+    "observed_at": "2026-07-27T10:02:55.643331Z",
     "raw_ref": "cash-ask-1",
     "is_synthetic": true
   },
   {
-    "id": "130f2bef-e7aa-4e6c-a86a-d46118fe34dd",
+    "id": "3b592679-e6d7-4eab-9457-5cb736a0de05",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3418,12 +3418,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:39.583000Z",
+    "observed_at": "2026-07-27T10:02:54.643331Z",
     "raw_ref": "cash-ask-2",
     "is_synthetic": true
   },
   {
-    "id": "d4673e3f-fa97-4201-897f-95e85edc3b82",
+    "id": "a6efd012-0e47-48af-b2d8-347f0d709b44",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3439,12 +3439,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:38.583000Z",
+    "observed_at": "2026-07-27T10:02:53.643331Z",
     "raw_ref": "cash-ask-3",
     "is_synthetic": true
   },
   {
-    "id": "3cfa474a-d723-4388-8ab6-7717d2b2845a",
+    "id": "6644487d-6c82-45e1-84bf-a8c7060e980f",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3460,12 +3460,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:37.583000Z",
+    "observed_at": "2026-07-27T10:02:52.643331Z",
     "raw_ref": "cash-ask-4",
     "is_synthetic": true
   },
   {
-    "id": "eef68c51-bf32-49a3-bb8d-92b172d2dbe0",
+    "id": "33008d5f-47e6-4cbf-8765-47d0eaa821e7",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3481,12 +3481,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:36.583000Z",
+    "observed_at": "2026-07-27T10:02:51.643331Z",
     "raw_ref": "cash-ask-5",
     "is_synthetic": true
   },
   {
-    "id": "1c5be455-1827-4f4b-9631-4d52dc232b63",
+    "id": "818d2cb2-79b4-45e3-a8d8-b4a227793647",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3502,12 +3502,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:35.583000Z",
+    "observed_at": "2026-07-27T10:02:50.643331Z",
     "raw_ref": "cash-ask-6",
     "is_synthetic": true
   },
   {
-    "id": "4fc96b2f-958a-4f41-ac24-bf9c38ecfb76",
+    "id": "fc60975e-df1b-412b-ac41-c7766fce4e02",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3523,12 +3523,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:34.583000Z",
+    "observed_at": "2026-07-27T10:02:49.643331Z",
     "raw_ref": "cash-ask-7",
     "is_synthetic": true
   },
   {
-    "id": "3cecd91e-3479-4ef1-994c-b630ef8cee57",
+    "id": "eb0fcf06-b44e-46e6-aec1-1fd9baf93b7d",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3544,12 +3544,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:33.583000Z",
+    "observed_at": "2026-07-27T10:02:48.643331Z",
     "raw_ref": "cash-ask-8",
     "is_synthetic": true
   },
   {
-    "id": "e35cbd7b-f7f1-464a-83dd-fa6b308e49b0",
+    "id": "7188735c-b806-45db-b80b-efb0f819576f",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3565,12 +3565,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:32.583000Z",
+    "observed_at": "2026-07-27T10:02:47.643331Z",
     "raw_ref": "cash-ask-9",
     "is_synthetic": true
   },
   {
-    "id": "451c7a79-2410-4f4d-aa8f-ea23d09f8099",
+    "id": "0ba19ca7-b252-415d-869f-4a0fa949a919",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3586,12 +3586,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:31.583000Z",
+    "observed_at": "2026-07-27T10:02:46.643331Z",
     "raw_ref": "cash-ask-10",
     "is_synthetic": true
   },
   {
-    "id": "88d99463-dca5-4c06-aea2-92bd3b29c9e2",
+    "id": "fd78c7a7-4fec-422c-b8aa-f2ecc467c487",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3607,12 +3607,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:30.583000Z",
+    "observed_at": "2026-07-27T10:02:45.643331Z",
     "raw_ref": "cash-ask-11",
     "is_synthetic": true
   },
   {
-    "id": "8fe941d9-b27c-4338-9c51-29c1d1e27687",
+    "id": "8edc6466-5da9-4411-b674-a443be8c3959",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3628,12 +3628,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:29.583000Z",
+    "observed_at": "2026-07-27T10:02:44.643331Z",
     "raw_ref": "cash-ask-12",
     "is_synthetic": true
   },
   {
-    "id": "5995ff84-2a80-4ee4-8a9c-6b91e86ce53d",
+    "id": "db0a3069-044e-439b-b657-8c427da7ba3d",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3649,12 +3649,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:28.583000Z",
+    "observed_at": "2026-07-27T10:02:43.643331Z",
     "raw_ref": "cash-ask-13",
     "is_synthetic": true
   },
   {
-    "id": "94e7b723-5531-4197-9804-90f66115c257",
+    "id": "69a50e33-93e4-4bea-a1f6-a2f78df5e8e4",
     "provider": "parallel_sdg",
     "kind": "PARALLEL_MARKET",
     "base_rail": "USDT",
@@ -3670,12 +3670,12 @@
     "fees": 0.0,
     "completion_rate": 0.85,
     "rating": 4.2,
-    "observed_at": "2026-07-27T10:02:27.583000Z",
+    "observed_at": "2026-07-27T10:02:42.643331Z",
     "raw_ref": "cash-ask-14",
     "is_synthetic": true
   },
   {
-    "id": "f149dd5e-6ec7-4062-9cb2-f51b98b93ad4",
+    "id": "5405d83c-3e79-4774-a343-7130fb78701b",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3691,12 +3691,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:03:01.583000Z",
+    "observed_at": "2026-07-27T10:03:16.643331Z",
     "raw_ref": "rich-rwf-bid-0",
     "is_synthetic": true
   },
   {
-    "id": "4910fef5-a58c-4a8b-bdb4-08635f7958a7",
+    "id": "615806d6-c4f7-4aff-92e3-852553504813",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3712,12 +3712,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:58.583000Z",
+    "observed_at": "2026-07-27T10:03:13.643331Z",
     "raw_ref": "rich-rwf-ask-0",
     "is_synthetic": true
   },
   {
-    "id": "c9938855-652e-455e-9368-01efa1543aae",
+    "id": "a98ae7df-13a8-4400-b4b0-1313ac2ce998",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3733,12 +3733,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:03:00.583000Z",
+    "observed_at": "2026-07-27T10:03:15.643331Z",
     "raw_ref": "rich-rwf-bid-1",
     "is_synthetic": true
   },
   {
-    "id": "4822542d-69a8-40f1-b78f-291a74884cc9",
+    "id": "9fe7bc31-bdd1-4c1b-9c33-6561c7574be5",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3754,12 +3754,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:57.583000Z",
+    "observed_at": "2026-07-27T10:03:12.643331Z",
     "raw_ref": "rich-rwf-ask-1",
     "is_synthetic": true
   },
   {
-    "id": "06b608f9-ca54-4eb3-8c52-e773bda4946a",
+    "id": "aeb572ec-90b7-47ba-b9d2-7ba2317bb215",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3775,12 +3775,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:59.583000Z",
+    "observed_at": "2026-07-27T10:03:14.643331Z",
     "raw_ref": "rich-rwf-bid-2",
     "is_synthetic": true
   },
   {
-    "id": "a7fceeee-8ebd-4205-9647-cb252858a0c4",
+    "id": "da637764-33a5-490f-822f-5ded9449f151",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3796,12 +3796,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:56.583000Z",
+    "observed_at": "2026-07-27T10:03:11.643331Z",
     "raw_ref": "rich-rwf-ask-2",
     "is_synthetic": true
   },
   {
-    "id": "af1b8945-04d2-436b-aaae-2e158ea3606d",
+    "id": "db01582a-1110-42af-b38d-3c2fceebdeeb",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3817,12 +3817,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:58.583000Z",
+    "observed_at": "2026-07-27T10:03:13.643331Z",
     "raw_ref": "rich-rwf-bid-3",
     "is_synthetic": true
   },
   {
-    "id": "3973d89b-2906-4fc9-ac20-7195efc66361",
+    "id": "e87f410e-37d1-4acb-901e-68fdeccdf4ff",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3838,12 +3838,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:55.583000Z",
+    "observed_at": "2026-07-27T10:03:10.643331Z",
     "raw_ref": "rich-rwf-ask-3",
     "is_synthetic": true
   },
   {
-    "id": "befd5680-f755-4861-8f8e-1b418bb8a6fc",
+    "id": "30f4a707-b518-4fea-b7c0-ee9e9a09d604",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3859,12 +3859,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:57.583000Z",
+    "observed_at": "2026-07-27T10:03:12.643331Z",
     "raw_ref": "rich-rwf-bid-4",
     "is_synthetic": true
   },
   {
-    "id": "2f610f88-e411-4581-8002-40625c11dc3c",
+    "id": "f19a8aab-8a29-4706-9cae-e280bc83c06f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3880,12 +3880,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:54.583000Z",
+    "observed_at": "2026-07-27T10:03:09.643331Z",
     "raw_ref": "rich-rwf-ask-4",
     "is_synthetic": true
   },
   {
-    "id": "d90199c3-8a43-4a09-ac1e-7b6b755216ae",
+    "id": "9e991370-c08d-4286-8f7b-570720c1e585",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3901,12 +3901,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:56.583000Z",
+    "observed_at": "2026-07-27T10:03:11.643331Z",
     "raw_ref": "rich-rwf-bid-5",
     "is_synthetic": true
   },
   {
-    "id": "4ba5e911-a812-4198-bb47-590c36b6f098",
+    "id": "3a773f02-f9dc-4e8d-9bb2-a44162c97f36",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3922,12 +3922,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:53.583000Z",
+    "observed_at": "2026-07-27T10:03:08.643331Z",
     "raw_ref": "rich-rwf-ask-5",
     "is_synthetic": true
   },
   {
-    "id": "a98094c2-044f-4915-98ca-094d954ba168",
+    "id": "8f13984b-c7ba-4b46-9e29-63ec3d52da82",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3943,12 +3943,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:55.583000Z",
+    "observed_at": "2026-07-27T10:03:10.643331Z",
     "raw_ref": "rich-rwf-bid-6",
     "is_synthetic": true
   },
   {
-    "id": "1280982f-578c-40c7-9fcf-7890fd2d236c",
+    "id": "8445e6ce-e6ff-4b0f-96fa-146557647152",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3964,12 +3964,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:52.583000Z",
+    "observed_at": "2026-07-27T10:03:07.643331Z",
     "raw_ref": "rich-rwf-ask-6",
     "is_synthetic": true
   },
   {
-    "id": "71e4414a-46aa-4079-b3a0-e4f6de340195",
+    "id": "93684661-c308-4493-b93f-f23bf1e24c37",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -3985,12 +3985,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:54.583000Z",
+    "observed_at": "2026-07-27T10:03:09.643331Z",
     "raw_ref": "rich-rwf-bid-7",
     "is_synthetic": true
   },
   {
-    "id": "e6761284-e6b5-4be5-b294-3586acdcae7e",
+    "id": "f6f3ff7d-7cae-4152-a0c6-c70c43697a9f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4006,12 +4006,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:51.583000Z",
+    "observed_at": "2026-07-27T10:03:06.643331Z",
     "raw_ref": "rich-rwf-ask-7",
     "is_synthetic": true
   },
   {
-    "id": "3b437ca7-7d3c-40ee-a4e3-9ec30ee4c942",
+    "id": "95965211-3e80-42ac-8c2d-039800abc3e6",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4027,12 +4027,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:53.583000Z",
+    "observed_at": "2026-07-27T10:03:08.643331Z",
     "raw_ref": "rich-rwf-bid-8",
     "is_synthetic": true
   },
   {
-    "id": "158c2a66-8388-4ef6-956c-1bb3f4b87aa1",
+    "id": "0126f635-c68e-445d-a7d4-81457243afa7",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4048,12 +4048,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:50.583000Z",
+    "observed_at": "2026-07-27T10:03:05.643331Z",
     "raw_ref": "rich-rwf-ask-8",
     "is_synthetic": true
   },
   {
-    "id": "621c10a0-3f54-4dfd-a58e-82b911f2071d",
+    "id": "b913e2ee-6902-47a2-b7a0-282cdf2cdec0",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4069,12 +4069,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:52.583000Z",
+    "observed_at": "2026-07-27T10:03:07.643331Z",
     "raw_ref": "rich-rwf-bid-9",
     "is_synthetic": true
   },
   {
-    "id": "fc6931ed-3f41-42b8-a2c2-2bb0757aa4f0",
+    "id": "f9255de2-e28a-4251-9d0d-2ee206478687",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4090,12 +4090,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:49.583000Z",
+    "observed_at": "2026-07-27T10:03:04.643331Z",
     "raw_ref": "rich-rwf-ask-9",
     "is_synthetic": true
   },
   {
-    "id": "a17338b3-af76-4693-9bba-ea32cbc6b509",
+    "id": "75af7ff4-3d4f-4ba3-9ece-352b68037b73",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4111,12 +4111,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:51.583000Z",
+    "observed_at": "2026-07-27T10:03:06.643331Z",
     "raw_ref": "rich-rwf-bid-10",
     "is_synthetic": true
   },
   {
-    "id": "2a2c3200-074a-4b73-80b5-b3760b6e7ba7",
+    "id": "68d60f42-d5af-454c-8d0f-a18ba5baa1d1",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4132,12 +4132,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:48.583000Z",
+    "observed_at": "2026-07-27T10:03:03.643331Z",
     "raw_ref": "rich-rwf-ask-10",
     "is_synthetic": true
   },
   {
-    "id": "6306aac0-cf33-49b4-bd59-289ca6baa20d",
+    "id": "debf5d9c-12c0-4cd6-867e-2e79a0f8bdfe",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4153,12 +4153,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:50.583000Z",
+    "observed_at": "2026-07-27T10:03:05.643331Z",
     "raw_ref": "rich-rwf-bid-11",
     "is_synthetic": true
   },
   {
-    "id": "891beec6-95e1-4306-ab75-570df4c57916",
+    "id": "8d8efc46-b8d1-4a7c-b801-27673df2f256",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4174,12 +4174,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:47.583000Z",
+    "observed_at": "2026-07-27T10:03:02.643331Z",
     "raw_ref": "rich-rwf-ask-11",
     "is_synthetic": true
   },
   {
-    "id": "3358cfdf-34b5-4e50-8cbd-1689e78aa837",
+    "id": "5578da43-fac4-4800-bc03-238fc7b6c5c4",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4195,12 +4195,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:49.583000Z",
+    "observed_at": "2026-07-27T10:03:04.643331Z",
     "raw_ref": "rich-rwf-bid-12",
     "is_synthetic": true
   },
   {
-    "id": "c6e21d23-a47c-48a0-b267-f9bac2482567",
+    "id": "4aff1144-acba-49de-88c8-797feda529f9",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4216,12 +4216,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:46.583000Z",
+    "observed_at": "2026-07-27T10:03:01.643331Z",
     "raw_ref": "rich-rwf-ask-12",
     "is_synthetic": true
   },
   {
-    "id": "f666469a-2d7e-4174-bf16-74a7df9ebdef",
+    "id": "76ce7778-7b65-42b2-a09d-331c4e605a4f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4237,12 +4237,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:48.583000Z",
+    "observed_at": "2026-07-27T10:03:03.643331Z",
     "raw_ref": "rich-rwf-bid-13",
     "is_synthetic": true
   },
   {
-    "id": "07e74696-56c7-4143-aed8-09f9687d8575",
+    "id": "244ff3a0-b803-4a5b-a398-021c46b9afaa",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4258,12 +4258,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:45.583000Z",
+    "observed_at": "2026-07-27T10:03:00.643331Z",
     "raw_ref": "rich-rwf-ask-13",
     "is_synthetic": true
   },
   {
-    "id": "7ef7f208-b3a5-4ee4-8447-27d06cba447d",
+    "id": "868b3ed0-bb39-4702-9108-610100ce1437",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4279,12 +4279,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:47.583000Z",
+    "observed_at": "2026-07-27T10:03:02.643331Z",
     "raw_ref": "rich-rwf-bid-14",
     "is_synthetic": true
   },
   {
-    "id": "c0ab6631-e5d7-4c53-b223-c7185cddc33b",
+    "id": "86de51ae-34c0-4e1f-a32a-ea479dd3bd2c",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4300,12 +4300,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:44.583000Z",
+    "observed_at": "2026-07-27T10:02:59.643331Z",
     "raw_ref": "rich-rwf-ask-14",
     "is_synthetic": true
   },
   {
-    "id": "7275c416-1c52-4f5e-b64b-4b74351129d5",
+    "id": "ed44b723-f6c9-4c46-9cec-360a5e44dcf7",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4321,12 +4321,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:46.583000Z",
+    "observed_at": "2026-07-27T10:03:01.643331Z",
     "raw_ref": "rich-rwf-bid-15",
     "is_synthetic": true
   },
   {
-    "id": "8d593da3-16ec-44b2-9481-e9f241b64f3d",
+    "id": "654e361d-2dfb-4a6e-8786-4fe2e0c2aef5",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4342,12 +4342,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:43.583000Z",
+    "observed_at": "2026-07-27T10:02:58.643331Z",
     "raw_ref": "rich-rwf-ask-15",
     "is_synthetic": true
   },
   {
-    "id": "07c068e4-7229-4510-9836-2888ade6b397",
+    "id": "b2f84386-a8ae-4c51-a80c-2782cd24434c",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4363,12 +4363,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:45.583000Z",
+    "observed_at": "2026-07-27T10:03:00.643331Z",
     "raw_ref": "rich-rwf-bid-16",
     "is_synthetic": true
   },
   {
-    "id": "142fca30-1db0-4d1b-9e26-56c59dcd8178",
+    "id": "d531e15e-c256-4a0b-9243-57d209c3472f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4384,12 +4384,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:42.583000Z",
+    "observed_at": "2026-07-27T10:02:57.643331Z",
     "raw_ref": "rich-rwf-ask-16",
     "is_synthetic": true
   },
   {
-    "id": "6ab90981-ce70-437c-a657-b5cfa0200550",
+    "id": "88f37eda-5c00-4f86-80c1-7849a81a98a2",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4405,12 +4405,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:44.583000Z",
+    "observed_at": "2026-07-27T10:02:59.643331Z",
     "raw_ref": "rich-rwf-bid-17",
     "is_synthetic": true
   },
   {
-    "id": "7b1e0e63-9e69-44f6-b9ea-ba3ceb55712d",
+    "id": "a74ca439-5e55-4c2b-9172-dd2f1008a6a2",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4426,12 +4426,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:41.583000Z",
+    "observed_at": "2026-07-27T10:02:56.643331Z",
     "raw_ref": "rich-rwf-ask-17",
     "is_synthetic": true
   },
   {
-    "id": "526e5d58-4fab-4d69-b3a3-fc91bcb9435a",
+    "id": "0c9b3204-9310-4f59-9354-32cc135e5f21",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4447,12 +4447,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:43.583000Z",
+    "observed_at": "2026-07-27T10:02:58.643331Z",
     "raw_ref": "rich-rwf-bid-18",
     "is_synthetic": true
   },
   {
-    "id": "74d98483-658b-4983-b188-0cb9ee08b856",
+    "id": "d9318d97-132a-47ef-9eaf-298ffd8bbc18",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4468,12 +4468,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:40.583000Z",
+    "observed_at": "2026-07-27T10:02:55.643331Z",
     "raw_ref": "rich-rwf-ask-18",
     "is_synthetic": true
   },
   {
-    "id": "5f253d14-875a-4363-97ea-90b284cece76",
+    "id": "4c489667-5eb3-478d-8929-c99e983f686f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4489,12 +4489,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:42.583000Z",
+    "observed_at": "2026-07-27T10:02:57.643331Z",
     "raw_ref": "rich-rwf-bid-19",
     "is_synthetic": true
   },
   {
-    "id": "6fb1e68d-1a97-4295-ae98-5c3f6b6dfa01",
+    "id": "9ee399e0-d093-4d7b-bccd-1b51d14d3137",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4510,12 +4510,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:39.583000Z",
+    "observed_at": "2026-07-27T10:02:54.643331Z",
     "raw_ref": "rich-rwf-ask-19",
     "is_synthetic": true
   },
   {
-    "id": "16898e51-2823-4c91-a62d-141f2f523786",
+    "id": "8a07cd25-781d-4b7c-a837-62fd24c38949",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4531,12 +4531,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:41.583000Z",
+    "observed_at": "2026-07-27T10:02:56.643331Z",
     "raw_ref": "rich-rwf-bid-20",
     "is_synthetic": true
   },
   {
-    "id": "08c811f9-1549-466c-b4e4-2d0f80b554b5",
+    "id": "82c6db36-6c1c-44bf-ab53-d38eaa36173c",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4552,12 +4552,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:38.583000Z",
+    "observed_at": "2026-07-27T10:02:53.643331Z",
     "raw_ref": "rich-rwf-ask-20",
     "is_synthetic": true
   },
   {
-    "id": "f9fe3bb1-1ac5-4f81-bd14-4e1f86901225",
+    "id": "c8c6836c-7073-4055-b927-adfddc9524aa",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4573,12 +4573,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:40.583000Z",
+    "observed_at": "2026-07-27T10:02:55.643331Z",
     "raw_ref": "rich-rwf-bid-21",
     "is_synthetic": true
   },
   {
-    "id": "513c72b2-a494-46eb-afd0-4d65508d128f",
+    "id": "e1d20944-4810-443d-848b-7b5ad48e7904",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4594,12 +4594,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:37.583000Z",
+    "observed_at": "2026-07-27T10:02:52.643331Z",
     "raw_ref": "rich-rwf-ask-21",
     "is_synthetic": true
   },
   {
-    "id": "0c897634-3a04-4e55-a6c5-aaf680cfdc0a",
+    "id": "ff7cf75a-49e4-4b40-a5d7-c0706f710917",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4615,12 +4615,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:39.583000Z",
+    "observed_at": "2026-07-27T10:02:54.643331Z",
     "raw_ref": "rich-rwf-bid-22",
     "is_synthetic": true
   },
   {
-    "id": "a37434f6-9cf1-465f-98af-34029a9e3993",
+    "id": "f5e56b88-809a-4932-b43c-f92543d0fecd",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4636,12 +4636,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:36.583000Z",
+    "observed_at": "2026-07-27T10:02:51.643331Z",
     "raw_ref": "rich-rwf-ask-22",
     "is_synthetic": true
   },
   {
-    "id": "0ebe5317-65d1-4a07-a044-bc9b3345d003",
+    "id": "cbb978ad-37a3-44d4-a9f2-e02148451c2d",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4657,12 +4657,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:38.583000Z",
+    "observed_at": "2026-07-27T10:02:53.643331Z",
     "raw_ref": "rich-rwf-bid-23",
     "is_synthetic": true
   },
   {
-    "id": "3a189a82-8759-428a-964f-8988e89fdc46",
+    "id": "da85ce18-7feb-4da0-9d9b-1194ad1936c6",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4678,12 +4678,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:35.583000Z",
+    "observed_at": "2026-07-27T10:02:50.643331Z",
     "raw_ref": "rich-rwf-ask-23",
     "is_synthetic": true
   },
   {
-    "id": "795de31e-1cca-484a-b93e-30ddff5a1739",
+    "id": "4b66ea4e-5e98-4d3a-94e9-c68f1f53401f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4699,12 +4699,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:37.583000Z",
+    "observed_at": "2026-07-27T10:02:52.643331Z",
     "raw_ref": "rich-rwf-bid-24",
     "is_synthetic": true
   },
   {
-    "id": "b32114e6-38b0-4d83-893c-6c26c8a2d10a",
+    "id": "a5b5bfec-5a31-4263-bc5b-e4a0df4ea7fb",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4720,12 +4720,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:34.583000Z",
+    "observed_at": "2026-07-27T10:02:49.643331Z",
     "raw_ref": "rich-rwf-ask-24",
     "is_synthetic": true
   },
   {
-    "id": "3c9ba8d2-b116-49ad-98fd-424fcad41225",
+    "id": "a69c7da8-ad84-4f8d-907e-24d22455bcce",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4741,12 +4741,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:36.583000Z",
+    "observed_at": "2026-07-27T10:02:51.643331Z",
     "raw_ref": "rich-rwf-bid-25",
     "is_synthetic": true
   },
   {
-    "id": "9ae3d9a8-5e16-4ebd-bc64-ef17d74d4a3e",
+    "id": "09bfa4aa-a29f-45c9-8a36-198466fa9844",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4762,12 +4762,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:33.583000Z",
+    "observed_at": "2026-07-27T10:02:48.643331Z",
     "raw_ref": "rich-rwf-ask-25",
     "is_synthetic": true
   },
   {
-    "id": "1d9b0e5f-c379-4fc2-99a0-645af100a5b4",
+    "id": "ffbb2db4-2975-4d68-bcb1-444b4f94ecbd",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4783,12 +4783,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:35.583000Z",
+    "observed_at": "2026-07-27T10:02:50.643331Z",
     "raw_ref": "rich-rwf-bid-26",
     "is_synthetic": true
   },
   {
-    "id": "681c6f1a-dcfe-40c3-a65f-337f27b7eba6",
+    "id": "569bdd58-ff0c-4cd4-9812-e81e637280c6",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4804,12 +4804,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:32.583000Z",
+    "observed_at": "2026-07-27T10:02:47.643331Z",
     "raw_ref": "rich-rwf-ask-26",
     "is_synthetic": true
   },
   {
-    "id": "cf7c67e1-d3d7-4c5e-a795-4fb01a2fb54b",
+    "id": "b4704156-c81b-4532-b3c2-420f04294623",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4825,12 +4825,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:34.583000Z",
+    "observed_at": "2026-07-27T10:02:49.643331Z",
     "raw_ref": "rich-rwf-bid-27",
     "is_synthetic": true
   },
   {
-    "id": "8626bb69-b61d-40ae-a064-d5610f2e3546",
+    "id": "75f176b2-686a-4065-a9a9-908590fca1a6",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4846,12 +4846,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:31.583000Z",
+    "observed_at": "2026-07-27T10:02:46.643331Z",
     "raw_ref": "rich-rwf-ask-27",
     "is_synthetic": true
   },
   {
-    "id": "92a54129-5004-4d1e-ab6b-b802c655f759",
+    "id": "68e0ced8-82c7-43a4-a0bb-eab461c09b4f",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4867,12 +4867,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:33.583000Z",
+    "observed_at": "2026-07-27T10:02:48.643331Z",
     "raw_ref": "rich-rwf-bid-28",
     "is_synthetic": true
   },
   {
-    "id": "7186277e-1cd0-421c-9e52-8a345a8bf304",
+    "id": "221b858f-83a0-45f5-a41f-07f711281d9b",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4888,12 +4888,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:30.583000Z",
+    "observed_at": "2026-07-27T10:02:45.643331Z",
     "raw_ref": "rich-rwf-ask-28",
     "is_synthetic": true
   },
   {
-    "id": "2c9c6d7e-1e13-49c4-8714-71a1e67a532e",
+    "id": "78a398fd-e599-4760-bfb8-b3560fbb9d6d",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4909,12 +4909,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:32.583000Z",
+    "observed_at": "2026-07-27T10:02:47.643331Z",
     "raw_ref": "rich-rwf-bid-29",
     "is_synthetic": true
   },
   {
-    "id": "aa449812-324d-4e78-9036-a8d4315894a0",
+    "id": "930f6fee-6647-4bc0-a5c5-1b7684640c47",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4930,12 +4930,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:29.583000Z",
+    "observed_at": "2026-07-27T10:02:44.643331Z",
     "raw_ref": "rich-rwf-ask-29",
     "is_synthetic": true
   },
   {
-    "id": "1a353d72-23cf-4b31-95a5-d7b59b9961de",
+    "id": "7e688277-2f86-4df7-a516-3d8365b8436e",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4951,12 +4951,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:31.583000Z",
+    "observed_at": "2026-07-27T10:02:46.643331Z",
     "raw_ref": "rich-rwf-bid-30",
     "is_synthetic": true
   },
   {
-    "id": "123419a7-141d-46a5-89c1-44f2009f05be",
+    "id": "db56abd5-9f9b-4278-9baf-f1dacd5b0448",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4972,12 +4972,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:28.583000Z",
+    "observed_at": "2026-07-27T10:02:43.643331Z",
     "raw_ref": "rich-rwf-ask-30",
     "is_synthetic": true
   },
   {
-    "id": "ba176def-f6c9-4345-a559-52115b0d1522",
+    "id": "8c336acc-6c5e-4712-a931-eedbab83d5f2",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -4993,12 +4993,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:30.583000Z",
+    "observed_at": "2026-07-27T10:02:45.643331Z",
     "raw_ref": "rich-rwf-bid-31",
     "is_synthetic": true
   },
   {
-    "id": "b487fa6c-4d58-40ac-8057-7c7eba80f780",
+    "id": "b85c38d8-6ebb-4e8c-8e0e-ba95353a525a",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5014,12 +5014,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:27.583000Z",
+    "observed_at": "2026-07-27T10:02:42.643331Z",
     "raw_ref": "rich-rwf-ask-31",
     "is_synthetic": true
   },
   {
-    "id": "1c7427d6-7a58-4d80-85c4-e377a3cfa839",
+    "id": "3f4fa764-20f9-48ad-b20f-4a6cb134d2c3",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5035,12 +5035,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:29.583000Z",
+    "observed_at": "2026-07-27T10:02:44.643331Z",
     "raw_ref": "rich-rwf-bid-32",
     "is_synthetic": true
   },
   {
-    "id": "4a8c8135-0752-4eee-89c8-f1b884ed4c2c",
+    "id": "567d7180-5609-4190-93a3-7ce656d6ec9d",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5056,12 +5056,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:26.583000Z",
+    "observed_at": "2026-07-27T10:02:41.643331Z",
     "raw_ref": "rich-rwf-ask-32",
     "is_synthetic": true
   },
   {
-    "id": "fcc11587-2739-4e38-8a40-11ecffdf7be5",
+    "id": "db857fad-95b6-4c8b-8ab5-9767757dbd44",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5077,12 +5077,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:28.583000Z",
+    "observed_at": "2026-07-27T10:02:43.643331Z",
     "raw_ref": "rich-rwf-bid-33",
     "is_synthetic": true
   },
   {
-    "id": "cc93f29e-8fec-4dc7-a51e-119ac45924b1",
+    "id": "bd68badc-ac1d-4c0c-b7fb-33a024edbdd7",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5098,12 +5098,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:25.583000Z",
+    "observed_at": "2026-07-27T10:02:40.643331Z",
     "raw_ref": "rich-rwf-ask-33",
     "is_synthetic": true
   },
   {
-    "id": "8e5808e5-721e-4d5f-b83f-a012c0110956",
+    "id": "8f1f0811-416e-4554-aa75-c82e976a6eef",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5119,12 +5119,12 @@
     "fees": 0.0,
     "completion_rate": 0.97,
     "rating": 4.8,
-    "observed_at": "2026-07-27T10:02:27.583000Z",
+    "observed_at": "2026-07-27T10:02:42.643331Z",
     "raw_ref": "rich-rwf-bid-34",
     "is_synthetic": true
   },
   {
-    "id": "962a948d-3304-4d3a-8fcf-b3c52480cd4b",
+    "id": "a28050ee-13a4-4cc9-bc8b-ed7d83c36017",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5140,12 +5140,12 @@
     "fees": 0.0,
     "completion_rate": 0.95,
     "rating": 4.7,
-    "observed_at": "2026-07-27T10:02:24.583000Z",
+    "observed_at": "2026-07-27T10:02:39.643331Z",
     "raw_ref": "rich-rwf-ask-34",
     "is_synthetic": true
   },
   {
-    "id": "a49fee9f-a08f-4071-827b-2b40238b709e",
+    "id": "79d321d6-273d-4c6a-b04a-0dc7e380c1b5",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5161,12 +5161,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:56.583000Z",
+    "observed_at": "2026-07-27T10:03:11.643331Z",
     "raw_ref": "bank-rwf-bid-0",
     "is_synthetic": true
   },
   {
-    "id": "a681171d-f9e6-4def-bb4f-35c317277bff",
+    "id": "d7710532-2545-4ca3-a788-9d4bb21fe3a8",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5182,12 +5182,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:55.583000Z",
+    "observed_at": "2026-07-27T10:03:10.643331Z",
     "raw_ref": "bank-rwf-bid-1",
     "is_synthetic": true
   },
   {
-    "id": "94ad29f3-4127-4ea2-9bb1-f1bff12b5398",
+    "id": "5ad12f19-28d9-4a28-88d9-ce8c962e1934",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5203,12 +5203,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:54.583000Z",
+    "observed_at": "2026-07-27T10:03:09.643331Z",
     "raw_ref": "bank-rwf-bid-2",
     "is_synthetic": true
   },
   {
-    "id": "6c6d9054-505a-41fb-8cc4-81b3b9379753",
+    "id": "478e88fb-1806-4549-85cf-02000b1d1bd4",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5224,12 +5224,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:53.583000Z",
+    "observed_at": "2026-07-27T10:03:08.643331Z",
     "raw_ref": "bank-rwf-bid-3",
     "is_synthetic": true
   },
   {
-    "id": "41603fe2-5049-4b4a-9ab6-0bf498400eb0",
+    "id": "3c82dc3c-a5d2-46c7-b060-53ac3488a3f0",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5245,12 +5245,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:52.583000Z",
+    "observed_at": "2026-07-27T10:03:07.643331Z",
     "raw_ref": "bank-rwf-bid-4",
     "is_synthetic": true
   },
   {
-    "id": "92290857-c5e9-41e6-bbca-61245907226f",
+    "id": "f4f3ffc9-a785-4716-b3c0-4bc1e1ef25b1",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5266,12 +5266,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:51.583000Z",
+    "observed_at": "2026-07-27T10:03:06.643331Z",
     "raw_ref": "bank-rwf-bid-5",
     "is_synthetic": true
   },
   {
-    "id": "e1d34939-62f4-4acc-9da2-d146d1e61086",
+    "id": "d3215b8e-be86-4a69-82f8-71da00e1df95",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5287,12 +5287,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:50.583000Z",
+    "observed_at": "2026-07-27T10:03:05.643331Z",
     "raw_ref": "bank-rwf-bid-6",
     "is_synthetic": true
   },
   {
-    "id": "c9948964-0815-4410-ad09-c66f1ea98c66",
+    "id": "bf6e8dee-12f5-4377-8d3b-28b3bada7687",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5308,12 +5308,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:49.583000Z",
+    "observed_at": "2026-07-27T10:03:04.643331Z",
     "raw_ref": "bank-rwf-bid-7",
     "is_synthetic": true
   },
   {
-    "id": "e24d14e9-2489-4d7e-821b-80e1da78c619",
+    "id": "0fc738cc-9633-4270-bdfc-216a405931aa",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5329,12 +5329,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:48.583000Z",
+    "observed_at": "2026-07-27T10:03:03.643331Z",
     "raw_ref": "bank-rwf-bid-8",
     "is_synthetic": true
   },
   {
-    "id": "7ef439ff-2b2d-467f-8f0e-cbade51cede7",
+    "id": "24df411a-0015-4bf9-82b4-3143f80712a1",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5350,12 +5350,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:47.583000Z",
+    "observed_at": "2026-07-27T10:03:02.643331Z",
     "raw_ref": "bank-rwf-bid-9",
     "is_synthetic": true
   },
   {
-    "id": "eab12884-b47b-4193-bd57-3f6caae92383",
+    "id": "ff219621-c54b-462c-bc59-448347ca6bd0",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5371,12 +5371,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:46.583000Z",
+    "observed_at": "2026-07-27T10:03:01.643331Z",
     "raw_ref": "bank-rwf-bid-10",
     "is_synthetic": true
   },
   {
-    "id": "347b542d-f859-43c5-9a88-f7abd2957f3b",
+    "id": "6502de97-8b94-44f8-b9cb-c36be0f58bc3",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5392,12 +5392,12 @@
     "fees": 0.0,
     "completion_rate": 0.94,
     "rating": 4.6,
-    "observed_at": "2026-07-27T10:02:45.583000Z",
+    "observed_at": "2026-07-27T10:03:00.643331Z",
     "raw_ref": "bank-rwf-bid-11",
     "is_synthetic": true
   },
   {
-    "id": "303fd3e9-cc63-4ca7-9909-40e895c3cb4f",
+    "id": "56d9a237-3a3c-40b8-9fee-e1be885d3164",
     "provider": "binance_p2p",
     "kind": "PUBLIC_AD",
     "base_rail": "USDT",
@@ -5413,12 +5413,12 @@
     "fees": 0.0,
     "completion_rate": 0.2,
     "rating": 1.5,
-    "observed_at": "2026-07-27T10:03:01.583000Z",
+    "observed_at": "2026-07-27T10:03:16.643331Z",
     "raw_ref": "wash-outlier",
     "is_synthetic": true
   },
   {
-    "id": "20a2f7ca-4659-4371-a687-9ac5e8b6b8d0",
+    "id": "831fbf6f-f597-4fbc-92ea-62ece1c34df1",
     "provider": "trader_rfq",
     "kind": "BINDING_RFQ",
     "base_rail": "USDT",
@@ -5434,12 +5434,12 @@
     "fees": 0.0,
     "completion_rate": 0.98,
     "rating": 4.95,
-    "observed_at": "2026-07-27T10:03:00.583000Z",
+    "observed_at": "2026-07-27T10:03:15.643331Z",
     "raw_ref": "rfq-rich-0",
     "is_synthetic": true
   },
   {
-    "id": "33551230-55ba-4502-9c6d-db9c3bfb93f6",
+    "id": "4919ec53-9c02-4af2-b34c-1df448f1be71",
     "provider": "trader_rfq",
     "kind": "BINDING_RFQ",
     "base_rail": "USDT",
@@ -5455,12 +5455,12 @@
     "fees": 0.0,
     "completion_rate": 0.98,
     "rating": 4.95,
-    "observed_at": "2026-07-27T10:03:00.583000Z",
+    "observed_at": "2026-07-27T10:03:15.643331Z",
     "raw_ref": "rfq-rich-1",
     "is_synthetic": true
   },
   {
-    "id": "787ae021-1814-4211-858c-45ba5eee247c",
+    "id": "a5b65965-4377-460b-bb2c-01e4ee9cb9d8",
     "provider": "trader_rfq",
     "kind": "BINDING_RFQ",
     "base_rail": "USDT",
@@ -5476,12 +5476,12 @@
     "fees": 0.0,
     "completion_rate": 0.98,
     "rating": 4.95,
-    "observed_at": "2026-07-27T10:03:00.583000Z",
+    "observed_at": "2026-07-27T10:03:15.643331Z",
     "raw_ref": "rfq-rich-2",
     "is_synthetic": true
   },
   {
-    "id": "1233948b-4f3b-41c2-874a-5344b4ecd426",
+    "id": "9efbfc83-e57c-41ac-8161-2ffb3228db35",
     "provider": "trader_rfq",
     "kind": "BINDING_RFQ",
     "base_rail": "USDT",
@@ -5497,12 +5497,12 @@
     "fees": 0.0,
     "completion_rate": 0.98,
     "rating": 4.95,
-    "observed_at": "2026-07-27T10:03:00.583000Z",
+    "observed_at": "2026-07-27T10:03:15.643331Z",
     "raw_ref": "rfq-rich-3",
     "is_synthetic": true
   },
   {
-    "id": "4729bad7-6ccb-4de3-a492-66637d391c36",
+    "id": "df9d83ba-c07a-4233-8549-2e6b287f4372",
     "provider": "trader_rfq",
     "kind": "BINDING_RFQ",
     "base_rail": "USDT",
@@ -5518,12 +5518,12 @@
     "fees": 0.0,
     "completion_rate": 0.98,
     "rating": 4.95,
-    "observed_at": "2026-07-27T10:03:00.583000Z",
+    "observed_at": "2026-07-27T10:03:15.643331Z",
     "raw_ref": "rfq-rich-4",
     "is_synthetic": true
   },
   {
-    "id": "be850667-1ca3-4a3f-85aa-46cdef559ea5",
+    "id": "4c895952-5571-4ac7-bb47-d293ffd5e839",
     "provider": "trader_rfq",
     "kind": "BINDING_RFQ",
     "base_rail": "USDT",
@@ -5539,12 +5539,12 @@
     "fees": 0.0,
     "completion_rate": 0.98,
     "rating": 4.95,
-    "observed_at": "2026-07-27T10:03:00.583000Z",
+    "observed_at": "2026-07-27T10:03:15.643331Z",
     "raw_ref": "rfq-rich-5",
     "is_synthetic": true
   },
   {
-    "id": "21de9dee-5007-4679-a841-b94e084bbf37",
+    "id": "8c782ce0-a54f-4689-b3dd-c77e732c7f9c",
     "provider": "trader_rfq",
     "kind": "BINDING_RFQ",
     "base_rail": "USDT",
@@ -5560,12 +5560,12 @@
     "fees": 0.0,
     "completion_rate": 0.98,
     "rating": 4.95,
-    "observed_at": "2026-07-27T10:03:00.583000Z",
+    "observed_at": "2026-07-27T10:03:15.643331Z",
     "raw_ref": "rfq-rich-6",
     "is_synthetic": true
   },
   {
-    "id": "fd55a5e6-627f-48b0-b54a-17791557b862",
+    "id": "c12bb2b3-c664-4642-ab8c-0694d90b1fcf",
     "provider": "trader_rfq",
     "kind": "BINDING_RFQ",
     "base_rail": "USDT",
@@ -5581,7 +5581,7 @@
     "fees": 0.0,
     "completion_rate": 0.98,
     "rating": 4.95,
-    "observed_at": "2026-07-27T10:03:00.583000Z",
+    "observed_at": "2026-07-27T10:03:15.643331Z",
     "raw_ref": "rfq-rich-7",
     "is_synthetic": true
   }
