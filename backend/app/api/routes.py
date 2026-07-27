@@ -174,10 +174,62 @@ async def accuracy_evaluate(body: AccuracyIn) -> dict[str, Any]:
     return report.model_dump(mode="json")
 
 
+@router.get("/stats")
+async def stats() -> dict[str, Any]:
+    if not market_service.engine.quotes:
+        await market_service.refresh()
+    return market_service.stats()
+
+
+@router.get("/widget.js")
+async def widget_js() -> Any:
+    """Embeddable widget — display only, no paid ranking influence."""
+    from fastapi.responses import Response
+
+    js = """
+(function(){
+  async function boot(el){
+    const amount = Number(el.getAttribute('data-amount')||100000);
+    const api = el.getAttribute('data-api')||'/api/v1';
+    el.innerHTML = 'جارٍ التحميل…';
+    try{
+      const r = await fetch(api+'/quote',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({amount:amount,from_rail:'Bankak-SDG',to_rail:'MTN-MoMo-RWF',from_payment:'Bankak',to_payment:'MTN Mobile Money'})});
+      const d = await r.json();
+      el.dir='rtl';
+      el.style.cssText='font-family:Tahoma,sans-serif;padding:12px;border:1px solid #234;border-radius:12px;background:#0b1f17;color:#f0f5e8;max-width:360px';
+      el.innerHTML = '<div style="font-weight:700;margin-bottom:6px">مطمن</div>'+
+        '<div>'+ (d.display&&d.display.title||'') +'</div>'+
+        '<div>العادل: '+ (d.display&&d.display.fair) +'</div>'+
+        '<div>التنفيذي: '+ (d.display&&d.display.executable) +'</div>'+
+        '<div>الثقة: '+ (d.display&&d.display.confidence) +'/100</div>'+
+        '<div style="opacity:.7;font-size:12px;margin-top:8px">'+ (d.label||'') +'</div>';
+    }catch(e){ el.textContent='تعذر التحميل'; }
+  }
+  document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('[data-motman-widget]').forEach(boot);
+  });
+})();
+"""
+    return Response(content=js, media_type="application/javascript")
+
+
+@router.post("/accuracy/run-synthetic")
+async def run_synthetic_accuracy() -> dict[str, Any]:
+    """Software-validation harness on labeled synthetic corpus. Never claims live accuracy."""
+    from app.providers.mock_corpus import build_accuracy_samples
+
+    samples, meta = build_accuracy_samples(320, 12)
+    return {
+        "note": "synthetic_only",
+        "n_samples": len(samples),
+        "report": meta,
+    }
+
+
 @router.get("/business")
 async def business() -> dict[str, Any]:
     return {
-        "free": ["basic_rates", "pwa", "telegram_basic"],
+        "free": ["basic_rates", "pwa", "telegram_basic", "widget"],
         "pro": ["alerts", "analytics", "trader_desk"],
         "api": ["metered_company_api"],
         "data": ["historical_exports", "reports", "widgets"],

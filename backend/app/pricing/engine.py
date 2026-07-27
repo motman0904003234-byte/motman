@@ -527,13 +527,8 @@ class PricingEngine:
         return snap
 
     def _matches_fiat_rail(self, q: Quote, fiat_rail: Rail) -> bool:
-        fiats = {fiat_rail}
-        # Map asset equivalence for filtering ads tagged with asset codes
-        if fiat_rail in (Rail.BANKAK_SDG, Rail.CASH_SDG):
-            fiats |= {Rail.BANKAK_SDG, Rail.CASH_SDG}
-        if fiat_rail in (Rail.MTN_MOMO_RWF, Rail.BANK_RWF):
-            fiats |= {Rail.MTN_MOMO_RWF, Rail.BANK_RWF}
-        return q.quote_rail in fiats or q.base_rail in fiats
+        # Strict rail matching — never silently merge Bankak with Cash or MoMo with Bank.
+        return q.quote_rail == fiat_rail or q.base_rail == fiat_rail
 
     def _normalize_usdt_quote(self, q: Quote) -> tuple[float | None, float]:
         """Return (fiat_per_usdt, available_usdt)."""

@@ -79,3 +79,7 @@ PercentageError = abs(Predicted - ActualCompleted) / ActualCompleted × 100
 
 مجاني للسعر الأساسي. مدفوع للتنبيهات/API/التاريخ/لوحة التجار.  
 **ممنوع** الدفع للتأثير على ترتيب الأسعار أو وزن المؤشر.
+
+## الجاهزية
+
+شغّل `./scripts/e2e.sh` للتحقق الكامل. التقرير الصادق في `docs/READY_REPORT.md`.

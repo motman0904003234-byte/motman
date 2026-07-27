@@ -10,4 +10,5 @@ motman.db
 *.db
 .DS_Store
 frontend/dev-dist/
-.vite/
+.vite/motman.db
+backend/motman.db
