@@ -12,3 +12,11 @@ motman.db
 frontend/dev-dist/
 .vite/motman.db
 backend/motman.db
+backend/motman_cloud.db
+backend/motman.db
+*.db-journal
+frontend/android/.gradle/
+frontend/android/app/build/
+frontend/android/build/
+frontend/android/local.properties
+frontend/android/captures/

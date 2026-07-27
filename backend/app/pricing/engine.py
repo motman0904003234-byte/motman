@@ -464,8 +464,10 @@ class PricingEngine:
             if q.trader_anon_id:
                 snap.traders.add(q.trader_anon_id)
             snap.n_sources += 1
-            if snap.last_update is None or q.observed_at > snap.last_update:
-                snap.last_update = q.observed_at
+            # Freshness should follow live ads/RFQ, not historical completed prints.
+            if q.kind in (QuoteKind.PUBLIC_AD, QuoteKind.BINDING_RFQ, QuoteKind.PARALLEL_MARKET):
+                if snap.last_update is None or q.observed_at > snap.last_update:
+                    snap.last_update = q.observed_at
 
         if not values:
             return snap

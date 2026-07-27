@@ -1,14 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { QuotePanel } from './components/QuotePanel'
 import { TraderDesk } from './components/TraderDesk'
 import { HistoryPanel } from './components/HistoryPanel'
-import { refreshSources } from './api'
+import { TradersPanel } from './components/TradersPanel'
+import { CloudPanel } from './components/CloudPanel'
+import { ensureDevice, refreshSources } from './api'
 
-type Tab = 'quote' | 'trader' | 'history'
+type Tab = 'quote' | 'traders' | 'trader' | 'cloud' | 'history'
 
 export default function App() {
-  const [tab, setTab] = useState<Tab>('quote')
+  const [tab, setTab] = useState<Tab>('traders')
   const [refreshMsg, setRefreshMsg] = useState<string | null>(null)
+  const [installHint, setInstallHint] = useState(true)
+
+  useEffect(() => {
+    void ensureDevice('هاتف مطمن').catch(() => undefined)
+  }, [])
 
   async function onRefresh() {
     try {
@@ -24,35 +31,50 @@ export default function App() {
       <header className="hero">
         <div className="brand">
           <h1>
-            <span>مطمن</span> مؤشر الصرف
+            <span>مطمن</span> للجوال
           </h1>
         </div>
         <p className="tag">
-          أسعار لحظية شفافة لمسارات Bankak-SDG وCash-SDG وMTN-MoMo-RWF وBank-RWF دون دمجها في
-          رقم مضلل. مرحلة البيانات والتنبيهات فقط — بلا حفظ أموال وبلا تنفيذ تلقائي.
+          ابدأ اليوم: ابحث عن التجار، احسب السعر الشفاف، واحفظ كل شيء سحابيًا. لا حفظ أموال ولا
+          تنفيذ تلقائي.
         </p>
+        {installHint && (
+          <p className="tag" style={{ border: '1px solid var(--line)', padding: '0.7rem', borderRadius: 12 }}>
+            لتثبيته كتطبيق: من متصفح الهاتف اختر «إضافة إلى الشاشة الرئيسية».{' '}
+            <button type="button" onClick={() => setInstallHint(false)}>
+              حسناً
+            </button>
+          </p>
+        )}
         <div className="nav">
+          <button className={tab === 'traders' ? 'active' : ''} onClick={() => setTab('traders')}>
+            التجار
+          </button>
           <button className={tab === 'quote' ? 'active' : ''} onClick={() => setTab('quote')}>
             التسعير
           </button>
           <button className={tab === 'trader' ? 'active' : ''} onClick={() => setTab('trader')}>
-            لوحة التاجر
+            RFQ
+          </button>
+          <button className={tab === 'cloud' ? 'active' : ''} onClick={() => setTab('cloud')}>
+            السحابة
           </button>
           <button className={tab === 'history' ? 'active' : ''} onClick={() => setTab('history')}>
             التاريخ
           </button>
-          <button onClick={() => void onRefresh()}>تحديث المصادر</button>
+          <button onClick={() => void onRefresh()}>تحديث</button>
         </div>
         {refreshMsg && <p className="tag">{refreshMsg}</p>}
       </header>
 
+      {tab === 'traders' && <TradersPanel />}
       {tab === 'quote' && <QuotePanel />}
       {tab === 'trader' && <TraderDesk />}
+      {tab === 'cloud' && <CloudPanel />}
       {tab === 'history' && <HistoryPanel />}
 
       <footer className="footer">
-        الدفع لا يؤثر على ترتيب الأسعار أو وزن المؤشر. الصفقات الحقيقية تُجمع عبر موصل محلي
-        بصلاحية قراءة فقط دون مغادرة المفتاح السري لجهاز التاجر.
+        التخزين السحابي يحفظ التجار والتواصل والنسخ الاحتياطية. الدفع لا يؤثر على وزن المؤشر.
       </footer>
     </div>
   )

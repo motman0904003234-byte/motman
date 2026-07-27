@@ -83,3 +83,18 @@ PercentageError = abs(Predicted - ActualCompleted) / ActualCompleted × 100
 ## الجاهزية
 
 شغّل `./scripts/e2e.sh` للتحقق الكامل. التقرير الصادق في `docs/READY_REPORT.md`.
+
+
+## تطبيق الجوال (ابدأ اليوم)
+
+```bash
+cd frontend && npm run build
+cd ../backend && PYTHONPATH=. python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
+
+ثم افتح `http://<IP-جهازك>:8000` من الهاتف → إضافة إلى الشاشة الرئيسية.
+
+- تبويب التجار للبحث والتواصل
+- تبويب السحابة للنسخ الاحتياطي
+- مشروع Android: `frontend/android` عبر Capacitor
+- الدليل: `docs/MOBILE.md`

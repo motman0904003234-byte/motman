@@ -100,6 +100,12 @@ class MarketService:
             self.store.save_quote(record["request"], record["result"])
         except Exception:  # noqa: BLE001
             pass
+        try:
+            from app.db.cloud import get_cloud_store
+
+            get_cloud_store().save_cloud_quote(record["request"], record["result"])
+        except Exception:  # noqa: BLE001
+            pass
         self.audit("quote", {"label": result.label.value, "confidence": result.confidence})
         return result
 

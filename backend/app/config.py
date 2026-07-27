@@ -15,8 +15,11 @@ class Settings(BaseSettings):
     cors_origins: str = "*"
     telegram_bot_token: str = ""
     database_url: str = "sqlite+aiosqlite:///./motman.db"
+    cloud_database_url: str = "sqlite:///./motman_cloud.db"
+    public_base_url: str = ""
     stale_seconds_default: int = 120
     paid_ranking_forbidden: bool = True
+    require_device_auth: bool = False
 
 
 @lru_cache
