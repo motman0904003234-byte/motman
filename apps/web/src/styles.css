@@ -1,0 +1,274 @@
+:root {
+  --bg0: #071a14;
+  --bg1: #0b3d2e;
+  --bg2: #125a43;
+  --sand: #f3e6c5;
+  --gold: #e2b857;
+  --ink: #f7f1e4;
+  --muted: #b7c7bf;
+  --danger: #d97858;
+  --ok: #6fcf97;
+  --warn: #e2b857;
+  --card-line: rgba(243, 230, 197, 0.14);
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  font-family: "IBM Plex Sans Arabic", "Tajawal", sans-serif;
+  color: var(--ink);
+  background: var(--bg0);
+  line-height: 1.55;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 100% -10%, rgba(226, 184, 87, 0.18), transparent 55%),
+    radial-gradient(900px 500px at -10% 20%, rgba(18, 90, 67, 0.55), transparent 50%),
+    linear-gradient(165deg, #06150f 0%, #0b3d2e 42%, #08241b 100%);
+  background-attachment: fixed;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+a {
+  color: var(--gold);
+}
+
+.app-shell {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: 1.25rem 1rem 3rem;
+}
+
+.brand-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  min-height: min(72vh, 640px);
+  display: grid;
+  align-content: end;
+  padding: 2rem 0 1.5rem;
+  animation: rise 700ms ease-out both;
+}
+
+.brand-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 26, 20, 0.15), rgba(7, 26, 20, 0.82)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cpath d='M0 80h160M80 0v160' stroke='%23e2b857' stroke-opacity='.05'/%3E%3C/svg%3E");
+  z-index: -1;
+}
+
+.brand-mark {
+  font-family: "Tajawal", "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 800;
+  font-size: clamp(3.2rem, 12vw, 5.6rem);
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  margin: 0;
+  color: var(--sand);
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  animation: brandIn 900ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.brand-mark span {
+  color: var(--gold);
+}
+
+.lede {
+  max-width: 34rem;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.8rem 1.25rem;
+  cursor: pointer;
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: #1a1406;
+  font-weight: 700;
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: var(--card-line);
+  color: var(--ink);
+}
+
+.panel {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--card-line);
+  background: rgba(7, 26, 20, 0.55);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  animation: rise 800ms ease-out 120ms both;
+}
+
+.panel h2 {
+  margin: 0 0 0.75rem;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.35rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+input,
+select {
+  width: 100%;
+  border: 1px solid var(--card-line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--ink);
+  border-radius: 12px;
+  padding: 0.75rem 0.85rem;
+}
+
+.result {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--card-line);
+}
+
+.result .amount {
+  font-size: 1.15rem;
+  color: var(--sand);
+  font-weight: 700;
+}
+
+.result .fair {
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  font-family: "Tajawal", sans-serif;
+  font-weight: 800;
+  margin: 0.35rem 0;
+  color: var(--ink);
+}
+
+.meta {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  margin-top: 0.75rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--card-line);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  width: fit-content;
+}
+
+.badge.live {
+  color: var(--ok);
+}
+.badge.delayed {
+  color: var(--warn);
+}
+.badge.stale,
+.badge.down {
+  color: var(--danger);
+}
+
+.warnings {
+  margin-top: 0.85rem;
+  color: var(--warn);
+  font-size: 0.92rem;
+}
+
+.section {
+  margin-top: 2rem;
+  animation: rise 900ms ease-out 200ms both;
+}
+
+.section p {
+  color: var(--muted);
+}
+
+.footer {
+  margin-top: 2.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--card-line);
+  padding-top: 1rem;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes brandIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}

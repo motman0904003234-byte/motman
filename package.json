@@ -1,0 +1,26 @@
+{
+  "name": "motman",
+  "version": "0.1.0",
+  "private": true,
+  "description": "مؤشر عالمي مرجعي شفاف لأسعار Bankak-SDG و Cash-SDG و MTN-MoMo-RWF و Bank-RWF عبر USD/USDT/USDC",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @motman/shared && npm run build -w @motman/core && npm run build -w @motman/adapters && npm run build -w @motman/api && npm run build -w @motman/web && npm run build -w @motman/telegram-bot && npm run build -w @motman/trader-connector",
+    "dev:api": "npm run dev -w @motman/api",
+    "dev:web": "npm run dev -w @motman/web",
+    "dev:bot": "npm run dev -w @motman/telegram-bot",
+    "test": "npm run test -w @motman/core && npm run test -w @motman/adapters && npm run test -w @motman/api",
+    "test:accuracy": "npm run test:accuracy -w @motman/core",
+    "lint": "npm run build -w @motman/shared && npm run build -w @motman/core",
+    "seed": "npm run seed -w @motman/api",
+    "start:api": "npm run start -w @motman/api",
+    "start:web": "npm run preview -w @motman/web"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "parallel-1",
+    "sourceId": "parallel-sdg",
+    "sourceKind": "PARALLEL_MARKET",
+    "traderAnonId": "parallel_desk_1",
+    "assetBase": "CASH_SDG",
+    "assetQuote": "USD",
+    "paymentRail": "CASH",
+    "side": "BUY",
+    "price": 2100,
+    "quantity": 5000,
+    "totalAmount": 10500000,
+    "observedAt": "2026-07-27T08:00:00.000Z",
+    "executableUpTo": 5000
+  }
+]

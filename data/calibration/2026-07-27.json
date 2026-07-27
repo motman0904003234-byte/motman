@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-27",
+  "amount": 100000,
+  "asset": "BANKAK_SDG",
+  "theoreticalRateRwf": 25587.78,
+  "fieldTraderRateRwf": 25200,
+  "gapPct": 1.54,
+  "grossDealerMarginPct": 1.54,
+  "bankakBuyAdsObserved": 180,
+  "sellAdsAccepting100k": 0,
+  "disclaimer": "عينة معايرة مؤرخة وليست سعراً حياً ولا إثبات دقة بمفردها"
+}
