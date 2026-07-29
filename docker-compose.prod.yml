@@ -1,0 +1,30 @@
+# Motman FX — production compose (API + optional Postgres)
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: motman
+      POSTGRES_PASSWORD: motman
+      POSTGRES_DB: motman
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    profiles: ["postgres"]
+
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-}
+      CLOUD_DATABASE_URL: ${CLOUD_DATABASE_URL:-sqlite:////data/motman_cloud.db}
+      DATABASE_URL: ${DATABASE_URL:-sqlite+aiosqlite:////data/motman.db}
+      REQUIRE_DEVICE_AUTH: ${REQUIRE_DEVICE_AUTH:-false}
+      USE_DEMO_MARKET: ${USE_DEMO_MARKET:-true}
+      ENABLE_LIVE_BINANCE: ${ENABLE_LIVE_BINANCE:-false}
+    volumes:
+      - motman-data:/data
+    restart: unless-stopped
+
+volumes:
+  motman-data:
+  pgdata:

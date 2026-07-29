@@ -1,0 +1,16 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+pydantic==2.11.7
+pydantic-settings==2.10.1
+httpx==0.28.1
+sqlalchemy==2.0.41
+aiosqlite==0.21.0
+python-telegram-bot==22.3
+pytest==8.4.1
+pytest-asyncio==1.1.0
+numpy==2.3.1
+orjson==3.11.0
+python-multipart==0.0.20
+cryptography==45.0.5
+structlog==25.4.0
+psycopg[binary]==3.2.9

@@ -1,0 +1,35 @@
+{
+  "disclaimer": "SYNTHETIC SOFTWARE TEST ONLY — not a live accuracy claim",
+  "n": 80,
+  "report": {
+    "n_samples": 80,
+    "n_traders": 0,
+    "mape": 0.3500285405836132,
+    "median_error_pct": 0.39840637450199384,
+    "p95_error_pct": 0.6036217303823027,
+    "pct_within_10": 100.0,
+    "meets_min_accuracy_90": true,
+    "meets_target_mape_2": true,
+    "meets_median_1_5": true,
+    "meets_p95_5": true,
+    "claim_live_accuracy": false,
+    "notes": [
+      "العينات اصطناعية فقط — تصلح لاختبار البرمجيات لا لإثبات دقة السوق الحية.",
+      "لا يُسمح بالادعاء بدقة حية دون ≥300 صفقة مكتملة حقيقية و≥10 تجار مستقلين."
+    ],
+    "by_bucket": {
+      "100k": {
+        "n": 40,
+        "mape": 0.3549986202248871,
+        "median": 0.39840637450199384,
+        "p95": 0.6036217303822908
+      },
+      "500k": {
+        "n": 40,
+        "mape": 0.34505846094233933,
+        "median": 0.39840637450198585,
+        "p95": 0.6036217303823027
+      }
+    }
+  }
+}

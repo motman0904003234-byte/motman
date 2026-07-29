@@ -1,0 +1,3202 @@
+[
+  {
+    "predicted_price": 257760.06233383564,
+    "actual_completed_price": 252301.6847477135,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T00:00:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1287585.8982176026,
+    "actual_completed_price": 1268140.4024993177,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T00:07:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2573464.0331990686,
+    "actual_completed_price": 2549317.2938656136,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T00:14:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257760.06233383564,
+    "actual_completed_price": 259043.25477605234,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T00:21:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1287585.8982176026,
+    "actual_completed_price": 1255396.2507621625,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T00:28:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2573464.0331990686,
+    "actual_completed_price": 2587847.7849305943,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T00:35:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257760.06233383564,
+    "actual_completed_price": 257495.70960119623,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T00:42:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1287585.8982176026,
+    "actual_completed_price": 1289644.8942791608,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T00:49:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2573464.0331990686,
+    "actual_completed_price": 2529676.195534001,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T00:56:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257760.06233383564,
+    "actual_completed_price": 255862.45322010174,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T01:03:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1287585.8982176026,
+    "actual_completed_price": 1297135.9224420488,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T01:10:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2573464.0331990686,
+    "actual_completed_price": 2557661.169254856,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T01:17:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257760.06233383564,
+    "actual_completed_price": 255601.25857221652,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T01:24:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1287585.8982176026,
+    "actual_completed_price": 1285716.1486243794,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T01:31:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2573464.0331990686,
+    "actual_completed_price": 2588291.093358094,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T01:38:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257760.06233383564,
+    "actual_completed_price": 258224.0993565633,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T01:45:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1287585.8982176026,
+    "actual_completed_price": 1286935.3997181305,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T01:52:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2573464.0331990686,
+    "actual_completed_price": 2562702.1868890976,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T01:59:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257760.06233383564,
+    "actual_completed_price": 257801.11825283483,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T02:06:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1287585.8982176026,
+    "actual_completed_price": 1274862.2792280363,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T02:13:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257005.41768388927,
+    "actual_completed_price": 257930.52924127242,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T02:27:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257053.06599323763,
+    "actual_completed_price": 259585.3201530303,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T02:48:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257066.1337713875,
+    "actual_completed_price": 257558.453347913,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T03:09:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257122.15788967354,
+    "actual_completed_price": 253319.03186807648,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T03:30:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257122.15788967354,
+    "actual_completed_price": 257272.63875013613,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T03:51:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257236.35800590826,
+    "actual_completed_price": 251390.2833492184,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T04:12:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257236.35800590826,
+    "actual_completed_price": 255195.99165812077,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T04:33:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257236.35800590826,
+    "actual_completed_price": 258603.67433335155,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T04:54:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257236.35800590826,
+    "actual_completed_price": 257924.28251624544,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T05:15:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257245.10030970114,
+    "actual_completed_price": 255715.26890193176,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T05:36:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257245.10030970114,
+    "actual_completed_price": 258639.6649398004,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T05:57:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257275.22047776452,
+    "actual_completed_price": 251358.75762384947,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T06:18:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1283782.9444969955,
+    "actual_completed_price": 1288824.5221939678,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T06:25:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257288.76741625724,
+    "actual_completed_price": 254858.01952689845,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T06:39:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1284090.254561612,
+    "actual_completed_price": 1263954.3850435482,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T06:46:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257288.76741625724,
+    "actual_completed_price": 256484.38065154888,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T07:00:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1284156.71208606,
+    "actual_completed_price": 1289250.8192254296,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T07:07:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257288.76741625724,
+    "actual_completed_price": 256821.66756760582,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T07:21:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1284327.946469936,
+    "actual_completed_price": 1275468.99754856,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T07:28:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257294.60594199898,
+    "actual_completed_price": 254462.8172011455,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T07:42:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1284430.0703080564,
+    "actual_completed_price": 1278709.5585221096,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T07:49:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257296.2302702652,
+    "actual_completed_price": 259149.22096314223,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T08:03:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1284540.3994066664,
+    "actual_completed_price": 1278967.3036658326,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T08:10:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257327.79117415487,
+    "actual_completed_price": 257684.67017709566,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T08:24:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1284724.5996726318,
+    "actual_completed_price": 1302024.5555717598,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T08:31:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257327.79117415487,
+    "actual_completed_price": 257734.49298890796,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T08:45:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1284865.2478780258,
+    "actual_completed_price": 1294449.835617189,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T08:52:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257338.19815738726,
+    "actual_completed_price": 255100.6849187801,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T09:06:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1284935.8344415291,
+    "actual_completed_price": 1259811.0754195584,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T09:13:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257338.19815738726,
+    "actual_completed_price": 252482.21882996432,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T09:27:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285029.587472038,
+    "actual_completed_price": 1285782.1906934653,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T09:34:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257338.19815738726,
+    "actual_completed_price": 257271.072765255,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T09:48:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285044.6634397972,
+    "actual_completed_price": 1272823.5597260022,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T09:55:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257338.19815738726,
+    "actual_completed_price": 254123.9707476282,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T10:09:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285044.6634397972,
+    "actual_completed_price": 1284209.267074317,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T10:16:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257350.33507656702,
+    "actual_completed_price": 256614.59298832595,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T10:30:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285145.7426477205,
+    "actual_completed_price": 1257315.3528180243,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T10:37:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257350.33507656702,
+    "actual_completed_price": 256542.15521138164,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T10:51:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285202.769499686,
+    "actual_completed_price": 1285051.8501155286,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T10:58:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257350.33507656702,
+    "actual_completed_price": 256074.05450481607,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T11:12:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285202.769499686,
+    "actual_completed_price": 1274101.677771329,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T11:19:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257350.33507656702,
+    "actual_completed_price": 258424.29273052837,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T11:33:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285300.0643686522,
+    "actual_completed_price": 1282713.041248116,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T11:40:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257350.33507656702,
+    "actual_completed_price": 258722.2401046393,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T11:54:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285340.9302555465,
+    "actual_completed_price": 1283060.8748122256,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T12:01:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2567527.892134563,
+    "actual_completed_price": 2518705.3319334295,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T12:08:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257350.33507656702,
+    "actual_completed_price": 254793.87412654955,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T12:15:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285348.8646555464,
+    "actual_completed_price": 1281159.0720948663,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T12:22:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2567602.100445104,
+    "actual_completed_price": 2576498.5752180927,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T12:29:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257362.8006204777,
+    "actual_completed_price": 256974.5080146923,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T12:36:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285465.5367048187,
+    "actual_completed_price": 1269518.2227093305,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T12:43:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2568023.181912023,
+    "actual_completed_price": 2569290.4871829855,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T12:50:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257362.8006204777,
+    "actual_completed_price": 253347.0748380184,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T12:57:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285548.908552028,
+    "actual_completed_price": 1294533.7266558537,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T13:04:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2568179.206237824,
+    "actual_completed_price": 2563865.616286964,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T13:11:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257362.8006204777,
+    "actual_completed_price": 252745.16774091174,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T13:18:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285557.1546047146,
+    "actual_completed_price": 1301064.4579450933,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T13:25:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2568303.4003623324,
+    "actual_completed_price": 2533612.542336428,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T13:32:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257362.8006204777,
+    "actual_completed_price": 260145.15412946785,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T13:39:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285648.2096687248,
+    "actual_completed_price": 1281432.104782911,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T13:46:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2568527.3099351116,
+    "actual_completed_price": 2561798.482195542,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T13:53:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257362.8006204777,
+    "actual_completed_price": 254636.20956757333,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T14:00:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285648.2096687248,
+    "actual_completed_price": 1312950.6788151502,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T14:07:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2568598.223930021,
+    "actual_completed_price": 2597732.4940673043,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T14:14:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257363.48379060382,
+    "actual_completed_price": 257499.4052571361,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T14:21:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285668.3989711483,
+    "actual_completed_price": 1280146.247076371,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T14:28:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2568622.534730021,
+    "actual_completed_price": 2576702.7401172156,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T14:35:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257363.48379060382,
+    "actual_completed_price": 256788.77461176156,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T14:42:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285700.7739216974,
+    "actual_completed_price": 1292758.4808945984,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T14:49:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2568803.3430813383,
+    "actual_completed_price": 2566774.4604275404,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T14:56:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257363.48379060382,
+    "actual_completed_price": 258077.44334330424,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T15:03:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285719.2861890304,
+    "actual_completed_price": 1278066.4659006398,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T15:10:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2568849.4328887686,
+    "actual_completed_price": 2546625.394736684,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T15:17:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257363.48379060382,
+    "actual_completed_price": 253383.7588715029,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T15:24:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285719.2861890304,
+    "actual_completed_price": 1287328.1689114477,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T15:31:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2568889.969730775,
+    "actual_completed_price": 2565149.497893526,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T15:38:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257363.48379060382,
+    "actual_completed_price": 256235.72641910828,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T15:45:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285776.3890399202,
+    "actual_completed_price": 1283666.8853261468,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T15:52:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569035.2268070206,
+    "actual_completed_price": 2559827.610275517,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T15:59:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257363.48379060382,
+    "actual_completed_price": 259550.41193549166,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T16:06:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285776.3890399202,
+    "actual_completed_price": 1276809.3348864946,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T16:13:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569128.4615972657,
+    "actual_completed_price": 2577661.9052339448,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T16:20:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257363.48379060382,
+    "actual_completed_price": 258304.325559388,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T16:27:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285776.3890399202,
+    "actual_completed_price": 1296969.0848901044,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T16:34:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569128.4615972657,
+    "actual_completed_price": 2534989.8490845324,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T16:41:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257365.0140471786,
+    "actual_completed_price": 256625.05689763403,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T16:48:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285862.7875949647,
+    "actual_completed_price": 1268894.6247263353,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T16:55:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569454.3095378224,
+    "actual_completed_price": 2553579.158460318,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T17:02:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257365.0140471786,
+    "actual_completed_price": 259842.6380607784,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T17:09:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285876.0515949652,
+    "actual_completed_price": 1291880.5416900786,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T17:16:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569508.526434366,
+    "actual_completed_price": 2543650.390972648,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T17:23:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257365.0140471786,
+    "actual_completed_price": 257912.03353093754,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T17:30:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285876.0515949652,
+    "actual_completed_price": 1291948.9257921646,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T17:37:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569508.526434366,
+    "actual_completed_price": 2562917.821925109,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T17:44:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257365.0140471786,
+    "actual_completed_price": 256699.9152416191,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T17:51:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285897.5459152134,
+    "actual_completed_price": 1291163.218173838,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T17:58:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569633.784841866,
+    "actual_completed_price": 2566059.8406432206,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T18:05:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257365.0140471786,
+    "actual_completed_price": 257320.73217974725,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T18:12:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285921.9418731907,
+    "actual_completed_price": 1307422.450137959,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T18:19:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569824.5750252623,
+    "actual_completed_price": 2549211.2200488984,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T18:26:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257365.0140471786,
+    "actual_completed_price": 258006.1102278945,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T18:33:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285931.6304183346,
+    "actual_completed_price": 1267368.5445665673,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T18:40:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569832.811999212,
+    "actual_completed_price": 2583198.496732377,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T18:47:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257365.0140471786,
+    "actual_completed_price": 259587.820864477,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T18:54:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285952.82313349,
+    "actual_completed_price": 1268591.1849322312,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T19:01:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569916.778735903,
+    "actual_completed_price": 2592224.789519409,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T19:08:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257365.0140471786,
+    "actual_completed_price": 257645.3859891917,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T19:15:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285967.047062626,
+    "actual_completed_price": 1274677.9361865888,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T19:22:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569958.293201439,
+    "actual_completed_price": 2566455.8738578926,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T19:29:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257367.76874499425,
+    "actual_completed_price": 259746.81868487867,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T19:36:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285975.059462626,
+    "actual_completed_price": 1278896.6902486894,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T19:43:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2569991.6470156587,
+    "actual_completed_price": 2563706.946495867,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T19:50:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257367.76874499425,
+    "actual_completed_price": 253694.9143641657,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T19:57:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285986.5802272023,
+    "actual_completed_price": 1274786.6874660042,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T20:04:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570049.364045104,
+    "actual_completed_price": 2505798.129943976,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T20:11:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257367.76874499425,
+    "actual_completed_price": 259727.09827506013,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T20:18:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285986.5802272023,
+    "actual_completed_price": 1281065.621441228,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T20:25:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570083.584029468,
+    "actual_completed_price": 2581734.379271248,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T20:32:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257367.76874499425,
+    "actual_completed_price": 253960.73319116386,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T20:39:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1285997.2108757799,
+    "actual_completed_price": 1272398.1712548146,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T20:46:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570113.496467661,
+    "actual_completed_price": 2544329.3401228623,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T20:53:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257368.4133761482,
+    "actual_completed_price": 257939.42526130727,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T21:00:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286046.5959325088,
+    "actual_completed_price": 1288568.8067245851,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T21:07:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570293.5303500304,
+    "actual_completed_price": 2601747.340900175,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T21:14:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257368.4133761482,
+    "actual_completed_price": 252819.16900912853,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T21:21:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286046.5959325088,
+    "actual_completed_price": 1275673.6600014428,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T21:28:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570293.5303500304,
+    "actual_completed_price": 2565376.2493738136,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T21:35:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257368.4133761482,
+    "actual_completed_price": 254416.88082001224,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T21:42:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286046.5959325088,
+    "actual_completed_price": 1273176.7105910073,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T21:49:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570340.2698497465,
+    "actual_completed_price": 2540004.8221025374,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T21:56:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257368.4133761482,
+    "actual_completed_price": 259681.71777200358,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T22:03:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286083.073056762,
+    "actual_completed_price": 1288283.1593503559,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T22:10:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570442.9678089092,
+    "actual_completed_price": 2556142.2162108757,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T22:17:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257368.4133761482,
+    "actual_completed_price": 255607.1463128592,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T22:24:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286083.073056762,
+    "actual_completed_price": 1271090.0723259589,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T22:31:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570492.9953786284,
+    "actual_completed_price": 2580952.548331667,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T22:38:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257368.4133761482,
+    "actual_completed_price": 256077.022815107,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T22:45:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286083.073056762,
+    "actual_completed_price": 1258248.5953088345,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T22:52:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570492.9953786284,
+    "actual_completed_price": 2545982.3786227377,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T22:59:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 254556.45951050383,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T23:06:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286163.7389289504,
+    "actual_completed_price": 1281216.5077433658,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T23:13:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570730.1602124963,
+    "actual_completed_price": 2544660.3442583424,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T23:20:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 252634.50748129174,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T23:27:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286186.5277547147,
+    "actual_completed_price": 1279944.489745197,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T23:34:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570737.856179187,
+    "actual_completed_price": 2535282.683790987,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T23:41:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 258150.90916305184,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T23:48:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286186.5277547147,
+    "actual_completed_price": 1274969.9649742139,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-01T23:55:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570738.935978366,
+    "actual_completed_price": 2541859.9401265346,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T00:02:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 257897.368706235,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T00:09:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286201.4594367384,
+    "actual_completed_price": 1269757.3820244605,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T00:16:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570788.3854006226,
+    "actual_completed_price": 2574392.5607099254,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T00:23:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 258006.98286456527,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T00:30:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286208.3808163311,
+    "actual_completed_price": 1281075.81618894,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T00:37:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570827.449839768,
+    "actual_completed_price": 2520809.6419279845,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T00:44:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 255712.41821833368,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T00:51:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286208.3808163311,
+    "actual_completed_price": 1271434.6334585152,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T00:58:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570829.7654677713,
+    "actual_completed_price": 2575597.065319864,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T01:05:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 256189.40334907718,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T01:12:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286230.8560938279,
+    "actual_completed_price": 1293192.5175255416,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T01:19:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570924.068454574,
+    "actual_completed_price": 2572386.5411476786,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T01:26:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 254628.36532594956,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T01:33:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286230.8560938279,
+    "actual_completed_price": 1281481.0350666824,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T01:40:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570924.068454574,
+    "actual_completed_price": 2530790.99060893,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T01:47:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 256765.75387075328,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T01:54:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286231.7030340182,
+    "actual_completed_price": 1283123.507942558,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T02:01:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2570947.4202255914,
+    "actual_completed_price": 2534405.381491928,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T02:08:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 257684.49224955204,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T02:15:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286252.7607530137,
+    "actual_completed_price": 1296746.1610696549,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T02:22:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571022.664642138,
+    "actual_completed_price": 2533973.6743329847,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T02:29:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 255496.14838232606,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T02:36:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286252.7607530137,
+    "actual_completed_price": 1303387.6535411293,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T02:43:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571032.885140795,
+    "actual_completed_price": 2559832.862803486,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T02:50:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257378.48671902253,
+    "actual_completed_price": 257180.38146659939,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T02:57:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286268.8359879502,
+    "actual_completed_price": 1263169.0976151405,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T03:04:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571072.614643799,
+    "actual_completed_price": 2575782.643055914,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T03:11:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 257546.7766176397,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T03:18:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286324.9592661005,
+    "actual_completed_price": 1290548.2298463993,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T03:25:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571246.198593367,
+    "actual_completed_price": 2582643.115446422,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T03:32:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 257793.30153247842,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T03:39:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286324.9592661005,
+    "actual_completed_price": 1295956.1833582567,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T03:46:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571246.198593367,
+    "actual_completed_price": 2582172.912571756,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T03:53:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 259658.97909650777,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T04:00:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286324.9592661005,
+    "actual_completed_price": 1296587.555328059,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T04:07:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571246.198593367,
+    "actual_completed_price": 2593043.6817604927,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T04:14:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 257424.03882726296,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T04:21:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286324.9592661005,
+    "actual_completed_price": 1288215.224553467,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T04:28:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571272.1682981728,
+    "actual_completed_price": 2586215.7932145623,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T04:35:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 255366.16910167082,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T04:42:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286324.9592661005,
+    "actual_completed_price": 1281674.3890802497,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T04:49:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571275.5822981726,
+    "actual_completed_price": 2569876.313719587,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T04:56:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 257306.29106000348,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T05:03:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286324.9592661005,
+    "actual_completed_price": 1264787.9735315514,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T05:10:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571275.5822981726,
+    "actual_completed_price": 2556057.4546899716,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T05:17:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 255372.12498467023,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T05:24:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286339.274317748,
+    "actual_completed_price": 1307806.115178578,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T05:31:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571343.84065836,
+    "actual_completed_price": 2574506.274517777,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T05:38:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 260821.1477690799,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T05:45:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286348.0550719686,
+    "actual_completed_price": 1285588.6397103567,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T05:52:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571353.7448080303,
+    "actual_completed_price": 2553389.0302866083,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T05:59:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 257739.35838745735,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T06:06:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286348.0550719686,
+    "actual_completed_price": 1275865.7711706774,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T06:13:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571353.8728080303,
+    "actual_completed_price": 2582107.2741909814,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T06:20:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 255165.34588323173,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T06:27:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286348.0550719686,
+    "actual_completed_price": 1297190.5215781,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T06:34:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571379.6491865246,
+    "actual_completed_price": 2566477.3293405413,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T06:41:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 255486.5483717497,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T06:48:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286348.0550719686,
+    "actual_completed_price": 1275687.6175429118,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T06:55:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571402.9919466786,
+    "actual_completed_price": 2563735.343115717,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T07:02:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 252356.9931800493,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T07:09:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286354.108196104,
+    "actual_completed_price": 1285473.4170418796,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T07:16:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571403.0371191883,
+    "actual_completed_price": 2570394.9595460193,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T07:23:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 262032.89643319204,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T07:30:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286393.5900900103,
+    "actual_completed_price": 1263043.6546651227,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T07:37:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571482.0128484424,
+    "actual_completed_price": 2568787.064545283,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T07:44:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 258772.41715249716,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T07:51:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286393.5900900103,
+    "actual_completed_price": 1267654.3916191417,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T07:58:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571482.0128484424,
+    "actual_completed_price": 2535779.4306107946,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T08:05:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 256127.902566058,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T08:12:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286410.4458893386,
+    "actual_completed_price": 1296031.9888651087,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T08:19:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571543.601405231,
+    "actual_completed_price": 2552638.105536353,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T08:26:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 257630.42307335034,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T08:33:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286414.0493825567,
+    "actual_completed_price": 1293317.1714744458,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T08:40:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571556.8091247724,
+    "actual_completed_price": 2539805.8513668287,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T08:47:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 260742.05022514515,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T08:54:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286414.0493825567,
+    "actual_completed_price": 1275431.538924462,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T09:01:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571556.8091247724,
+    "actual_completed_price": 2551820.520077144,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T09:08:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 252127.82874577877,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T09:15:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286414.0493825567,
+    "actual_completed_price": 1277921.9276989659,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T09:22:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571556.8091247724,
+    "actual_completed_price": 2603617.570026025,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T09:29:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 258072.55948193904,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T09:36:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286437.440686347,
+    "actual_completed_price": 1280626.1713336702,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T09:43:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571615.8548035678,
+    "actual_completed_price": 2554014.406557964,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T09:50:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 254331.4065341109,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T09:57:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286437.440686347,
+    "actual_completed_price": 1301459.693099154,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T10:04:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571615.8548035678,
+    "actual_completed_price": 2568117.4221594827,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T10:11:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 254353.96362681908,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T10:18:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286437.440686347,
+    "actual_completed_price": 1265401.9265054043,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T10:25:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571615.8548035678,
+    "actual_completed_price": 2523042.68442277,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T10:32:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257380.47165542515,
+    "actual_completed_price": 257154.42813615594,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T10:39:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286455.8450879026,
+    "actual_completed_price": 1270013.8561238667,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T10:46:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571676.8898531366,
+    "actual_completed_price": 2526174.4137093313,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T10:53:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 253887.56154133967,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T11:00:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286455.8450879026,
+    "actual_completed_price": 1273862.1086247906,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T11:07:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571685.4089946244,
+    "actual_completed_price": 2544368.0011117896,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T11:14:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 257980.90176458334,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T11:21:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286455.8450879026,
+    "actual_completed_price": 1296204.6051253404,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T11:28:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571685.4089946244,
+    "actual_completed_price": 2541178.061939893,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T11:35:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 257069.10861044953,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T11:42:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286476.5882712966,
+    "actual_completed_price": 1281620.2274617192,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T11:49:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571762.820673965,
+    "actual_completed_price": 2573382.415096004,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T11:56:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 257163.496543168,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T12:03:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286476.5882712966,
+    "actual_completed_price": 1278935.2687406298,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T12:10:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571773.646620859,
+    "actual_completed_price": 2582510.4801071635,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T12:17:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 256213.4265764739,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T12:24:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286476.5882712966,
+    "actual_completed_price": 1278798.3312269135,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T12:31:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571776.8085835553,
+    "actual_completed_price": 2563081.2283668425,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T12:38:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 257885.66040727394,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T12:45:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286492.7002772596,
+    "actual_completed_price": 1273250.8838805943,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T12:52:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571840.276151377,
+    "actual_completed_price": 2523023.929713909,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T12:59:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 257592.47562536545,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T13:06:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286492.7002772596,
+    "actual_completed_price": 1268641.7099073797,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T13:13:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2543282.358394287,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T13:20:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 261817.70955218494,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T13:27:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1289187.264661065,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T13:34:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2574661.2753937566,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T13:41:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 254744.74907062194,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T13:48:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1279413.1448775216,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T13:55:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2551818.197082455,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T14:02:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 255044.3289907685,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T14:09:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1290604.7047745446,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T14:16:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2576939.1187361013,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T14:23:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 258872.48954899082,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T14:30:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1283105.4844516527,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T14:37:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2564029.4452774255,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T14:44:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 256001.94893047976,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T14:51:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1288838.505327805,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T14:58:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2542927.2239987655,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T15:05:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 254466.07576940407,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T15:12:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1265436.3008158219,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T15:19:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2546943.7941807928,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T15:26:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 255972.49202769957,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T15:33:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1274432.4782715482,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T15:40:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2549033.304053678,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T15:47:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 257696.60689488042,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T15:54:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1268082.7165178298,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T16:01:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2526220.5126815233,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T16:08:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 252283.7839553758,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T16:15:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1280990.5179953887,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T16:22:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2554907.063038225,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T16:29:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 255497.16007433497,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T16:36:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1281379.2596443947,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T16:43:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2548837.0814111084,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T16:50:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 256603.99108454245,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T16:57:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1283347.478056543,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T17:04:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2525387.9683288876,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T17:11:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 256015.31207575704,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T17:18:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1280663.3922431997,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T17:25:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 2571866.3705047807,
+    "actual_completed_price": 2543431.419288868,
+    "amount": 1000000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T17:32:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 257384.00907428123,
+    "actual_completed_price": 256044.92663341435,
+    "amount": 100000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T17:39:00Z",
+    "is_synthetic": true
+  },
+  {
+    "predicted_price": 1286499.0569549587,
+    "actual_completed_price": 1278351.6866560446,
+    "amount": 500000.0,
+    "from_rail": "Bankak-SDG",
+    "to_rail": "MTN-MoMo-RWF",
+    "payment_method": "Bankak",
+    "traded_at": "2026-07-02T17:46:00Z",
+    "is_synthetic": true
+  }
+]
