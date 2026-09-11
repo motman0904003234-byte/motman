@@ -1,0 +1,400 @@
+{
+  "name": "Salon Booking Agent - Kigali",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "twilio-whatsapp",
+        "responseMode": "onReceived",
+        "responseData": "noData",
+        "options": {}
+      },
+      "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "name": "📱 Twilio WhatsApp Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 400],
+      "webhookId": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "asgn-1",
+              "name": "customerMessage",
+              "value": "={{ $json.body.Body }}",
+              "type": "string"
+            },
+            {
+              "id": "asgn-2",
+              "name": "customerPhone",
+              "value": "={{ $json.body.From }}",
+              "type": "string"
+            },
+            {
+              "id": "asgn-3",
+              "name": "sandboxNumber",
+              "value": "={{ $json.body.To }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+      "name": "📋 استخراج بيانات العميل",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [500, 400]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: 'claude-sonnet-4-6', max_tokens: 1024, system: 'أنت مساعد حجوزات لصالون تجميل في كيغالي. اجمع: اسم العميل، الخدمة المطلوبة، الوقت المفضل. رد بإيجاز ومهنية.', messages: [{ role: 'user', content: $json.customerMessage }] }) }}",
+        "options": {}
+      },
+      "id": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+      "name": "🤖 Claude AI - رد مقترح",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [760, 400],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "anthropic-api-cred",
+          "name": "Anthropic API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// استخراج بيانات الخطوات السابقة\nconst resumeUrl = $execution.resumeUrl;\nconst aiResponse = $input.item.json.content[0].text;\nconst customerPhone = $('📋 استخراج بيانات العميل').item.json.customerPhone;\nconst customerMessage = $('📋 استخراج بيانات العميل').item.json.customerMessage;\nconst sandboxNumber = $('📋 استخراج بيانات العميل').item.json.sandboxNumber;\n\n// روابط الموافقة والرفض\nconst approveUrl = `${resumeUrl}?action=approve`;\nconst rejectUrl  = `${resumeUrl}?action=reject`;\n\n// بناء رسالة التيليجرام بصيغة Markdown\nconst telegramMessage = [\n  '🔔 *طلب حجز جديد - صالون كيغالي*',\n  '',\n  `📱 *رقم العميل:* \\`${customerPhone}\\``,\n  `💬 *رسالة العميل:*`,\n  customerMessage,\n  '',\n  '🤖 *الرد المقترح من Claude:*',\n  aiResponse,\n  '',\n  '─────────────────────',\n  `✅ [موافقة وإرسال الرد](${approveUrl})`,\n  `❌ [رفض وإلغاء](${rejectUrl})`\n].join('\\n');\n\nreturn [{\n  json: {\n    telegramMessage,\n    aiResponse,\n    customerPhone,\n    customerMessage,\n    sandboxNumber,\n    approveUrl,\n    rejectUrl\n  }\n}];"
+      },
+      "id": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+      "name": "✍️ تحضير رسالة المراجعة",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1020, 400]
+    },
+    {
+      "parameters": {
+        "chatId": "OWNER_TELEGRAM_CHAT_ID",
+        "text": "={{ $json.telegramMessage }}",
+        "additionalFields": {
+          "parse_mode": "Markdown",
+          "disable_web_page_preview": true
+        }
+      },
+      "id": "6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c",
+      "name": "📨 إرسال للمراجعة - تيليجرام",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [1280, 400],
+      "credentials": {
+        "telegramApi": {
+          "id": "telegram-bot-cred",
+          "name": "Telegram Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resume": "webhook",
+        "options": {}
+      },
+      "id": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+      "name": "⏳ انتظار موافقة صاحب الصالون",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1540, 400],
+      "webhookId": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": false,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "cond-approve",
+              "leftValue": "={{ $json.query.action }}",
+              "rightValue": "approve",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3f",
+      "name": "✅ هل تمت الموافقة؟",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [1800, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// استخراج البيانات المنظمة من رد Claude\nconst aiResponse = $('✍️ تحضير رسالة المراجعة').item.json.aiResponse;\nconst customerPhone = $('✍️ تحضير رسالة المراجعة').item.json.customerPhone;\nconst customerMessage = $('✍️ تحضير رسالة المراجعة').item.json.customerMessage;\n\n// محاولة استخراج الاسم والخدمة والوقت من رد المساعد\nconst extractField = (text, patterns) => {\n  for (const pattern of patterns) {\n    const match = text.match(pattern);\n    if (match) return match[1].trim();\n  }\n  return 'يحتاج مراجعة';\n};\n\nconst name = extractField(aiResponse, [\n  /اسم[ك\\s]*:?\\s*([^\\n،,]+)/i,\n  /الاسم[\\s]*:?\\s*([^\\n،,]+)/i\n]);\n\nconst service = extractField(aiResponse, [\n  /الخدمة[\\s]*:?\\s*([^\\n،,]+)/i,\n  /خدمة[\\s]*:?\\s*([^\\n،,]+)/i,\n  /طلب[تي]?[\\s]*:?\\s*([^\\n،,]+)/i\n]);\n\nconst time = extractField(aiResponse, [\n  /الوقت[\\s]*:?\\s*([^\\n،,]+)/i,\n  /موعد[\\s]*:?\\s*([^\\n،,]+)/i,\n  /يوم[\\s]*:?\\s*([^\\n،,]+)/i\n]);\n\nconst now = new Date().toLocaleString('ar-EG', { timeZone: 'Africa/Kigali' });\n\nreturn [{\n  json: {\n    name,\n    service,\n    time,\n    status: 'مؤكد ✅',\n    customerPhone: customerPhone.replace('whatsapp:', ''),\n    customerMessage,\n    aiResponse,\n    timestamp: now\n  }\n}];"
+      },
+      "id": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
+      "name": "🔍 استخراج بيانات الحجز",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2060, 280]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_GOOGLE_SHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "الاسم": "={{ $json.name }}",
+            "الخدمة": "={{ $json.service }}",
+            "الوقت": "={{ $json.time }}",
+            "الحالة": "={{ $json.status }}",
+            "رقم_الهاتف": "={{ $json.customerPhone }}",
+            "رسالة_العميل": "={{ $json.customerMessage }}",
+            "رد_المساعد": "={{ $json.aiResponse }}",
+            "التاريخ": "={{ $json.timestamp }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {"id": "الاسم",         "displayName": "الاسم",         "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true},
+            {"id": "الخدمة",        "displayName": "الخدمة",        "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true},
+            {"id": "الوقت",         "displayName": "الوقت",         "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true},
+            {"id": "الحالة",        "displayName": "الحالة",        "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true},
+            {"id": "رقم_الهاتف",   "displayName": "رقم_الهاتف",   "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true},
+            {"id": "رسالة_العميل", "displayName": "رسالة_العميل", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true},
+            {"id": "رد_المساعد",   "displayName": "رد_المساعد",   "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true},
+            {"id": "التاريخ",       "displayName": "التاريخ",       "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true}
+          ]
+        },
+        "options": {}
+      },
+      "id": "a0b1c2d3-e4f5-6a7b-8c9d-0e1f2a3b4c5d",
+      "name": "📊 إضافة في Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [2320, 280],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "google-sheets-cred",
+          "name": "Google Sheets OAuth2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "create",
+        "from": "={{ $('✍️ تحضير رسالة المراجعة').item.json.sandboxNumber }}",
+        "to": "={{ $('✍️ تحضير رسالة المراجعة').item.json.customerPhone }}",
+        "message": "={{ $('🔍 استخراج بيانات الحجز').item.json.aiResponse }}"
+      },
+      "id": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+      "name": "📤 إرسال الرد المعتمد للعميل",
+      "type": "n8n-nodes-base.twilio",
+      "typeVersion": 1,
+      "position": [2580, 280],
+      "credentials": {
+        "twilioApi": {
+          "id": "twilio-cred",
+          "name": "Twilio Account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "create",
+        "from": "={{ $('✍️ تحضير رسالة المراجعة').item.json.sandboxNumber }}",
+        "to": "={{ $('✍️ تحضير رسالة المراجعة').item.json.customerPhone }}",
+        "message": "عذراً، لم نتمكن من معالجة طلبك الآن. يرجى التواصل معنا مجدداً أو الاتصال بالصالون مباشرة. شكراً لتفهمك 🙏"
+      },
+      "id": "c2d3e4f5-a6b7-8c9d-0e1f-2a3b4c5d6e7f",
+      "name": "❌ إرسال رسالة الرفض للعميل",
+      "type": "n8n-nodes-base.twilio",
+      "typeVersion": 1,
+      "position": [2060, 540],
+      "credentials": {
+        "twilioApi": {
+          "id": "twilio-cred",
+          "name": "Twilio Account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "📱 Twilio WhatsApp Trigger": {
+      "main": [
+        [
+          {
+            "node": "📋 استخراج بيانات العميل",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📋 استخراج بيانات العميل": {
+      "main": [
+        [
+          {
+            "node": "🤖 Claude AI - رد مقترح",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🤖 Claude AI - رد مقترح": {
+      "main": [
+        [
+          {
+            "node": "✍️ تحضير رسالة المراجعة",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "✍️ تحضير رسالة المراجعة": {
+      "main": [
+        [
+          {
+            "node": "📨 إرسال للمراجعة - تيليجرام",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📨 إرسال للمراجعة - تيليجرام": {
+      "main": [
+        [
+          {
+            "node": "⏳ انتظار موافقة صاحب الصالون",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "⏳ انتظار موافقة صاحب الصالون": {
+      "main": [
+        [
+          {
+            "node": "✅ هل تمت الموافقة؟",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "✅ هل تمت الموافقة؟": {
+      "main": [
+        [
+          {
+            "node": "🔍 استخراج بيانات الحجز",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "❌ إرسال رسالة الرفض للعميل",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🔍 استخراج بيانات الحجز": {
+      "main": [
+        [
+          {
+            "node": "📊 إضافة في Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📊 إضافة في Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "📤 إرسال الرد المعتمد للعميل",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "versionId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "instanceId": "salon-booking-kigali-001"
+  },
+  "id": "salon-booking-agent-kigali",
+  "tags": [
+    {
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "updatedAt": "2026-09-11T00:00:00.000Z",
+      "id": "tag-1",
+      "name": "salon"
+    },
+    {
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "updatedAt": "2026-09-11T00:00:00.000Z",
+      "id": "tag-2",
+      "name": "whatsapp"
+    },
+    {
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "updatedAt": "2026-09-11T00:00:00.000Z",
+      "id": "tag-3",
+      "name": "booking"
+    }
+  ]
+}
